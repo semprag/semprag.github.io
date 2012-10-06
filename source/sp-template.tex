@@ -1,0 +1,62 @@
+\documentclass{sp}
+
+% \pdf* commands provide metadata for the PDF output. ASCII characters only!
+\pdfauthor{Full author name}
+\pdftitle{Full title}
+\pdfkeywords{Full keyword list}
+
+% Optional short title inside square brackets, for the running headers.
+% If no short title is given, no title appears in the headers.
+\title[Short title]{Full Title \thanks{We thank \ldots}}
+
+% Optional short author inside square brackets, for the running headers.
+% If no short author is given, no authors print in the headers.
+\author[Short author]{% As many authors as you like, each separated by \AND.
+  \spauthor{Author1 \\ \institute{Institute1}} \AND
+  \spauthor{Author2 \\ \institute{Institute2}} \AND
+  \spauthor{Author3 \\ \institute{Institute3}}%
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  Abstract here
+\end{abstract}
+
+\begin{keywords}
+  Keywords (special formatting is fine)
+\end{keywords}
+
+\section{The name of the first section}
+
+The document
+
+\subsection{And the first subsection}
+
+\subsubsection{The subsubsection inside the first subsection}
+
+\paragraph{A paragraph}
+
+\subparagraph{A subparagraph}
+
+\bibliography{your-bib-database}
+
+\begin{addresses}
+  \begin{address}
+    Author1 \\
+    Street1 \\
+    City1 \ldots \\
+    \email{author1@email}
+  \end{address}
+  \begin{address}
+    Author2 \\
+    Street2 \\
+    City2 \dots \\
+    \email{author2@email}
+  \end{address}
+  % repeat if needed.
+\end{addresses}
+
+\end{document}
