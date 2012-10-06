@@ -20,7 +20,7 @@ The `\title{}` can contain a `\thanks{}` acknowledgements section. If you do not
 There is no limit to the number of authors you can have. Each use of `\spauthor{}` should be separated by `\AND`.
 
 The optional argument to `\author` (inside square brackets) is what appears in the header on subsequent pages.
-If you have more than three authors, use ``Lastname et al.''
+If you have more than three authors, use "Murphy et al." (where Murphy is the last name of the first author).
 
 ## Keywords
 
@@ -34,7 +34,7 @@ You are free to use any package you wish for numbering examples.
 
 However, we impose a few general formatting restrictions:
 
-- Example numbers appear in round parentheses, flush left.
+- Example numbers appear in round parentheses, left-aligned.
 - Subexamples are labeled with lowercase alphabetical letters, each followed by a period.
 - Equations and examples should be numbered in the same sequence.
 - References to examples appear inside parentheses, with no punctuation between elements.
@@ -61,7 +61,6 @@ The S&P file also supports the following commands:
 - `\pgcitet{montague:1974}{12}`: Montague (1974: 12)
 - `\pgcitep{montague:1974}{12}`: (Montague 1974: 12)
 - `\seccitet{montague:1974}{2}`: Montague (1974: §2)
-
 - `\posscitet{montague:1974}`: Montague's (1974)
 - `\pgposscitet{montague:1974}{12}`: Montague's (1974: 12)
 - `\posscitet{montague:1974}`: Montague's (1974)
@@ -88,7 +87,8 @@ N.B. `\includegraphics` prefers filenames without underscores.
 The `sp.cls` includes the `float` package by default.
 If you need to modify the S&P `float` configuration temporarily, you can:
 
-    % outside brackets ensure that the style returns to normal after the temporary change
+    % outside brackets ensure that the style returns to normal
+    % after the temporary adjustment
     {
       \floatstyle{plain}
       % See the `float` documentation for other styles.
@@ -101,7 +101,7 @@ If you need to modify the S&P `float` configuration temporarily, you can:
 
 # Backmatter
 
-The end sections are organized like so:
+The end sections are organized in this order:
 
 1. Appendix
 2. References
@@ -109,7 +109,7 @@ The end sections are organized like so:
 
 ## Appendix
 
-The `appendix` environment, is a good home for lengthy proofs, fragments, experimental materials, and the like.
+The `appendix` environment, is a good home for lengthy proofs, fragments, experimental materials, etc.
 
     \begin{appendix}
       ...
@@ -121,13 +121,13 @@ Simply use the following, where you have a file `your-references.bib` in the sam
 
     \bibliography{your-references}
 
-If you have a system-wide BibTeX file elsewhere, accessible to your LaTeX library, that is fine too.
-However, when submitting your article, you will need to include your `.bib` file
+If you have a system-wide BibTeX file somewhere else that's accessible to your LaTeX library, that is fine too.
+However, when submitting your article, you will need to include whatever `.bib` file you use here.
 
 ## Addresses
 
 Full author addresses appear at the end of each article.
-They are specified as follows:
+They are specified in an `addresses` environment, which consists of `address` environments:
 
     \begin{addresses}
       \begin{address}
@@ -147,6 +147,8 @@ They are specified as follows:
 
 ## BibTeX
 
+The `.bib` file's BibTeX format allows leaving our certain fields in each entry's specification. We require a great deal more specificity to meet *S&P* publication standards.
+
 - Journal articles should specify both volume and issue.
 - Books should have publisher and address (city) information.
 - Journal and book titles *must* be given in full, with the initial letter of each major word capitalized.
@@ -154,8 +156,8 @@ They are specified as follows:
 - Use full first names of authors or editors.
 - In case of multiple authorship, the names of all authors must be given.
 - Unpublished manuscripts need a month and year. If a url is available, include it.
-- Urls preferably a url to a permanent resource such as SemanticsArchive.
-- Conference proceedings should NOT include editor information (this is contrary to either the universal or LI stylesheets).
+- For all urls, we prefer a url to a permanent resource such as SemanticsArchive, rather than the author's homepage or institutional website.
+- Conference proceedings should *not* include editor information.
 - Publishers that have multiple cities should include both (unless the publisher information indicates otherwise). Conjoin them with an ampersand &. <!-- Conflicting instruction: Separate multiple cities for publishers with commas. (Which is right?) -->
 - For conference proceedings title, use the name of the society and then put the meeting's acronym in parentheses. Otherwise treat as a journal article. Do not include the words "proceedings of the" or "papers from the".
 - Do not hard-case words or letters in your BibTeX entries (e.g., `{B}ook {T}itle`), except for the following exceptions:
@@ -166,12 +168,12 @@ They are specified as follows:
   - Acronyms
   - Even in these cases, hard-case the entire word instead of the initial letter.
     - <del>`{B}ook`</del> `{Book}`
-- Whenever possible, include the DOI for the article. These are often hard to find, but [http://scholar.google.com/](Google Scholar) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
+- Whenever possible, include the DOI for the article. These are often hard to find, but [Google Scholar](http://scholar.google.com/) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
   - DOIs should never end in periods, which can cause the DOI lookup to fail.
 
-## Included packages `sp.cls`
+## Packages included by sp.cls
 
-The `sp.cls` file includes the following packages by default, which means you have access to all their commands without having to `\includepackage{}` it in your own document:
+The `sp.cls` file includes the following packages by default, which means you have access to all their commands without having to `\usepackage{}` it in your own document:
 
 - graphicx
 - natbib
