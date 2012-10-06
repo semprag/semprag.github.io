@@ -18,8 +18,8 @@ title: "Styling: punctuation, citations, and more"
 # Punctuation and abbreviation
 
 - Uses of e.g. and i.e. should be followed by commas:
-  - <del>e.g.</del> e.g.,
-  - <del>i.e.</del> i.e.,
+  - ~~e.g.~~ e.g.,
+  - ~~i.e.~~ i.e.,
   - Avoid use of e.g., i.e., etc. in non-parenthesized text.
 - Commas and periods occur inside double quotation marks.
 - Colons and semicolons occur outside double quotation marks.
@@ -42,14 +42,14 @@ title: "Styling: punctuation, citations, and more"
 # Other stylistic preferences
 
 - For lists of 3 items or more, don't use a comma before *and* or *or*
-  - <del>apples, oranges, and bananas</del> apples, oranges and bananas
+  - ~~apples, oranges, and bananas~~ apples, oranges and bananas
   - Use & to disambiguate conjunctions of conjunctions, e.g., a & b and c & d.
 - When underlining, use `\ul` from the `soul` package rather than `\underline`.
 - Use `\dash` instead of both n-dashes (`--`) and m-dashes (`---`).
 - Avoid stray spaces when using `\label{abc}` in examples by using `%`, e.g., `\label{abc}%`.
 - Use `\sv` for semantic interpretation brackets. It creates a math environment so be sure to use \text for any text in it, e.g., `\sv{\text{unicorn}}`.
 - Use \colon instead of : in your equations to ensure proper spacing.
-  - ~~`\forall x : x \in D`~~ (`<del>∀x : x ∈ D</del>`)
+  - ~~`\forall x : x \in D`~~ (~~`∀x : x ∈ D`~~)
   - `\forall x \colon\thinspace x \in D` (`∀x: x ∈ D`)
   - `\co` is a shortcut for `\colon\thinspace`
 - Use `\http{}` to link to a webpage, e.g., `\http{semprag.org}`
