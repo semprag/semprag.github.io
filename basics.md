@@ -1,3 +1,7 @@
+---
+layout: default
+title: "The basics: the template structure explained"
+---
 # Frontmatter (the preamble)
 
 Instructions for the content that comes before `\begin{document}`.
@@ -13,7 +17,7 @@ The `\title{}` can contain a `\thanks{}` acknowledgements section. If you do not
 
 ## Authors
 
-There is no limit to the number of authors you can have. Each use of `\spauthor{}` should be separated by `\AND`.  
+There is no limit to the number of authors you can have. Each use of `\spauthor{}` should be separated by `\AND`.
 
 The optional argument to `\author` (inside square brackets) is what appears in the header on subsequent pages.
 If you have more than three authors, use ``Lastname et al.''
@@ -29,6 +33,7 @@ The content of the `keywords` environment should be the same as the `\pdfkeyword
 You are free to use any package you wish for numbering examples.
 
 However, we impose a few general formatting restrictions:
+
 - Example numbers appear in round parentheses, flush left.
 - Subexamples are labeled with lowercase alphabetical letters, each followed by a period.
 - Equations and examples should be numbered in the same sequence.
@@ -97,6 +102,7 @@ If you need to modify the S&P `float` configuration temporarily, you can:
 # Backmatter
 
 The end sections are organized like so:
+
 1. Appendix
 2. References
 3. Addresses
@@ -159,13 +165,14 @@ They are specified as follows:
     - Places
   - Acronyms
   - Even in these cases, hard-case the entire word instead of the initial letter.
-    - `~~{B}ook~~` `{Book}`
+    - <del>`{B}ook`</del> `{Book}`
 - Whenever possible, include the DOI for the article. These are often hard to find, but [http://scholar.google.com/](Google Scholar) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
   - DOIs should never end in periods, which can cause the DOI lookup to fail.
 
 ## Included packages `sp.cls`
 
 The `sp.cls` file includes the following packages by default, which means you have access to all their commands without having to `\includepackage{}` it in your own document:
+
 - graphicx
 - natbib
 - hyperref

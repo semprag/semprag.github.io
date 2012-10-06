@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Internal configuration"
+---
 # Internal configuration instructions
 
 This page is for use by the core *Semantics and Pragmatics* team.

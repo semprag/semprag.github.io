@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Semantics & Pragmatics"
+---
 # Semantics and Pragmatics
 
 *Semantics and Pragmatics* (S&P) is a peer-reviewed open access journal. The main website can be found at [semprag.org](http://semprag.org/).
