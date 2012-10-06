@@ -1,1 +1,7 @@
 markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+exclude: ['README.md', '.gitignore']
+safe: true
+lsi: false
+pygments: true
