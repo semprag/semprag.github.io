@@ -25,7 +25,7 @@ title: "Styling: punctuation, citations, and more"
 - Colons and semicolons occur outside double quotation marks.
 - Example references and numbers should be surrounded by parentheses, e.g., (1), (2-3), (4a), (5b-c), (6a,c), etc.
   - Avoid primes (e.g., (1')).
-- Footnotes follow punctuation and precede spacing as in this sentence.<super>1</super> This is the next sentence.
+- Footnotes follow punctuation and precede spacing as in this sentence.<sup>1</sup> This is the next sentence.
   - I.e., end punctuation, footnote, space, next sentence.
 - Et al. contains only 1 period.
 - Be consistent about the use of non-, pre-, and co-. The LI style sheet recommends conjoining prefixes without a dash.
