@@ -26,20 +26,20 @@
       <dt>S&P BibTeX Style</dt>
         <dd><a href="source/sp.bst">sp.bst</a></dd>
     </dl>
-    <!-- <p class="view"><a href="https://github.com/semprag">View My GitHub Profile</a></p> -->
   </header>
   <section>
     {{ content }}
   </section>
   <footer>
-    <!-- <p><small>Hosted on GitHub Pages</small></p> -->
   </footer>
 </div>
 <script>
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  try {
-    var pageTracker = _gat._getTracker("UA-20644777-6");
-    pageTracker._trackPageview();
-  } catch(err) {}
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20644777-6']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
