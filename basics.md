@@ -74,7 +74,7 @@ This ensures that all bibliographic entries are included, and, since these autom
 
 ## Images and custom figures
 
-You can easily include a range of figures using the \includegraphics{} command.
+You can easily include a range of figures using the `\includegraphics{}` command.
 
     \includegraphics[width=4in]{figure-1b.pdf}
     \includegraphics[height=1in]{my-pet-cat.png}

@@ -55,10 +55,10 @@ title: "Styling: punctuation, citations, and more"
 - Use `\http{}` to link to a webpage, e.g., `\http{semprag.org}`
 - Use `\email{}` to include an email address, e.g., `\email{editors@semprag.org}`
 - Use `\footnotemark` and `\footnotetext` for footnotes in section headers.
-  - You'll need to use the \section[options] options for the section title.
+  - You'll need to use the `\section[options]` options for the section title.
 - Use `booktabs` package for tables, and use that package's commands, `\midrule`, `\cmidrule`, rather than `\hline`.
   - Do not use vertical rules in tables.
-- Don't use \sf (Sans Serif).
+- Don't use `\sf` (Sans Serif).
 
 <!--
   I'm leaving these out because the sp.bst should handle it.
