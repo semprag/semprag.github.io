@@ -27,4 +27,6 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * use the `\text{}` macro to wrap object language expressions inside any math environment
 * use the `\co` macro (provided by `sp.cls`) for the "such that" colon in math environments
 
+Believe it or not, the above are the main stumbling blocks for a quick conversion of a manuscript to a publishable S&P paper. There are more subtle guidelines on the other pages of this site, but these are the most important issues.
+
 
