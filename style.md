@@ -8,7 +8,7 @@ title: "Styling: punctuation, citations, and more"
 - Use italics for the introduction of terms.
 - Use italics sparingly for emphasis.
 - Use italics for journal and book titles. Due to policies on citation, this should occur rarely in running text.
-- Phrases such as a priori, iff, and viz-a-viz should be italicized.
+- Phrases such as *a priori*, *iff*, and *viz-a-viz* should be italicized.
 - Use double quotes for notions and concepts in appositive constructions, e.g., the notion "proposition."
 - Use double quotes to set off the name of a journal article, unpublished paper, chapter, or dissertation, in running text, e.g., Montague's "Universal Grammar."
 - Use double quotes for scare quotes (but use scare quotes sparingly).
@@ -21,8 +21,7 @@ title: "Styling: punctuation, citations, and more"
   - ~~e.g.~~ e.g.,
   - ~~i.e.~~ i.e.,
   - Avoid use of e.g., i.e., etc. in non-parenthesized text.
-- Commas and periods occur inside double quotation marks.
-- Colons and semicolons occur outside double quotation marks.
+- Punctuation marks (commas, semicolons, periods, ...) should be inside quotation marks **only if** they were part of the material being quoted. Otherwise --- if they are attributable to you as the author rather than the material being quoted --- they should occur outside the quotation marks. (Ben Yagoda has [a good article on this topic](http://www.slate.com/articles/life/the_good_word/2011/05/the_rise_of_logical_punctuation.single.html).)
 - Example references and numbers should be surrounded by parentheses, e.g., (1), (2-3), (4a), (5b-c), (6a,c), etc.
   - Avoid primes (e.g., (1')).
 - Footnotes follow punctuation and precede spacing as in this sentence.<sup>1</sup> This is the next sentence.
@@ -36,13 +35,13 @@ title: "Styling: punctuation, citations, and more"
 <!-- [Special case of general rule for proper names? - jc] -->
 - Avoid full capitals, unless contrastive (e.g., *COMP, PRO/pro)
 <!-- [What about sentences following colons? First word of subtitles? - jc] -->
-- References to figures and tables should indicate whether they are a figure or table, be capitalized in the figure or table (e.g., Figure 1) and lowercase in text (e.g., table 1).
-<!-- [What is the source for this rule?  I can't find it in LI, USS or S&P style guidelines.  In text lowercase reference looks strange to me - jc] -->
+- References to figures and tables should indicate whether they are a figure or table, and be capitalized both in the figure or table (e.g., Figure 1) and in the text (e.g., "As we see in Table 1, ...").
 
-# Other stylistic preferences
+# Other stylistic guidelines
 
-- For lists of 3 items or more, don't use a comma before *and* or *or*
-  - ~~apples, oranges, and bananas~~ apples, oranges and bananas
+- For lists of 3 items or more, there is a religious war whether a final comma should be used before *and* or *or*
+  - "apples, oranges, and bananas" vs. "apples, oranges and bananas"
+  - We do not take a position on this, but authors should be consistent in their policy.
   - Use & to disambiguate conjunctions of conjunctions, e.g., a & b and c & d.
 - When underlining, use `\ul` from the `soul` package rather than `\underline`.
 - Use `\dash` instead of both n-dashes (`--`) and m-dashes (`---`).
