@@ -19,8 +19,7 @@ The `\title{}` can contain a `\thanks{}` acknowledgements section. If you do not
 
 There is no limit to the number of authors you can have. Each use of `\spauthor{}` should be separated by `\AND`.
 
-The optional argument to `\author` (inside square brackets) is what appears in the header on subsequent pages.
-If you have more than three authors, use "Murphy et al." (where Murphy is the last name of the first author).
+The optional argument to `\author` (inside square brackets) is what appears in the header on subsequent pages. Just give your full name. For two authors, you can give both full names conjoined with *and*. When the author list becomes too long, use last names only, and use *&* instead of *and*. If you have more than three authors, use "Murphy et al." (where Murphy is the last name of the first author).
 
 ## Keywords
 
@@ -39,6 +38,10 @@ However, we impose a few general formatting restrictions:
 - Equations and examples should be numbered in the same sequence.
 - References to examples appear inside parentheses, with no punctuation between elements.
   - E.g., we can refer to (12), or to its subexample (12a).
+
+We have found that the [linguex package](http://www.ctan.org/pkg/linguex) works well with our styles. You can load it by simply passing a `linguex` option to `sp.cls`.
+
+For more complex needs (complex glosses, for example), we recommend the [expex package](http://ctan.org/pkg/expex). We expect to offer full expex integration into our system soon.
 
 ## BibTeX and Citations
 
@@ -156,17 +159,17 @@ The `.bib` file's BibTeX format allows leaving our certain fields in each entry'
 - Use full first names of authors or editors.
 - In case of multiple authorship, the names of all authors must be given.
 - Unpublished manuscripts need a month and year. If a url is available, include it.
-- For all urls, we prefer a url to a permanent resource such as SemanticsArchive, rather than the author's homepage or institutional website.
-- Conference proceedings should *not* include editor information.
-- Publishers that have multiple cities should include both (unless the publisher information indicates otherwise). Conjoin them with an ampersand &. <!-- Conflicting instruction: Separate multiple cities for publishers with commas. (Which is right?) -->
-- For conference proceedings title, use the name of the society and then put the meeting's acronym in parentheses. Otherwise treat as a journal article. Do not include the words "proceedings of the" or "papers from the".
+- For all urls, we prefer a url to a permanent resource such as SemanticsArchive, rather than the author's homepage or institutional website, but if the latter is the only available option, please use it.
+- Conference proceedings should *not* include editor information. They should be given the `@article` type with the `journal` field set to the conference name and the acronym in parentheses: `journal = {North East Linguistic Society ({NELS})`. Do not include the words "proceedings of the" or "papers from the".
+- Publishers that have multiple cities should include both (unless the publisher information indicates otherwise). Conjoin them with an ampersand `\&`.
 - Do not hard-case words or letters in your BibTeX entries (e.g., `{B}ook {T}itle`), except for the following exceptions:
   - Proper names
     - Languages
     - People
     - Places
   - Acronyms
-  - Even in these cases, hard-case the entire word instead of the initial letter.
+  - All nouns if the title is in German or similar languages that capitalize nouns
+  - Even in these cases, hard-case the entire word instead of the initial letter. (This is essential for proper kerning.)
     - <del>`{B}ook`</del> `{Book}`
 - Whenever possible, include the DOI for the article. These are often hard to find, but [Google Scholar](http://scholar.google.com/) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
   - DOIs should never end in periods, which can cause the DOI lookup to fail.
