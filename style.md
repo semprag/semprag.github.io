@@ -21,7 +21,7 @@ title: "Styling: punctuation, citations, and more"
   - ~~e.g.~~ e.g.,
   - ~~i.e.~~ i.e.,
   - Avoid use of e.g., i.e., etc. in non-parenthesized text.
-- Punctuation marks (commas, semicolons, periods, ...) should be inside quotation marks **only if** they were part of the material being quoted. Otherwise --- if they are attributable to you as the author rather than the material being quoted --- they should occur outside the quotation marks. (Ben Yagoda has [a good article on this topic](http://www.slate.com/articles/life/the_good_word/2011/05/the_rise_of_logical_punctuation.single.html).)
+- Punctuation marks (commas, semicolons, periods, ...) should be inside quotation marks *only if they were part of the material being quoted. Otherwise -- if they are attributable to you as the author rather than the material being quoted -- they should occur outside the quotation marks. (Ben Yagoda has [a good article on this topic](http://www.slate.com/articles/life/the_good_word/2011/05/the_rise_of_logical_punctuation.single.html).)
 - Example references and numbers should be surrounded by parentheses, e.g., (1), (2-3), (4a), (5b-c), (6a,c), etc.
   - Avoid primes (e.g., (1')).
 - Footnotes follow punctuation and precede spacing as in this sentence.<sup>1</sup> This is the next sentence.
