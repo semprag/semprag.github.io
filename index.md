@@ -6,7 +6,7 @@ title: "Semantics & Pragmatics"
 
 *Semantics and Pragmatics* (S&P) is a peer-reviewed open access journal. The main website can be found at [semprag.org](http://semprag.org/).
 
-This public github repository is dedicated to the copyediting, stylistic, and typesetting concerns of the journal.
+This site is dedicated to the copyediting, stylistic, and typesetting concerns of the journal.
 
 If you have any issues with the instructions here, or compiling your article, please email us at [latex@semprag.org](mailto:latex@semprag.org).
 
