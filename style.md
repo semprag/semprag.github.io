@@ -21,6 +21,7 @@ Read your paper one more time very carefully, paying attention to the issues lis
     * don't case protect just the initial letter, always the entire word: ~~`{E}nglish`~~ `{English}`
     * provide volume *and* issue numbers *and* page numbers for all journal articles (and page numbers for all book chapters etc.)
     * provide DOIs and URLs for everything that can reasonably be accessed electronically
+* Our house style follows the *LI*-style in making a distinction between referring to an author and referring to an author's work. So, "Beaver (2001) proposes ..." (LaTeX: `\citet`) but "as claimed in Beaver 2001" (LaTeX: `\citealt`). Expressions that probably go with the latter form: "in", "see", ... .
 * instead of "`---`" for parenthetical remarks, use the `\dash` macro provided by `sp.cls`
 * instead of literal "`...`" for dots, use the LaTeX `\dots` macro
 * use `\sv{}` (provided by `sp.cls`) for semantic evaluation brackets
