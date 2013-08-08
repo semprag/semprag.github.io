@@ -148,35 +148,9 @@ They are specified in an `addresses` environment, which consists of `address` en
       % repeat if needed
     \end{addresses}
 
-## BibTeX
-
-The `.bib` file's BibTeX format allows leaving our certain fields in each entry's specification. We require a great deal more specificity to meet *S&P* publication standards.
-
-- Journal articles should specify both volume and issue.
-- Books should have publisher and address (city) information.
-- Journal and book titles *must* be given in full, with the initial letter of each major word capitalized.
-- Articles in journals and books *must* specify page numbers.
-- Use full first names of authors or editors.
-- In case of multiple authorship, the names of all authors must be given.
-- Unpublished manuscripts need a month and year. If a url is available, include it.
-- For all urls, we prefer a url to a permanent resource such as SemanticsArchive, rather than the author's homepage or institutional website, but if the latter is the only available option, please use it.
-- Conference proceedings should *not* include editor information. They should be given the `@article` type with the `journal` field set to the conference name and the acronym in parentheses: `journal = {North East Linguistic Society ({NELS})}`. Do not include the words "proceedings of the" or "papers from the".
-- Publishers that have multiple cities should include both (unless the publisher information indicates otherwise). Conjoin them with an ampersand `\&`.
-- Do not hard-case words or letters in your BibTeX entries (e.g., `{B}ook {T}itle`), except for the following exceptions:
-  - Proper names
-    - Languages
-    - People
-    - Places
-  - Acronyms
-  - All nouns if the title is in German or similar languages that capitalize nouns
-  - Even in these cases, hard-case the entire word instead of the initial letter. (This is essential for proper kerning.)
-    - <del>`{B}ook`</del> `{Book}`
-- Whenever possible, include the DOI for the article. These are often hard to find, but [Google Scholar](http://scholar.google.com/) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
-  - DOIs should never end in periods, which can cause the DOI lookup to fail.
-
 ## Packages included by sp.cls
 
-The `sp.cls` file includes the following packages by default, which means you have access to all their commands without having to `\usepackage{}` it in your own document:
+The `sp.cls` file includes the following packages by default, which means you have access to all their commands without having to `\usepackage{}` it in your own document (in fact, it is a very good idea to delete the relevant `\usepackage{}` commands from your preamble):
 
 - graphicx
 - natbib
@@ -194,3 +168,17 @@ The `sp.cls` file includes the following packages by default, which means you ha
 - ifthen
 - color
 - fontenc
+- linguex (loaded by `[linguex]` package option)
+
+## Postscript
+
+We strongly recommend rendering directly to PDF with `pdflatex`, avoiding `dvi` and `ps` formats entirely.
+This ensures that line breaks and hyperlinks appear correctly.
+
+If you must use `postscript` for certain diagrams, we recommend rendering those to PDF format independently (e.g., via `latex` & `dvipdf` or by using `ps2pdf`), and then importing the result directly into your *S&P* submission:
+
+    \includegraphics{used-to-be-ps.pdf}
+
+Failing that, you can use the option `\documentclass[dvips]{sp}` or the `pdftricks` package.
+
+If you provide us with a TeX document that requires postscript, we will most likely convert your figures to PDF and render the document with `pdflatex` anyway. By submitting in `pdflatex`-able format, with graphics in separate documents, you will ensure that the final publication is as close as possible to what you envision.
