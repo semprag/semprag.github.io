@@ -173,9 +173,10 @@ header ul a strong {
 }
 
 .logo {
-  height:100px;
+  text-align: center;
 }
-.logo svg path {
+.logo svg {
+  height:100px;
   fill:#333;
 }
 
