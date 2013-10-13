@@ -2,7 +2,7 @@
 % Kai von Fintel, Christopher Potts, and Chung-chieh Shan
 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesClass{sp}[2012/01/06 v.2.01 Class for Semantics & Pragmatics]
+\ProvidesClass{sp}[2013/08/11 v.2.1 Class for Semantics & Pragmatics]
 
 % OUTLINE OF THIS CLASS FILE
 %   option declarations 
@@ -87,6 +87,11 @@
   \else\relax
 \fi
 
+% Strong widow and orphan control
+
+\clubpenalty10000
+\widowpenalty10000
+
 %=====================================================================
 %========================= required packages =========================
 
@@ -101,11 +106,10 @@
 
 \if@biblatex
 	\RequirePackage[backend=biber,
-			bibstyle=sp-biblatex,
+			bibstyle=biblatex-sp-unified,
 			citestyle=sp-authoryear-comp,
 			maxcitenames=3,
 			maxbibnames=99]{biblatex}
-	\setlength{\bibitemsep}{0pt}
 \else
 	\RequirePackage{natbib}
 	\bibpunct[: ]{(}{)}{,}{a}{}{,}
@@ -125,7 +129,7 @@
     \newcommand{\seccitet}[2]{\citeauthor{#1} (\citeyear{#1}:~$\S$#2)}
 \fi	
 
-\RequirePackage[usenames]{color}
+\RequirePackage[usenames]{xcolor}
 \definecolor{splinkcolor}{rgb}{.0,.2,.4}
 \RequirePackage[colorlinks,breaklinks,
                 linkcolor=splinkcolor, 
