@@ -22,7 +22,7 @@ If you get the following error message when trying to use a Lucida font, your Lu
 ### On Mac OS X (Lion):
 
     unzip lucimatx.zip
-    sudo cp -Rf texmf/* /usr/local/texlive/texmf-local/
+    cp -R texmf/* /usr/local/texlive/texmf-local/
     sudo texhash
     sudo updmap-sys --enable Map lucida.map
     sudo texhash
