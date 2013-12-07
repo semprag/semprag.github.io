@@ -4,7 +4,7 @@ Public resources for the authoring and styling of [_Semantics & Pragmatics_](htt
 
 ### Website
 
-These files are rendered as webpages at [http://semprag.github.io/](http://semprag.github.io/),
+These files are rendered as webpages at [http://info.semprag.org/](http://info.semprag.org/),
 please view them there.
 
 To preview local changes to this Github pages user site, before committing, you can run the following:
