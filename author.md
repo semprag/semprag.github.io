@@ -1,3 +1,8 @@
+---
+layout: default
+title: "S&P Guidelines for authors"
+---
+
 # S&P Guidelines for authors
 
 ## The journal
