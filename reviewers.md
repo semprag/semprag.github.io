@@ -2,7 +2,9 @@
 layout: default
 title: "S&P Guidelines for reviewers"
 ---
-#Preliminaries
+# S&P Guidelines for reviewers
+
+## Preliminaries
 
 Normally, we will ask a reviewer for a short review, short both in terms
 of the allotted time and in terms of the expected length of the review.
@@ -68,7 +70,7 @@ If you do decline to review the paper, please help us out by suggesting
 some alternative reviewers (the template presented by the website when
 declining a review includes a space to put in such recommendations).
 
-# The review
+## The review
 
 If you accept to be a reviewer of this paper, please read through the
 paper, and in your report to us address questions A–C, and optionally D,
@@ -221,7 +223,7 @@ Contextualization of research
 that it would be acceptable to share your answer in C, or you may
 provide no commentary at all for the author’s eyes)
 
-# Short contributions
+## Short contributions
 
 S&P welcomes various shorter contributions (squibs, commentaries, remarks
 and replies, reviews, state of the art surveys). If you are asked for a
@@ -230,7 +232,7 @@ modulated. Short squibs, in particular, “will not be required to propose
 a solution to problems they address as long as their relevance to
 theoretical issues is made clear” (as *Linguistic Inquiry* puts it).
 
-# Short and quick
+## Short and quick
 
 Please note that when the editors request a short review, that means
 they do not at that stage require or expect detailed feedback on
