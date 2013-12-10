@@ -88,6 +88,13 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Use `booktabs` package for tables, and use that package's commands, `\midrule`, `\cmidrule`, rather than `\hline`.
   - Do not use vertical rules in tables.
 - Don't use `\sf` (Sans Serif).
+- The `sp` documentclass uses the standard skip amounts:
+  | Skip name          | `\the{...}` | total |
+  |:-------------------|:------------|:------|
+  | `\smallskipamount` | 3.0pt plus 1.0pt minus 1.0pt | 3pt |
+  | `\medskipamount`   | 6.0pt plus 2.0pt minus 2.0pt | 6pt |
+  | `\bigskipamount`   | 12.0pt plus 4.0pt minus 4.0pt | 12pt |
+
 
 ## BibTeX
 
