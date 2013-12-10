@@ -13,7 +13,7 @@ If you have any questions or concerns about the journal and its processes, conta
 ## Overview of the resources on this site
 
 * [Author guidelines](author)
-* [Reviewer guidelines](reviewer)
+* [Reviewer guidelines](reviewers)
 * [The S&P LaTeX system](basics)
 * [Final submission style guidelines](style)
 
