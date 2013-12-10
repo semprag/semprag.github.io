@@ -13,7 +13,3 @@ To preview local changes to this Github pages user site, before committing, you 
     jekyll serve --watch
 
 And then go to [localhost:4000](http://127.0.0.1:4000)
-
-<!-- s/(e\.g\.)([^,])/$1,$2/gi -->
-<!-- s/(i\.e\.)([^,])/$1,$2/gi -->
-<!-- /['"][.,]/ and /[:;]['"]/ are bad -->
