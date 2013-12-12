@@ -105,7 +105,7 @@ reviewers allows the following recommendations:
 -   Resubmit for review
 -   Resubmit elsewhere
 -   Decline submission
--   See comments ($\Longleftarrow$ preferred option)
+-   See comments (&larr; preferred option)
 
 Unless you strongly believe that you should make a specific
 recommendation from that list, we recommend that you choose “See
@@ -166,32 +166,18 @@ recommendation, if you chose to make one). Although you should feel free
 to explain your reaction in any way you think will be helpful, issues
 that you might consider include:
 
-Principal results
-:   What are the major contributions this paper makes to semantics and
-    pragmatics? Note: we would expect a pointer rather than a full
-    explanation, e.g. “The most important contribution is the analysis
-    of Cacgia Roglai temporal markers as dynamic generalized
-    quantifiers.”
-
-Originality
+Originality & Results
 :   Are there important new theoretical insights, important new data,
     perhaps a notably original synthesis of ideas from disparate fields,
     or new formal techniques? Does the paper substantially overlap with
-    a separate published paper of the author?
+    a separate published paper of the author? What are the major contributions this paper makes to semantics and pragmatics? Note: we would expect a pointer rather than a full explanation, e.g. “The most important contribution is the analysis of Cacgia Roglai temporal markers as dynamic generalized quantifiers.”
 
-Technical competence and presentation of technical material
-:   Are there minor or major examples of sloppiness or misunderstanding?
-    Are there places where the argumentation should be strengthened?
-    Would the paper be improved with new statistical analyses, proofs of
-    claims, or worked examples demonstrating proposed techniques? Should
-    graphs, tables, or other presentations of data be added or modified?
-
-Empirical quality
+Empirical quality & Technical competence
 :   Most (but not all) articles in will be based on empirical data. Is
     the evidentiary basis of this paper adequate to the theoretical
     conclusions reached? Are there places where the quality of the data
     could be improved (cross-linguistic data, naturally occurring data,
-    corpus data, experimental data)?
+    corpus data, experimental data)? Are there minor or major examples of sloppiness or misunderstanding? Are there places where the argumentation should be strengthened? Would the paper be improved with new statistical analyses, proofs of claims, or worked examples demonstrating proposed techniques? Should graphs, tables, or other presentations of data be added or modified?
 
 Audience
 :   Consider the background someone would need to follow the main thread

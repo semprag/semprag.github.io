@@ -27,13 +27,20 @@ We have an ambitious goal: to publish as many as possible of the top 100 article
 
 Issues that reviewers are directed to consider include the following:
 
-Originality
-:   Are there important new theoretical insights, important new data, perhaps a notably original synthesis of ideas from disparate fields, or new formal techniques? Does the paper substantially overlap with a separate published paper of the author?
+Originality & Results
+:   Are there important new theoretical insights, important new data,
+    perhaps a notably original synthesis of ideas from disparate fields,
+    or new formal techniques? Does the paper substantially overlap with
+    a separate published paper of the author? What are the major contributions this paper makes to semantics and pragmatics? 
 
     *Advice to authors: Originality is the most basic requirement for articles. However, and even though we must take into account any duplication of previously available material, overlap with a prior conference paper, thesis or other work does not automatically prevent publication in S&P. Each such case will be considered on its merits, subject to applicable copyright limitations. We might, for example, consider publishing material that overlaps with an existing publication if we judge that the new publication in S&P would serve the field by bringing visibility to important developments that might otherwise be overlooked.*
 
-Technical competence and presentation of technical material
-:   Are there minor or major examples of sloppiness or misunderstanding? Are there places where the argumentation should be strengthened? Would the paper be improved with new statistical analyses, proofs of claims, or worked examples demonstrating proposed techniques? Should graphs, tables, or other presentations of data be added or modified?
+Empirical quality & Technical competence
+:   Most (but not all) articles in will be based on empirical data. Is
+    the evidentiary basis of this paper adequate to the theoretical
+    conclusions reached? Are there places where the quality of the data
+    could be improved (cross-linguistic data, naturally occurring data,
+    corpus data, experimental data)? Are there minor or major examples of sloppiness or misunderstanding? Are there places where the argumentation should be strengthened? Would the paper be improved with new statistical analyses, proofs of claims, or worked examples demonstrating proposed techniques? Should graphs, tables, or other presentations of data be added or modified?
 
     *Advice to authors: Obviously if reviewers pick up on issues of this sort, the paper cannot be accepted without modification. Accepting subject to revision is possible, but we will only consider accepting a paper subject to revision if it is absolutely clear to us what changes are needed.*
 
@@ -59,7 +66,7 @@ Subject matter and methodology
 
     2.  The creation of large corpora of text and speech, together with computer search techniques, have made new sources of data available. The citation of naturally occurring web examples is now <span>*de rigeur*</span>, and we anticipate that more sophisticated statistical and quantitative analyses, analyses which take into account both the advantages and potential pitfalls of corpus and web data, will become ever more common in the field.
 
-    3.  There is a small but growing tendency for work in the area to include or reference experimental data, sometimes involving evidence from acquisition. This development is of particular importance for pragmatics, an area where judgments based on data for which context is not carefully controlled are notoriously variable.
+    3.  There is a small but growing tendency for work in the area to include or reference experimental data, from adult or child participants. This development is of particular importance for pragmatics, an area where judgments based on data for which context is not carefully controlled are notoriously variable.
 
     4.  Over the last three decades, formal techniques like those used in semantics have been increasingly applied to pragmatics, to discourse, and to dialogue. Relatedly, there has been an ever greater awareness that semantic and pragmatic data are highly sensitive to context. So researchers are increasingly careful to contextualize examples, often presenting data in the form of mini-discourses rather than isolated single sentence examples.
 
@@ -82,10 +89,10 @@ Apart from main research articles, S&P publishes some shorter contributions and 
 S&P welcomes several kinds of shorter contributions:
 
 Squibs
-:   Squibs are very short articles with a length of under 10 journal pages. As in the tradition established by *Linguistic Inquiry*, “manuscripts accepted as Squibs will not be required to propose a solution to problems they address as long as their relevance to theoretical issues is made clear” (<http://www.mitpressjournals.org/page/sub/ling>).
+:   Squibs are very short articles with a length of no more than 10 journal pages (less than 4,000 words). As in the tradition established by *Linguistic Inquiry*, “manuscripts accepted as Squibs will not be required to propose a solution to problems they address as long as their relevance to theoretical issues is made clear” (<http://www.mitpressjournals.org/page/sub/ling>).
 
 Remarks and Replies
-:   Somewhat longer than squibs but still shorter than main articles are remarks and replies, which deal with issues raised in the literature and present a new perspective on them.
+:   Somewhat longer than squibs but still shorter than main articles are remarks and replies (no more than 20 journal pages, less than 8,000 words), which deal with issues raised in the literature and present a new perspective on them.
 
 Commentaries
 :   S&P welcomes and sometimes initiates debates that take place within the journal. Commentaries on main articles published in S&P will typically be quite short.
