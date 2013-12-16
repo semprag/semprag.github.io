@@ -70,6 +70,10 @@ If you do decline to review the paper, please help us out by suggesting
 some alternative reviewers (the template presented by the website when
 declining a review includes a space to put in such recommendations).
 
+## Anonymity
+
+We do not require that submitted papers be anonymous, since this is frequently an unattainable goal. However, the author of a paper has the right to remain anonymous to the reviewers throughout the review process. In that case, the author will take care to anonymize the paper, and will include in a clearly visible position on the front page the text “Submitted to for anonymous review.” The reviewers are then considered under obligation not to attempt to discern the identity of the author. Please take this seriously.
+
 ## The review
 
 If you accept to be a reviewer of this paper, please read through the
