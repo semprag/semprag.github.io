@@ -100,7 +100,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 
 The `.bib` file's BibTeX format allows leaving out certain fields in each entry's specification. We require a great deal more specificity to meet *S&P* publication standards. Our production process often gets bogged down in correcting authors' bibliographies. Please spend some care on preparing your bibliographic details before submission!
 
-NB: *S&P*'s bibliographic style is a close implementation of the ["Unified Style Sheet for Linguistics Journals"](http://celxj.org/downloads/UnifiedStyleSheet.pdf).
+NB: *S&P*'s bibliographic style is a close implementation of the ["Unified Style Sheet for Linguistics Journals"](http://celxj.org/downloads/UnifiedStyleSheet.pdf). For the authors' convenience, we make [a bst-style file](http://info.semprag.org/source/sp.bst) available (see the sidebar). But for production purposes, we actually use a new BibLaTeX-based implementation of the bibliography style. If you want to adopt that new system, check out the [github repository for the project](https://github.com/semprag/biblatex-sp-unified).
 
 - Journal articles should specify both volume and issue.
 - Books should have publisher and address (city) information (use the two letter postal abbreviation for US cities: `address = {Amherst, MA}`.
