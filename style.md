@@ -123,6 +123,7 @@ NB: *S&P*'s bibliographic style is a close implementation of the ["Unified Style
     - <del>`{B}ook`</del> `{Book}`
 - Whenever possible, include the DOI for the article. These are often hard to find, but [Google Scholar](http://scholar.google.com/) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
   - DOIs should never end in periods, which can cause the DOI lookup to fail.
+- There is no need for the `\SortNoop{}` hack to sort non-ascii author names. Our bibliography style will handle these automatically.
 
 <!--
   I'm leaving these out because the sp.bst should handle it.
