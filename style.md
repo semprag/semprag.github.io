@@ -18,7 +18,7 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * Make sure that your bibliographic information complies with our requirements (more detail below in the "BibTeX" section), especially:
     * full names for *all* authors and editors
     * only use braces to case protect proper names, first words of subtitles, and the like, never a whole title
-    * don't case protect just the initial letter, always the entire word: ~~`{E}nglish`~~ `{English}`
+    * don't case protect just the initial letter, always the entire word: <del><code>{E}nglish</code></del> `{English}`; <del><code>{NPI}s</code></del> `{NPIs}`
     * provide volume *and* issue numbers *and* page numbers for all journal articles (and page numbers for all book chapters etc.)
     * provide DOIs and URLs for everything that can reasonably be accessed electronically
 * Our house style follows the *LI*-style in making a distinction between referring to an author and referring to an author's work. So, "Beaver (2001) proposes ..." (LaTeX: `\citet`) but "as claimed in Beaver 2001" (LaTeX: `\citealt`). Expressions that probably go with the latter form: "in", "see", ... .
@@ -32,23 +32,24 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 
 ## Italicization and quotation
 
-- Use italics for a letter, word, phrase, or sentence cited as a linguistic example or subject of discussion. This means that inline example sentences should be in italics. [LaTeX: use `\emph{}`!]
+- Use italics for a letter, word, phrase, or sentence cited as a linguistic example or subject of discussion. This means that inline example sentences should be in italics. [LaTeX: use `\emph{}`!; do not use the obsolete pre-LaTeX font commands such as `{\it ...}`!]
 - Use italics for the introduction of terms.
 - Use italics sparingly for emphasis.
 - Use italics for journal and book titles. Due to policies on citation, this should occur rarely in running text.
 - Phrases such as *a priori*, *iff*, and *viz-a-viz* should be italicized.
 - Bold face should not be used at all, ever, really.
-- Use double quotes for notions and concepts in appositive constructions, e.g., the notion "proposition."
-- Use double quotes to set off the name of a journal article, unpublished paper, chapter, or dissertation, in running text, e.g., Montague's "Universal Grammar."
+- To set constants in logical representation, you may choose to use sans serif [LaTeX: `\textsf{...}` or `{\sffamily ...}`]
+- Use double quotes for notions and concepts in appositive constructions, e.g., *the notion "proposition"*.
+- Use double quotes to set off the name of a journal article, unpublished paper, chapter, or dissertation, in running text, e.g., *Montague's "Universal Grammar"*.
 - Use double quotes for scare quotes (but use scare quotes sparingly).
-- Use single quotes for inline meanings and glosses, e.g., Swedish sig 'self'
+- Use single quotes for inline meanings and glosses, e.g., *Swedish sig 'self'*.
 - Enclose the bottom-most gloss/English translation in single quotes.
 
 # Punctuation and abbreviation
 
 - Uses of e.g. and i.e. should be followed by commas:
-  - ~~e.g.~~ e.g.,
-  - ~~i.e.~~ i.e.,
+  - <del>e.g.</del> e.g.,
+  - <del>i.e.</del> i.e.,
   - Avoid use of e.g., i.e., etc. in non-parenthesized text.
 - Punctuation marks (commas, semicolons, periods, ...) should be inside quotation marks *only if* they were part of the material being quoted. Otherwise -- if they are attributable to you as the author rather than the material being quoted -- they should occur outside the quotation marks. (Ben Yagoda has [a good article on this topic](http://www.slate.com/articles/life/the_good_word/2011/05/the_rise_of_logical_punctuation.single.html).)
 - Example references and numbers should be surrounded by parentheses, e.g., (1), (2-3), (4a), (5b-c), (6a,c), etc.
@@ -74,27 +75,19 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
   - We do not take a position on this, but authors should be consistent in their policy.
   - Use & to disambiguate conjunctions of conjunctions, e.g., a & b and c & d.
 - When underlining (which should be used only very rarely, if at all), use `\ul` from the `soul` package rather than `\underline`.
-- Use `\dash` instead of both n-dashes (`--`) and m-dashes (`---`).
+- Use `\dash` for parenthetical remarks (instead of both n-dashes (`--`) and m-dashes (`---`)); n-dashes (`--`) are useful elsewhere, for example for number ranges (`1--5`).
 - Avoid stray spaces when using `\label{abc}` in examples by using `%`, e.g., `\label{abc}%`.
 - Use `\sv` for semantic interpretation brackets. It creates a math environment so be sure to use \text for any text in it, e.g., `\sv{\text{unicorn}}`.
 - Use \colon instead of : in your equations to ensure proper spacing.
-  - ~~`\forall x : x \in D`~~ (~~`∀x : x ∈ D`~~)
-  - `\forall x \colon\thinspace x \in D` (`∀x: x ∈ D`)
+  - <del><code>\forall x : x \in D</code></del> 
+  - `\forall x \colon\thinspace x \in D`
   - `\co` is a shortcut for `\colon\thinspace`
 - Use `\http{}` to link to a webpage, e.g., `\http{semprag.org}`
 - Use `\email{}` to include an email address, e.g., `\email{editors@semprag.org}`
 - Use `\footnotemark` and `\footnotetext` for footnotes in section headers.
   - You'll need to use the `\section[options]` options for the section title.
 - Use `booktabs` package for tables, and use that package's commands, `\midrule`, `\cmidrule`, rather than `\hline`.
-  - Do not use vertical rules in tables.
-- Don't use `\sf` (Sans Serif).
-- The `sp` documentclass uses the standard skip amounts:
-  | Skip name          | `\the{...}` | total |
-  |:-------------------|:------------|:------|
-  | `\smallskipamount` | 3.0pt plus 1.0pt minus 1.0pt | 3pt |
-  | `\medskipamount`   | 6.0pt plus 2.0pt minus 2.0pt | 6pt |
-  | `\bigskipamount`   | 12.0pt plus 4.0pt minus 4.0pt | 12pt |
-
+  - Do not use vertical rules in tables. We strongly recommend the `booktabs` package (and its documentation for guidance on typesetting tables).
 
 ## BibTeX
 
@@ -118,9 +111,11 @@ NB: *S&P*'s bibliographic style is a close implementation of the ["Unified Style
     - People
     - Places
   - Acronyms
+  - The first word of a subtitle (unless you're using the title/subtitle functionality of BibLaTeX)
   - All nouns if the title is in German or similar languages that capitalize nouns
   - Even in these cases, hard-case the entire word instead of the initial letter. (This is essential for proper kerning.)
-    - <del>`{B}ook`</del> `{Book}`
+    - <del><code>{B}ook</code></del> `{Book}`
+    - <del><code>{NPI}s</code></del> `{NPIs}`
 - Whenever possible, include the DOI for the article. These are often hard to find, but [Google Scholar](http://scholar.google.com/) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
   - DOIs should never end in periods, which can cause the DOI lookup to fail.
 - There is no need for the `\SortNoop{}` hack to sort non-ascii author names. Our bibliography style will handle these automatically.
