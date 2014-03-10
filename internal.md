@@ -34,13 +34,15 @@ Note that these are biased and stylistic, and don't have
 BibTeX normalizations:
 
 * `s/\}\}\s+@/}\n}\n\n@/g`: close each entry with a brace on its own line.
-    + Bad:
+    + Unclear:
+
               ...
               Year = {2009}}
 
             @article{Roberts03,
-            ...
-    + Good:
+
+    + Better:
+
               ...
               Year = {2009}
             }
@@ -49,7 +51,6 @@ BibTeX normalizations:
 
 * `s/(\w)+\s*=\s*\{/\1 = {/g`: space out field-value separator, "=", with exactly one space on each side.
 * `s/^[ \t]+/  /g`: force everything that's indented to be indented exactly two spaces.
-
 
 ## TODO
 

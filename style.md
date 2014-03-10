@@ -32,13 +32,15 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 
 ## Italicization and quotation
 
-- Use italics for a letter, word, phrase, or sentence cited as a linguistic example or subject of discussion. This means that inline example sentences should be in italics. [LaTeX: use `\emph{}`!; do not use the obsolete pre-LaTeX font commands such as `{\it ...}`!]
+- Use italics for a letter, word, phrase, or sentence cited as a linguistic example or subject of discussion. This means that inline example sentences should be in italics.
+  - LaTeX: use `\emph{}`; do not use the obsolete pre-LaTeX font commands such as `{\it ...}`
 - Use italics for the introduction of terms.
 - Use italics sparingly for emphasis.
 - Use italics for journal and book titles. Due to policies on citation, this should occur rarely in running text.
 - Phrases such as *a priori*, *iff*, and *viz-a-viz* should be italicized.
 - Bold face should not be used at all, ever, really.
-- To set constants in logical representation, you may choose to use sans serif [LaTeX: `\textsf{...}` or `{\sffamily ...}`]
+- To set constants in logical representation, you may choose to use sans serif.
+  - LaTeX: `\textsf{...}` or `{\sffamily ...}`
 - Use double quotes for notions and concepts in appositive constructions, e.g., *the notion "proposition"*.
 - Use double quotes to set off the name of a journal article, unpublished paper, chapter, or dissertation, in running text, e.g., *Montague's "Universal Grammar"*.
 - Use double quotes for scare quotes (but use scare quotes sparingly).
@@ -79,7 +81,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Avoid stray spaces when using `\label{abc}` in examples by using `%`, e.g., `\label{abc}%`.
 - Use `\sv` for semantic interpretation brackets. It creates a math environment so be sure to use \text for any text in it, e.g., `\sv{\text{unicorn}}`.
 - Use \colon instead of : in your equations to ensure proper spacing.
-  - <del><code>\forall x : x \in D</code></del> 
+  - <del><code>\forall x : x \in D</code></del>
   - `\forall x \colon\thinspace x \in D`
   - `\co` is a shortcut for `\colon\thinspace`
 - Use `\http{}` to link to a webpage, e.g., `\http{semprag.org}`
