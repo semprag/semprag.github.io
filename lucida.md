@@ -14,8 +14,24 @@ If you get the following error message when trying to use a Lucida font, your Lu
 
 ### On Mac OS X (Lion):
 
+The Lucida font files will be installed to `/usr/local`, so you want
+ownership of that directory:
+
+    sudo chown -R $USER /usr/local
+
+Assuming that you downloaded the lucimatx.zip archive into `~/Downloads`,
+unpack it:
+
+    cd ~/Downloads
     unzip lucimatx.zip
+
+And copy a subset of the contents of that archive into your TeX distribution:
+
+    mkdir -p /usr/local/texlive/texmf-local/
     cp -R texmf/* /usr/local/texlive/texmf-local/
+
+Now make your TeX tools recognize these fonts:
+
     sudo texhash
     sudo updmap-sys --enable Map lucida.map
     sudo texhash
@@ -46,6 +62,15 @@ Some of those `texhash` calls are probably redundant, but they don't hurt.
         cd /usr/share/texmf-texlive/fonts/map/dvips
         sudo updmap-sys
         sudo texhash
+
+
+### Bold *and* italic
+
+Unless your `lucimatx.zip` archive was already patched, you'll need to put a
+fixed `t1hlhj.fd` file into the directory,
+`/usr/local/texlive/texmf-local/tex/latex/lucida`.
+
+And then run `sudo texhash` once more after that file is in place.
 
 
 ## Installing the S&P styles
