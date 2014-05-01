@@ -27,6 +27,7 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * use `\sv{}` (provided by `sp.cls`) for semantic evaluation brackets
 * use the `\text{}` macro to wrap object language expressions inside any math environment
 * use the `\co` macro (provided by `sp.cls`) for the "such that" colon in math environments
+* You are free to use British spellings (e.g., "colour") as long as you are consistent in American vs. British spelling throughout the document.
 
 Believe it or not, the above are the main stumbling blocks for a quick conversion of a manuscript to a publishable S&P paper. There are more subtle guidelines below, but these are the most important issues.
 
@@ -121,6 +122,7 @@ NB: *S&P*'s bibliographic style is a close implementation of the ["Unified Style
 - Whenever possible, include the DOI for the article. These are often hard to find, but [Google Scholar](http://scholar.google.com/) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
   - DOIs should never end in periods, which can cause the DOI lookup to fail.
 - There is no need for the `\SortNoop{}` hack to sort non-ascii author names. Our bibliography style will handle these automatically.
+- Use `volume` (the major specifier) and `number` (minor specifier) for articles, even if the journal calls the minor designator the "issue." <!-- Seems like the BibLaTeX should handle this, but it doesn't. - CB -->
 
 <!--
   I'm leaving these out because the sp.bst should handle it.
