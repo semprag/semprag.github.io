@@ -18,7 +18,9 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * Make sure that your bibliographic information complies with our requirements (more detail below in the "BibTeX" section), especially:
     * full names for *all* authors and editors
     * only use braces to case protect proper names, first words of subtitles, and the like, never a whole title
-    * don't case protect just the initial letter, always the entire word: <del><code>{E}nglish</code></del> `{English}`; <del><code>{NPI}s</code></del> `{NPIs}`
+    * don't case protect just the initial letter, always the entire word:
+      - <del><code>{E}nglish</code></del> `{English}`
+      - <del><code>{NPI}s</code></del> `{NPIs}`
     * provide volume *and* issue numbers *and* page numbers for all journal articles (and page numbers for all book chapters etc.)
     * provide DOIs and URLs for everything that can reasonably be accessed electronically
 * Our house style follows the *LI*-style in making a distinction between referring to an author and referring to an author's work. So, "Beaver (2001) proposes ..." (LaTeX: `\citet`) but "as claimed in Beaver 2001" (LaTeX: `\citealt`). Expressions that probably go with the latter form: "in", "see", ... .
@@ -56,10 +58,10 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
   - Avoid use of e.g., i.e., etc. in non-parenthesized text.
 - Punctuation marks (commas, semicolons, periods, ...) should be inside quotation marks *only if* they were part of the material being quoted. Otherwise -- if they are attributable to you as the author rather than the material being quoted -- they should occur outside the quotation marks. (Ben Yagoda has [a good article on this topic](http://www.slate.com/articles/life/the_good_word/2011/05/the_rise_of_logical_punctuation.single.html).)
 - Example references and numbers should be surrounded by parentheses, e.g., (1), (2-3), (4a), (5b-c), (6a,c), etc.
-  - Avoid primes (e.g., (1')).
+  - Avoid primes, e.g., (1').
 - Footnotes follow punctuation and precede spacing as in this sentence.<sup>1</sup> This is the next sentence.
   - I.e., end punctuation, footnote, space, next sentence.
-- Et al. contains only 1 period.
+- "Et al." contains only 1 period.
 - Be consistent about the use of non-, pre-, and co-. The LI style sheet recommends conjoining prefixes without a dash.
 
 # Capitalization and spelling

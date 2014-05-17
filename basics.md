@@ -9,7 +9,7 @@ While we accept submissions in both LaTeX and Microsoft Word formats, we publish
 
 ## LaTeX configuration
 
-Compiling in the S&P style requires two files, a TeX style file, [sp.cls](/source/sp.cls), and a BibTeX style file, [sp.bst](/source/sp.bst). (If you like to live on the cutting edge, replace sp.bst with [our BibLaTeX implementation of our bibliography style](https://github.com/semprag/biblatex-sp-unified).) 
+Compiling in the S&P style requires two files, a TeX style file, [sp.cls](/source/sp.cls), and a BibTeX style file, [sp.bst](/source/sp.bst). (If you like to live on the cutting edge, replace sp.bst with [our BibLaTeX implementation of our bibliography style](https://github.com/semprag/biblatex-sp-unified).)
 
 You can add these to your global TeX distribution, your local settings, or keep them in the same folder as your article.
 
@@ -101,7 +101,6 @@ The S&P file also supports the following commands:
 - `\seccitet{montague:1974}{2}`: Montague (1974: §2)
 - `\posscitet{montague:1974}`: Montague's (1974)
 - `\pgposscitet{montague:1974}{12}`: Montague's (1974: 12)
-- `\posscitet{montague:1974}`: Montague's (1974)
 - `\possciteauthor{montague:1974}`: Montague's
 - `\secposscitet{montague:1974}{2}`: Montague's (1974: §2)
 - `\seccitealt{montague:1974}{2}`: Montague 1974: §2
