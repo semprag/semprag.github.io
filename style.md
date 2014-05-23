@@ -12,9 +12,13 @@ Read your paper one more time very carefully, paying attention to the issues lis
 
 ## Checklist of the top issues ##
 
-* Your title and your section headings should be in sentence case (not "title case")
-* Make sure that the keyword list is the same in all three places (the pdf keywords, the keyword section on the first page, and in the article metadata on the S&P website)
-* Make sure that your abstract is the same as the one on the S&P website
+* Your title and your section headings should be in "Sentence case" (not "Title Case"). If you have a subtitle, capitalize the first word of the subtitle: "First part of title: Second part of title".
+* Make sure that the keyword list is the same in the keyword section on the first page, as well as in the PDF file properties.
+
+<!-- ITEM FOR EDITORS ONLY: Also make sure the keywords match in the article metadata on the journal website. -->
+
+<!-- ITEM FOR EDITORS ONLY: Make sure that the abstract is the same as the one on the journal website.  -->
+
 * Make sure that your bibliographic information complies with our requirements (more detail below in the "BibTeX" section), especially:
     * full names for *all* authors and editors
     * only use braces to case protect proper names, first words of subtitles, and the like, never a whole title
@@ -24,7 +28,7 @@ Read your paper one more time very carefully, paying attention to the issues lis
     * provide volume *and* issue numbers *and* page numbers for all journal articles (and page numbers for all book chapters etc.)
     * provide DOIs and URLs for everything that can reasonably be accessed electronically
 * Our house style follows the *LI*-style in making a distinction between referring to an author and referring to an author's work. So, "Beaver (2001) proposes ..." (LaTeX: `\citet`) but "as claimed in Beaver 2001" (LaTeX: `\citealt`). Expressions that probably go with the latter form: "in", "see", ... .
-* instead of "`---`" for parenthetical remarks, use the `\dash` macro provided by `sp.cls`
+* instead of "`---`" or "`--`" for parenthetical remarks, use the `\dash` macro provided by `sp.cls`
 * instead of literal "`...`" for dots, use the LaTeX `\dots` macro
 * use `\sv{}` (provided by `sp.cls`) for semantic evaluation brackets
 * use the `\text{}` macro to wrap object language expressions inside any math environment
@@ -80,7 +84,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
   - We do not take a position on this, but authors should be consistent in their policy.
   - Use & to disambiguate conjunctions of conjunctions, e.g., a & b and c & d.
 - When underlining (which should be used only very rarely, if at all), use `\ul` from the `soul` package rather than `\underline`.
-- Use `\dash` for parenthetical remarks (instead of both n-dashes (`--`) and m-dashes (`---`)); n-dashes (`--`) are useful elsewhere, for example for number ranges (`1--5`).
+- Use `\dash` for parenthetical remarks (instead of both n-dashes (`--`) and m-dashes (`---`)); n-dashes (`--`) are useful elsewhere, for example for number ranges (`1--5`) or when citing an affix (the prefix *co`--`*).
 - Avoid stray spaces when using `\label{abc}` in examples by using `%`, e.g., `\label{abc}%`.
 - Use `\sv` for semantic interpretation brackets. It creates a math environment so be sure to use \text for any text in it, e.g., `\sv{\text{unicorn}}`.
 - Use \colon instead of : in your equations to ensure proper spacing.
@@ -101,7 +105,9 @@ The `.bib` file's BibTeX format allows leaving out certain fields in each entry'
 NB: *S&P*'s bibliographic style is a close implementation of the ["Unified Style Sheet for Linguistics Journals"](http://celxj.org/downloads/UnifiedStyleSheet.pdf). For the authors' convenience, we make [a bst-style file](http://info.semprag.org/source/sp.bst) available (see the sidebar). But for production purposes, we actually use a new BibLaTeX-based implementation of the bibliography style. If you want to adopt that new system, check out the [github repository for the project](https://github.com/semprag/biblatex-sp-unified).
 
 - Journal articles should specify both volume and issue.
-- Books should have publisher and address (city) information (use the two letter postal abbreviation for US cities: `address = {Amherst, MA}`.
+- Books should have publisher and address (city) information. (Use the two-letter state postal abbreviation for US cities: `address = {Amherst, MA}`).
+- Dissertations should have city information, unless the city is evident from the name of the university. (Again, use the two letter postal abbreviation for US cities: `address = {Amherst, MA}`.)
+- University names should be written out in full (e.g., "University of California, Los Angeles" and "Massachusetts Institute of Technology").
 - Journal and book titles *must* be given in full, with the initial letter of each major word capitalized.
 - Articles in journals and books *must* specify page numbers.
 - Use full first names of authors or editors.
