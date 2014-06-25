@@ -37,7 +37,7 @@ likelihood that we may take up to 90 days given the nature of their paper.
 
     When some of these conditions are not met (e.g. for a postdoc only 1 year out, or for someone who has limited semantics publications but a primary area of interest that is relevant), then discussion with the rest of the editorial team (or at least with Kai and David, if you prefer) would be merited.
 
-    Notify the all-editors list when you plan to invite a new board member. Please use [the template for editorial board invitations](/resources/sp-editorial-invitation.txt).
+    Notify the all-editors list when you plan to invite a new board member. Please use [the template for editorial board invitations](/resources/sp-editorial-invitation.txt) (edit as you see fit).
 
     *Ad hoc reviewer*
 
