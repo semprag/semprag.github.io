@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Editorial workflow"
+---
 # Our basic workflow:
 
 1. Author submits paper via our website (which runs software called OJS, Open Journal Systems, which is pretty good but not perfect and we have occasional issues with its upkeep being out of our control). The way we find out is that the all-editors alias is cc'ed when the system sends out acknowledgment to the author.
