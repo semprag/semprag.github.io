@@ -63,8 +63,8 @@ If that returns anything, jump past this section. To create a new SSH key:
 Now that you definitely have a key in place, copy the public key to your
 clipboard:
 
-    # cat streams the contents of the id_rsa.pub file into pbcopy, which places the
-    # streamed input into the OS X clipboard.
+    # cat streams the contents of the id_rsa.pub file into pbcopy,
+    # which copies the streamed input into the OS X clipboard.
     cat ~/.ssh/id_rsa.pub | pbcopy
 
 Go to bitbucket.org, find the "Manage account" page, select "SSH keys" from
@@ -83,8 +83,8 @@ Let's say you want to render the Rojas-Esponda 2014 paper.
     cd sp-repo/sp-submissions/rojas-esponda-2014
     pdflatex rojas-esponda-v2-edited
     bibtex rojas-esponda-v2-edited
-    # this won't work with the current version of the paper, since it's
-    # expecting biblatex (biber), not bibtex
+    # this won't actually work with the current version of the paper,
+    # since it's expecting biblatex (biber), not bibtex
     pdflatex rojas-esponda-v2-edited
     pdflatex rojas-esponda-v2-edited
 
@@ -106,7 +106,7 @@ With git, the basic process goes like:
 1. 'stage' your changes
 2. commit what's staged
 3. pull the latest version from bitbucket
-4. merge your commit with the latest version (only if the latest version is not the same as your version)
+4. merge your commit with the latest version (only required if the latest version is not the same as your version)
 5. push your merged commit to bitbucket
 
 Let's say you make some changes to `rojas-esponda-v2-edited.tex`.
@@ -121,13 +121,16 @@ Let's say you make some changes to `rojas-esponda-v2-edited.tex`.
     git pull
     # alternatively, you can run 'git pull --rebase' if you're sure no one
     # has made changes to this file. this means you won't have to merge, but
-    # it'll will be a bit messier if someone else has changed the file
+    # it will be a bit messier if someone else has changed the file
     git push
     # the first time you do this, you'll probably need to run:
-    # 'git push -u origin master', which just says default to the defaults
+    # 'git push -u origin master', which just says default to the
+    # conventional names that are used for repos and branches
 
 
 # Fixes
+
+These are automatic fixes for some of the inconsistencies that typically crop up in submissions.
 
 ## LaTeX
 
