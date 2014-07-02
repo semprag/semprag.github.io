@@ -51,6 +51,10 @@ likelihood that we may take up to 90 days given the nature of their paper.
 
     We typically ask three reviewers. For some shorter papers, especially when we have serious in-house competence, we stay with two reviewers. On some doozies, we go out for four reviews sometimes.
 
+    -----
+
+    Sometimes reviewers accept review requests via email and don't go through the system. In such a case, the shepherd should go to the Review page and click "WILL DO THE REVIEW", thus recording the agreement.
+
 7. If a reviewer doesn't respond within 3 days, resend the request. If they do not respond within a week, cancel the request, chiding them for not responding, and move on to alternate reviewers.
 
 8. The usual deadline for reviews is four weeks. We sometimes adjust this a bit if needed, keeping in mind that we really want to have a decision made within 60 days of submission. As the deadline approaches or passes, we often need to nudge reviewers.
