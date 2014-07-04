@@ -5,28 +5,24 @@ title: "Lucida installation"
 
 ## Installing Lucida fonts
 
-You should have access to an archive, `lucimatx.zip`, which will unzip into two folders in the current directory: `texmf/` and `templates/`. We only need the contents of `texmf/`.
-
-If you get the following error message when trying to use a Lucida font, your Lucida install is only partially installed.
+If you get the following error message (among others) when trying to use a Lucida font, Lucida is incorrectly installed or maybe not installed at all.
 
 > mktexpk: don't know how to create bitmap font for hlhr8r.
 
 
-### On Mac OS X (Lion):
+### On Mac OS X (Lion)
 
-The Lucida font files will be installed to `/usr/local`, so you want
-ownership of that directory:
+The Lucida font files will be installed to `/usr/local`, so you want ownership
+of that directory. (This might seem crazy, but it's totally reasonable if
+you're the primary user of your computer, and makes development much less painful.)
 
     sudo chown -R $USER /usr/local
 
-Assuming that you downloaded the lucimatx.zip archive into `~/Downloads`,
-unpack it:
+The Lucida font resides in `bitbucket.org:fintelkai/sp-repo.git` under the
+`sp-fonts/texmf/` directory. To install it, merge the contents of `sp-fonts/texmf/`
+into your machine's local TeX distribution:
 
-    cd ~/Downloads
-    unzip lucimatx.zip
-
-And copy a subset of the contents of that archive into your TeX distribution:
-
+    cd ~/src/sp-repo/sp-fonts/                    # change as needed
     mkdir -p /usr/local/texlive/texmf-local/
     cp -R texmf/* /usr/local/texlive/texmf-local/
 
@@ -42,7 +38,7 @@ Now make your TeX tools recognize these fonts:
 Some of those `texhash` calls are probably redundant, but they don't hurt.
 
 
-### On Ubuntu (12.04):
+### On Ubuntu (12.04)
 
 1. Put the Lucida files in the right place:
 
