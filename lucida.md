@@ -7,7 +7,7 @@ title: "Lucida installation"
 
 If you get the following error message (among others) when trying to use a Lucida font, Lucida is incorrectly installed or maybe not installed at all.
 
-> mktexpk: don't know how to create bitmap font for hlhr8r.
+> `mktexpk: don't know how to create bitmap font for hlhr8r.`
 
 
 ### On Mac OS X (Lion)

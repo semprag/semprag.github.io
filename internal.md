@@ -9,6 +9,11 @@ If you aren't responsible for the final or pre-final compilation of TeX
 before the article is officially published, you probably won't find this
 page very useful.
 
+## Prerequisites
+
+* A computer with a functional LaTeX installation. The instructions below are tuned for OS X, because linguists tend to be Mac users, but should work on other non-Windows OS's without too much trouble. [MacTeX](https://tug.org/mactex/) is great for installing LaTeX on Mac OS X, but note that the download is ~2.4 GB, and will take a while to install even after downloading.
+* Read/write access to the `sp-repo` repository at [bitbucket.org/fintelkai/sp-repo](https://bitbucket.org/fintelkai/sp-repo/). To get access, create an account on [Bitbucket.org](https://bitbucket.org/), and then email [Kai von Fintel](http://kaivonfintel.org/) with your Bitbucket username, asking for access.
+
 
 # Process
 
