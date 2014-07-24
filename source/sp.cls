@@ -103,6 +103,7 @@
   \RequirePackage[final,protrusion={true,compatibility}]{microtype}
 }{}
 \RequirePackage{ifthen}
+\RequirePackage[hyphens]{url}
 
 \if@biblatex
 	\RequirePackage[backend=biber,
@@ -129,7 +130,7 @@
     \newcommand{\seccitet}[2]{\citeauthor{#1} (\citeyear{#1}:~$\S$#2)}
 \fi	
 
-\RequirePackage[usenames]{xcolor}
+\RequirePackage[usenames,dvipsnames]{xcolor}
 \definecolor{splinkcolor}{rgb}{.0,.2,.4}
 \RequirePackage[colorlinks,breaklinks,
                 linkcolor=splinkcolor, 
@@ -266,8 +267,8 @@
 % it is elsewhere in the headers so that we have a chance of fitting
 % the whole license on the page.
 \newcommand{\cctext}{{\footnotesize This is an open-access article
-    distributed under the terms of a Creative Commons Non-Commercial License
-    (\http{creativecommons.org/licenses/by-nc/3.0}).}}
+    distributed under the terms of a Creative Commons Attribution License
+    (\http{http://creativecommons.org/licenses/by/3.0/}).}}
 
 % This boolean switch lets the user control whether the logo is
 % included even when the requisite image file is present.  (If it is
