@@ -12,7 +12,7 @@ Providing a document in Word format is problematic for a few reasons.
 
 Nevertheless, we will accept submissions of any typesetting choice, and will work with you to make sure the final product is up to both *S&P*'s and your standards. Just note that turnaround time on Word submissions is a great deal longer than LaTeX, due to these additional complications.
 
-## Word guidelines
+## Requirements and guidelines
 
 The following pointers will ensure that the automatic conversion step goes more smoothly.
 
@@ -24,16 +24,17 @@ Some of the steps below may incorporate psuedo–LaTeX markup, but all of these 
   * `File` → `Properties...`
     + You should fill in the `Title`, `Author`, and `Keywords` inputs.
 - Your abstract should be at the beginning of the paper.
-  * It should be immediately preceded by a line with _only_ the text `<abstract>`,
-  * and immediately followed by a line with _only_ the text `</abstract>`.
+  * It should be immediately preceded by a line with _only_ the text `<abstract>`
+  * and immediately followed by a line with _only_ the text `</abstract>`
   * This is non-standard syntax, but will help the converter know what part to format as the abstract.
 - Use only one font, with only normal, bold, italic, or small-caps styles. You should only use one font size in the body of your paper, except for subscripts and superscripts (which Word naturally sizes smaller).
   * If you must use more than one font, underlining, or different font sizes, provide a postscript or simply a page at the end of your document describing what each font and font style designates.
-- If you use unusual symbols, include a list of each symbol its intended meaning in a postscript. I would not consider, for example, `∈`, `⊉`, or `∝`, unusual, but if you use them in atypical ways, or if you use potentially ambiguous symbols, like `⊗` or `⤳`, or particularly odd ones like `⋵` or `⊼`, describe them in the postscript, so that we will know which LaTeX symbols to resolve them to. Include the Unicode character name if possible.
+- If you use unusual symbols, include a list of each symbol its intended meaning in a postscript. I would not consider, for example, `∈`, `⊉`, or `∝`, unusual, but if you use them in atypical ways, or if you use common but potentially ambiguous symbols, like `⊗` or `⤳`, or particularly odd ones like `⋵` or `⊼`, describe them in the postscript, so that we will know which LaTeX symbols to resolve them to. Include the Unicode character name if possible.
 - Examples should be numbered continuously throughout your document, except for footnotes, which each have independent numbering, and should not be referred to outside the footnote.
   * Use Word's "Fields," not literal numbering. You are not required to use Word's built-in field, `NumberDefault`, but it's probably the easiest way:
-    1. `Insert` → `Field...` → Enter `LISTNUM NumberDefault \L 4` (`\L 4` indicates parentheses surrounding an arabic numeral) into the text box, and click `OK`.
-    2. You can repeat those steps to insert additional examples, or you can copy & paste the `(1)` entity as needed.
+    1. `Insert` → `Field...`
+    2. Enter `LISTNUM NumberDefault \L 4` into the text box and click `OK` (`\L 4` indicates parentheses surrounding an arabic numeral).
+    3. You can repeat those steps to insert additional examples, or you can copy & paste the `(1)` entity as needed (and if it's working, it was automatically increment with each instance).
   * Sub-examples should use Word's basic ordered list formatting.
   * When referring to these numbered examples, use Word's "Cross-reference" tool.
     1. `Insert` → `Cross-reference...`
@@ -41,9 +42,9 @@ Some of the steps below may incorporate psuedo–LaTeX markup, but all of these 
     3. "Insert reference to" should be "Paragraph number"
     4. "Insert as hyperlink" should be checked.
     5. "Include above/below" should _not_ be checked.
-    6. (If you right-click on the resulting entity and click "Toggle Field Codes" you should see something like `{ REF _Ref1234 \r \h }`. Right-click again and click "Toggle Field Codes" again to show the resolved reference.)
+    6. (If you right-click on the resulting entity and click "Toggle Field Codes" you should see something like `{ REF _Ref1234 \r \h }`. Right-click and select "Toggle Field Codes" again to show the resolved reference.)
     <!-- http://office.microsoft.com/en-us/word-help/field-codes-ref-field-HP005186139.aspx -->
-- Use footnotes instead of endnotes. Endnotes will be converted to footnotes.
+- Use footnotes instead of endnotes. Any endnotes will be converted to footnotes.
 
 
 ## Yet to be determined
