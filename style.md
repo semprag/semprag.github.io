@@ -108,7 +108,7 @@ NB: *S&P*'s bibliographic style is a close implementation of the ["Unified Style
 - Books should have publisher and address (city) information. (Use the two-letter state postal abbreviation for US cities: `address = {Amherst, MA}`).
 - Dissertations should have city information, unless the city is evident from the name of the university. (Again, use the two letter postal abbreviation for US cities: `address = {Amherst, MA}`.)
 - University names should be written out in full (e.g., "University of California, Los Angeles" and "Massachusetts Institute of Technology").
-- Journal and book titles *must* be given in full, with the initial letter of each major word capitalized.
+- Journal and book titles *must* be given in full
 - Articles in journals and books *must* specify page numbers.
 - Use full first names of authors or editors.
 - In case of multiple authorship, the names of all authors must be given.
