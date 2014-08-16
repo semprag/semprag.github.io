@@ -51,7 +51,8 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Use double quotes for notions and concepts in appositive constructions, e.g., *the notion "proposition"*.
 - Use double quotes to set off the name of a journal article, unpublished paper, chapter, or dissertation, in running text, e.g., *Montague's "Universal Grammar"*.
 - Use double quotes for scare quotes (but use scare quotes sparingly).
-- Use single quotes for inline meanings and glosses, e.g., *Swedish sig 'self'*.
+- Use single quotes for inline meanings and glosses, e.g.:
+  > Swedish _sig_ 'self'
 - Enclose the bottom-most gloss/English translation in single quotes.
 
 # Punctuation and abbreviation
