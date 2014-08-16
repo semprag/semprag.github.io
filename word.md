@@ -48,7 +48,7 @@ Some of the steps below may incorporate psuedo–LaTeX markup, but all of these 
 - Figures
   * Include figures as separate files, preferably in vector format (such as `.eps` or `.pdf` or `.ai`), and insert the following markup into the Word document where the figures are intended to appear, e.g., for a file named "results-01.eps", `<figure "results-01.eps">`.
 
-    Optionally, you may also specify the intended size of the figure in a postscript or readme accompanying your submission.
+  Optionally, you may also specify the intended size of the figure in a postscript or readme accompanying your submission.
   * If you've used Excel to generate your figure, include the original Excel spreadsheet
   * Raster images should have a pixel resolution of at least 300 dpi
   * If you are including more than three figures as separate files, compress the `.docx` file and all of your figures and other attachments into a single `.zip` archive before submitting.
