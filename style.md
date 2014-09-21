@@ -98,6 +98,11 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
   - You'll need to use the `\section[options]` options for the section title.
 - Use `booktabs` package for tables, and use that package's commands, `\midrule`, `\cmidrule`, rather than `\hline`.
   - Do not use vertical rules in tables. We strongly recommend the `booktabs` package (and its documentation for guidance on typesetting tables).
+- Spell out "Section" (preferably capitalized) when referring to sections by number, e.g., "In Section 3 we discuss the problem of...", but use lowercase when referring to relative, e.g., "...as we saw in the previous section."
+  - <del><code>\S\ref{sec:intro}</code></del> `Section~\ref{sec:intro}`
+  - Or, use the `autoref` package and type `\autoref{sec:intro}` (which won't capitalize "section")
+  - Or even better, import the `cleveref` package and use `\Cref{sec:intro}` (which will capitalize "Section")
+
 
 ## BibTeX
 
