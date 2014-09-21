@@ -79,6 +79,13 @@ Some of the steps below may incorporate psuedo–LaTeX markup, but all of these 
 ## TO DO:
 
 - Bibliography formatting
+<!--
+Links:
+  http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html
+  http://jabref.sourceforge.net/resources.php
+  https://www.citavi.com/
+  http://bibus-biblio.sourceforge.net/wiki/index.php/Bibus_and_Jabref
+-->
 - Citation formatting
 - Complete Word example, numbering and cross-reference method
 - Format of glosses
