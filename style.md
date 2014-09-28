@@ -44,7 +44,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Use italics for the introduction of terms.
 - Use italics sparingly for emphasis.
 - Use italics for journal and book titles. Due to policies on citation, this should occur rarely in running text.
-- Phrases such as *a priori*, *iff*, and *viz-a-viz* should be italicized.
+- Phrases such as *a priori*, *iff*, and *vis-à-vis* should be italicized.
 - Bold face should not be used at all, ever, really.
 - To set constants in logical representation, you may choose to use sans serif.
   - LaTeX: `\textsf{...}` or `{\sffamily ...}`
