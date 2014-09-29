@@ -93,12 +93,10 @@ repository, that file is already patched, and no further steps are necessary.
 
 1. Use `kpsewhich -var-value=TEXMFHOME` to find out where your TeX distribution will look for user-space style files.
   Call this `$TEXMF`.
-
   * For me, on OS X (Mountain) Lion, this is `~/Library/texmf`
   * On my Ubuntu dist, it's `~/texmf`
 
 2. Copy the following files into `$TEXMF/tex/latex/local`:
-
   * `sp.cls`
   * `sp.bst`
   * `sp-biblatex.bbx`
@@ -108,9 +106,10 @@ repository, that file is already patched, and no further steps are necessary.
 3. You might then have to run `texhash $TEXMF` (without sudo)
 4. Check that texlive knows to look where you just put the files:
 
-        kpsewhich sp.cls
+       kpsewhich sp.cls
+       # /texmf/tex/latex/local/sp.cls
 
-    > /texmf/tex/latex/local/sp.cls
+
 
 
 ## Troubleshooting
