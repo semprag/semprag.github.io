@@ -29,51 +29,43 @@ Same installation process applies in both cases.
 of that directory. (This might seem crazy, but it's totally reasonable if
 you're the primary user of your computer, and makes development much less painful.)
 
-  ```bash
-  sudo chown -R $USER /usr/local
-  ```
+        sudo chown -R $USER /usr/local
+
 2. The Lucida font resides in `bitbucket.org:fintelkai/sp-repo.git` under the
 `sp-fonts/texmf/` directory. To install it, merge the contents of `sp-fonts/texmf/`
 into your machine's local TeX distribution:
-```bash
-cd ~/src/sp-repo/sp-fonts/                    # change as needed
-mkdir -p /usr/local/texlive/texmf-local/
-cp -R texmf/* /usr/local/texlive/texmf-local/
-```
+        cd ~/src/sp-repo/sp-fonts/                    # change as needed
+        mkdir -p /usr/local/texlive/texmf-local/
+        cp -R texmf/* /usr/local/texlive/texmf-local/
 3. Now make your TeX tools recognize these fonts:
+        sudo texhash
+        sudo updmap-sys --enable Map lucida.map
+        sudo texhash
+        cd /usr/local/texlive/texmf-local/fonts/map/dvips
+        sudo updmap-sys
+        sudo texhash
 
-    ```bash
-    sudo texhash
-    sudo updmap-sys --enable Map lucida.map
-    sudo texhash
-    cd /usr/local/texlive/texmf-local/fonts/map/dvips
-    sudo updmap-sys
-    sudo texhash
-    ```
-    Some of those `texhash` calls are probably redundant, but they don't hurt.
+  Some of those `texhash` calls are probably redundant, but they don't hurt.
 
 
 ### On Ubuntu (12.04)
 
 1. Put the Lucida files in the right place:
-  ```bash
-  unzip lucimatx.zip
-  sudo cp -Rf texmf/* /usr/share/texmf-texlive
-  # doc/ won't copy because /usr/share/texmf-texlive/doc is a symlink, so:
-  cd texmf
-  sudo cp -Rf doc/* /usr/share/texmf-texlive/doc
-  ```
+
+        unzip lucimatx.zip
+        sudo cp -Rf texmf/* /usr/share/texmf-texlive
+        # doc/ won't copy because /usr/share/texmf-texlive/doc is a symlink, so:
+        cd texmf
+        sudo cp -Rf doc/* /usr/share/texmf-texlive/doc
+
 2. Add the `lucida.map` name to the updmap config sequence:
-  ```bash
-  echo 'Map lucida.map' > /etc/texmf/updmap.d/99lucida.cfg
-  ```
+
+        echo 'Map lucida.map' > /etc/texmf/updmap.d/99lucida.cfg
 3. Configure latex install to recognize these new files
-  ```bash
-  sudo texhash
-  cd /usr/share/texmf-texlive/fonts/map/dvips
-  sudo updmap-sys
-  sudo texhash
-  ```
+        sudo texhash
+        cd /usr/share/texmf-texlive/fonts/map/dvips
+        sudo updmap-sys
+        sudo texhash
 
 
 ### Bold *and* italic
