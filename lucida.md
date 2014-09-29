@@ -28,27 +28,29 @@ Same installation process applies in both cases.
 1. The Lucida font files will be installed to `/usr/local`, so you want ownership
 of that directory. (This might seem crazy, but it's totally reasonable if
 you're the primary user of your computer, and makes development much less painful.)
+
   ```bash
   sudo chown -R $USER /usr/local
   ```
 2. The Lucida font resides in `bitbucket.org:fintelkai/sp-repo.git` under the
 `sp-fonts/texmf/` directory. To install it, merge the contents of `sp-fonts/texmf/`
 into your machine's local TeX distribution:
-  ```bash
-  cd ~/src/sp-repo/sp-fonts/                    # change as needed
-  mkdir -p /usr/local/texlive/texmf-local/
-  cp -R texmf/* /usr/local/texlive/texmf-local/
-  ```
+```bash
+cd ~/src/sp-repo/sp-fonts/                    # change as needed
+mkdir -p /usr/local/texlive/texmf-local/
+cp -R texmf/* /usr/local/texlive/texmf-local/
+```
 3. Now make your TeX tools recognize these fonts:
-  ```bash
-  sudo texhash
-  sudo updmap-sys --enable Map lucida.map
-  sudo texhash
-  cd /usr/local/texlive/texmf-local/fonts/map/dvips
-  sudo updmap-sys
-  sudo texhash
-  ```
-  Some of those `texhash` calls are probably redundant, but they don't hurt.
+
+    ```bash
+    sudo texhash
+    sudo updmap-sys --enable Map lucida.map
+    sudo texhash
+    cd /usr/local/texlive/texmf-local/fonts/map/dvips
+    sudo updmap-sys
+    sudo texhash
+    ```
+    Some of those `texhash` calls are probably redundant, but they don't hurt.
 
 
 ### On Ubuntu (12.04)
