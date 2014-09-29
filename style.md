@@ -102,7 +102,10 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
   - <del><code>\S\ref{sec:intro}</code></del> `Section~\ref{sec:intro}`
   - Or, use the `autoref` package and type `\autoref{sec:intro}` (which won't capitalize "section")
   - Or even better, import the `cleveref` package and use `\Cref{sec:intro}` (which will capitalize "Section")
-
+- Use English rather than Latin:
+  - ~ceteris paribus~ other things being equal
+  - ~inter alia~ among others
+  - ~simpliciter~ in and of itself
 
 ## BibTeX
 
