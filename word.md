@@ -29,6 +29,7 @@ Some of the steps below may incorporate psuedo–LaTeX markup, but all of these 
   * This is non-standard syntax, but will help the converter know what part to format as the abstract.
 - Use only one font, with only normal, bold, italic, or small-caps styles. You should only use one font size in the body of your paper, except for subscripts and superscripts (which Word naturally sizes smaller).
   * If you must use more than one font, underlining, or different font sizes, provide a postscript or simply a page at the end of your document describing what each font and font style designates.
+- Use built-in Word styles for sections and subsections headings; "Heading 1" for sections, "Heading 2" for subsections, and "Heading 3" for subsubsections.
 - If you use unusual symbols, include a list of each symbol its intended meaning in a postscript. I would not consider, for example, `∈`, `⊉`, or `∝`, unusual, but if you use them in atypical ways, or if you use common but potentially ambiguous symbols, like `⊗` or `⤳`, or particularly odd ones like `⋵` or `⊼`, describe them in the postscript, so that we will know which LaTeX symbols to resolve them to. Include the Unicode character name if possible.
 - Examples should be numbered continuously throughout your document, except for footnotes, which each have independent numbering, and should not be referred to outside the footnote.
   * Use Word's "Fields," not literal numbering. You are not required to use Word's built-in field, `NumberDefault`, but it's probably the easiest way:
