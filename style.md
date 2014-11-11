@@ -103,9 +103,9 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
   - Or, use the `autoref` package and type `\autoref{sec:intro}` (which won't capitalize "section")
   - Or even better, import the `cleveref` package and use `\Cref{sec:intro}` (which will capitalize "Section")
 - Use English rather than Latin:
-  - ~ceteris paribus~ other things being equal
-  - ~inter alia~ among others
-  - ~simpliciter~ in and of itself
+  - <del>ceteris paribus</del> other things being equal
+  - <del>inter alia</del> among others
+  - <del>simpliciter</del> in and of itself
 
 ## BibTeX
 
@@ -114,16 +114,23 @@ The `.bib` file's BibTeX format allows leaving out certain fields in each entry'
 NB: *S&P*'s bibliographic style is a close implementation of the ["Unified Style Sheet for Linguistics Journals"](http://celxj.org/downloads/UnifiedStyleSheet.pdf). For the authors' convenience, we make [a bst-style file](http://info.semprag.org/source/sp.bst) available (see the sidebar). But for production purposes, we actually use a new BibLaTeX-based implementation of the bibliography style. If you want to adopt that new system, check out the [github repository for the project](https://github.com/semprag/biblatex-sp-unified).
 
 - Journal articles should specify both volume and issue.
-- Books should have publisher and address (city) information. (Use the two-letter state postal abbreviation for US cities: `address = {Amherst, MA}`).
-- Dissertations should have city information, unless the city is evident from the name of the university. (Again, use the two letter postal abbreviation for US cities: `address = {Amherst, MA}`.)
+  - Use `volume` (major specifier) and `number` (minor specifier) in `@article` entries, even if the journal calls the minor designator the "issue." <!-- Seems like the BibLaTeX should handle this, but it doesn't. - CB -->
+- Books should have publisher and address (city) information. Use the two-letter state postal abbreviation for US states, e.g., `address = {Amherst, MA}`.
+- Dissertations should have city information, unless the city is evident from the name of the university. Again, use the two letter postal abbreviation for US states, e.g., `address = {Santa Cruz, CA}`.
 - University names should be written out in full (e.g., "University of California, Los Angeles" and "Massachusetts Institute of Technology").
 - Journal and book titles *must* be given in full
 - Articles in journals and books *must* specify page numbers.
 - Use full first names of authors or editors.
 - In case of multiple authorship, the names of all authors must be given.
-- Unpublished manuscripts need a month and year. If a url is available, include it.
-- For all urls, we prefer a url to a permanent resource such as SemanticsArchive, rather than the author's homepage or institutional website, but if the latter is the only available option, please use it.
-- Conference proceedings should *not* include editor information. They should be given the `@article` type with the `journal` field set to the conference name and the acronym in parentheses: `journal = {North East Linguistic Society ({NELS})}`. Do not include the words "proceedings of the" or "papers from the".
+- Unpublished manuscripts need a month and year. If a URL is available, include it.
+- When you have a choice of URLs:
+  - Prefer URLs pointing to permanent resources, such as [Semantics Archive](http://semanticsarchive.net/), rather than the author's homepage or institutional website, which are all too often subject to [link rot](http://en.wikipedia.org/wiki/Link_rot).
+- Conference proceedings (`@inproceedings`):
+  - Should not include the words "proceedings of the" or "papers from the", etc., in the `booktitle` field.
+  - Editor information is not required (and will not appear in the bibliography, if provided)
+  - When an abbreviation is commonly used, specify it in parentheses after the full name, e.g.:
+    - `booktitle = {North East Linguistic Society (NELS)}`
+    - `booktitle = {Semantics and Linguistic Theory (SALT) 21}`
 - Publishers that have multiple cities should include both (unless the publisher information indicates otherwise). Conjoin them with an ampersand `\&`.
 - Do not hard-case words or letters in your BibTeX entries (e.g., `{B}ook {T}itle`), except for the following exceptions:
   - Proper names
@@ -131,15 +138,14 @@ NB: *S&P*'s bibliographic style is a close implementation of the ["Unified Style
     - People
     - Places
   - Acronyms
-  - The first word of a subtitle (unless you're using the title/subtitle functionality of BibLaTeX)
-  - All nouns if the title is in German or similar languages that capitalize nouns
+  - All nouns if the title is in German or other languages that capitalize nouns
   - Even in these cases, hard-case the entire word instead of the initial letter. (This is essential for proper kerning.)
     - <del><code>{B}ook</code></del> `{Book}`
     - <del><code>{NPI}s</code></del> `{NPIs}`
+- Do not use any kind of `\SortNoop{}` hack, or hard-casing name pairs (like `Kai {von Fintel}`), to sort author names. Our bibliography style will handle these automatically.
 - Whenever possible, include the DOI for the article. These are often hard to find, but [Google Scholar](http://scholar.google.com/) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
   - DOIs should never end in periods, which can cause the DOI lookup to fail.
-- There is no need for the `\SortNoop{}` hack to sort non-ascii author names. Our bibliography style will handle these automatically.
-- Use `volume` (the major specifier) and `number` (minor specifier) for articles, even if the journal calls the minor designator the "issue." <!-- Seems like the BibLaTeX should handle this, but it doesn't. - CB -->
+  - Use the "doi" BibTeX field, `doi = {10.3765/sp.1.1}`, rather than `url = {http://dx.doi.org/10.3765/sp.1.1}`.
 
 <!--
   I'm leaving these out because the sp.bst should handle it.
