@@ -25,6 +25,8 @@ Papers must include new results of interest to those working in semantics and pr
 
 We have an ambitious goal: to publish as many as possible of the top 100 articles in semantics and pragmatics in a given year, and no other full articles. 
 
+Main articles have a target length of 20-45 journal pages, including references, appendices, and footnotes (this is about 8,000 to 18,000 words of main text). In exceptional circumstances, we will consider articles that reach a length of up to 60 journal pages, again including references, appendices, and footnotes, which corresponds to less than 25,000 words of main text. Although S&P is an online-only journal, and thus not limited by restrictions on the number of published pages, we nevertheless strongly discourage longer submissions, for several reasons. First, long papers place an undue burden on reviewers, who give their time freely and who we ask to provide a review within four weeks. It is also more difficult to find reviewers for a long paper, which leads to a longer time to decision, which is not in the interest of the author, the journal and the discipline. Finally, long papers slow down the production process for the relevant paper and everyone else as well.
+
 Issues that reviewers are directed to consider include the following:
 
 Originality & Results
@@ -89,13 +91,13 @@ Apart from main research articles, S&P publishes some shorter contributions and 
 S&P welcomes several kinds of shorter contributions:
 
 Squibs
-:   Squibs are very short articles with a length of no more than 10 journal pages (less than 4,000 words). As in the tradition established by *Linguistic Inquiry*, “manuscripts accepted as Squibs will not be required to propose a solution to problems they address as long as their relevance to theoretical issues is made clear” (<http://www.mitpressjournals.org/page/sub/ling>).
+:   Squibs have a target length of 2--8 journal pages (including references, appendices, and footnotes), and should be no more than 10 journal pages (less than 4,000 words of main text). As in the tradition established by *Linguistic Inquiry*, “manuscripts accepted as Squibs will not be required to propose a solution to problems they address as long as their relevance to theoretical issues is made clear” (<http://www.mitpressjournals.org/page/sub/ling>).
 
 Remarks and Replies
-:   Somewhat longer than squibs but still shorter than main articles are remarks and replies (no more than 20 journal pages, less than 8,000 words), which deal with issues raised in the literature and present a new perspective on them.
+:   Remarks and replies deal with issues raised in the literature and present a new perspective on them. They have a target length of 5--15 pages (including references, appendices, and footnotes), and should be no more than 20 journal pages (less than 8,000 words of main text). 
 
 Commentaries
-:   S&P welcomes and sometimes initiates debates that take place within the journal. Commentaries on main articles published in S&P will typically be quite short.
+:   S&P welcomes and sometimes initiates debates that take place within the journal. Commentaries on main articles published in S&P will typically be quite short. They have a target length of 2--8 pages (including references, appendices, and footnotes), and should be no more than 10 journal pages (less than 4,000 words of main text).
 
 Authors should submit such shorter contributions in the standard way (see below).
 
