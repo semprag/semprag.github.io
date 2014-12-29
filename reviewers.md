@@ -121,48 +121,20 @@ But to give you a picture of the journal’s practices, here is how we
 interpret the choices offered by our software:
 
 Accept submission
-:   “We will publish this paper as soon as possible”. Typically, there
-    will be minor revisions needed but those shouldn’t take very long
-    and the paper will move into production as soon as those are done.
+:   “We will publish this paper as soon as possible”. Minor revisions may still be needed (e.g. fixing typos, small changes in wording, clarification of crucial examples), but those should only take a couple of hours and the paper will move into production as soon as those are done. 
 
 Revisions required
-:   “Accept the paper but minor revisions are necessary”. The revisions
-    will take no more than 2 weeks of work and only need to be checked
-    by the editors. We will only issue this decision if the revisions
-    are crystal-clear to us. NB: If the authors have not submitted a
-    revised version within 6 months of our decision, we will consider
-    the paper rejected. Any resubmitted version after 6 months will be
-    considered a new submission and will be subject to the regular
-    review process again.
+:   “Accept the paper but revisions are necessary”. The revisions will by and large not affect the structure of the argument and the proposed analysis, but may require substantial rewriting for expository purposes. They will take no more than 2 weeks of work and only need to be checked by the editors. We will only issue this decision if the revisions are crystal-clear to us. NB: If the authors have not submitted a revised version within 6 months of our decision, we will consider the paper rejected. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
 
 Resubmit for review
-:   This is the decision also known as “Revise and Resubmit”. This is
-    intended to be **a rare decision**, and implies that substantial rewriting and possibly
-    new research is needed, possibly taking months, but that the extreme
-    originality of the piece merits acceptance in spite of the flaws. We
-    will only consider such a decision if the path to a successful
-    revision is quite clear to us. The revised version will almost
-    certainly be reviewed not just by the editors but by outside
-    reviewers. These will likely be drawn from the reviewers who
-    reviewed the initial submission; but the editors reserve the right
-    to use fewer or different reviewers.
+:   This is intended to be **a rare decision**, and implies that substantial rewriting and possibly new research is needed, possibly taking months. But the editors are confident that they will be able to judge those revisions without sending them out for peer review again (we do reserve the right to change our minds and send the new version out for review). This decision is not an acceptance. The final decision may still be a rejection.
 
 Resubmit elsewhere
 :   This is really a variant of “Decline submission” but with helpful
     advice about where else the paper may find a more hospitable home.
 
 Decline submission
-:   “Reject”. This is the modal decision for a journal of S&P’s standards.
-    There are shades depending on whether the reviewers and editors
-    recommend submission of a substantially improved paper on the same
-    topic. Any such submission will be treated as a new submission and
-    while we might solicit the opinions of previous reviewers, there is
-    no assurance whatsoever that the same set of reviewers will look at
-    the paper. We should note that quite a few of our published papers
-    were declined in an earlier round. Some of our most enthusiastically
-    positive feedback has come from authors of declined submissions,
-    because of the speed of decision and the quality of editorial
-    feedback.
+:   “Reject”. This is the most frequent decision for a journal of S&P’s standards. There are shades depending on whether the reviewers and editors recommend submission of a substantially improved paper on the same topic. Any such submission will be treated as a new submission and while we might solicit the opinions of previous reviewers, there is no assurance whatsoever that the same set of reviewers will look at the paper. We should note that quite a few of our published papers were declined in an earlier round. Some of our most enthusiastically positive feedback has come from authors of declined submissions, because of the speed of decision and the quality of editorial feedback.
 
 **C. Justification.** Please write a short justification, in broad
 terms, of the above estimate of overall quality (and of your explicit
