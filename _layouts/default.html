@@ -1,49 +1,74 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>Semantics &amp; Pragmatics</title>
-<link rel="stylesheet" href="/master.css">
-<div class="wrapper">
-  <header>
-    <div class="logo" style="padding-right: 30px">
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Semantics & Pragmatics</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/master.css" type="text/css">
+</head>
+<body>
+  <nav>
+    <div style="text-align: center; margin-bottom: 2em">
       <a href="/">{% include logo.svg %}</a>
+      <h1><a href="http://semprag.org/">Semantics & Pragmatics</a></h1>
+      <h3>Guidelines and typesetting resources</h3>
     </div>
-    <p>Public resources for the authoring and styling of <a href="http://semprag.org/" class="journal">Semantics &amp; Pragmatics</a> articles.</p>
 
-    <h2>Pages</h2>
-    <dl>
-      <dt>Guidelines</dt>
-        <dd><a href="/author">Guidelines for S&P authors</a></dd>
-        <dd><a href="/reviewers">Guidelines for S&P reviewers</a></dd>
-      <dt>Typesetting</dt>
-        <dd><a href="/basics">The S&P LaTeX system</a></dd>
-        <dd><a href="/style">Detailed style guidelines</a></dd>
-    </dl>
+    <section>
+      <strong>Authoring and reviewing</strong>
+      <ul>
+        <li><a href="/author">Guidelines for S&P authors</a></li>
+        <li><a href="/reviewers">Guidelines for S&P reviewers</a></li>
+      </ul>
+    </section>
 
-    <h2>Resources</h2>
-    <dl>
-      <dt>Empty template</dt>
-        <dd><a href="/source/sp-template.tex">sp-template.tex</a></dd>
-      <dt>S&amp;P Style file</dt>
-        <dd><a href="/source/sp.cls">sp.cls</a></dd>
-      <dt>S&amp;P BibTeX Style</dt>
-        <dd><a href="/source/sp.bst">sp.bst</a></dd>
-    </dl>
+    <section>
+      <strong>Typesetting</strong>
+      <ul>
+        <li><a href="/basics">LaTeX configuration</a></li>
+        <li><a href="/style">Detailed style guide</a></li>
+        <li><a href="/word">Microsoft Word</a></li>
+      </ul>
+    </section>
 
-    <p><a href="https://github.com/semprag/semprag.github.com">Repository on Github</a></p>
-  </header>
-  <section>
+    <section>
+      <strong>LaTeX sources</strong>
+      <ul>
+        <li><a href="/source/sp-template.tex">Empty template</a></li>
+        <li><a href="/source/sp.cls">S&P document class</a></li>
+        <li><a href="/source/sp.bst">S&P BibTeX style</a></li>
+      </ul>
+    </section>
+
+    <section id="administrative" style="display: none; opacity: 0.5">
+      <strong>Administrative</strong>
+      <ul>
+        <li><a href="/workflow">Workflow</a></li>
+        <li><a href="/internal">Internal</a></li>
+        <li><a href="/lucida">Lucida</a></li>
+        <li><a href="https://github.com/semprag/semprag.github.com">This repository on GitHub</a></li>
+      </ul>
+    </section>
+  </nav>
+  <article>
     {{ content }}
-  </section>
-  <footer>
-  </footer>
-</div>
-<script>
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20644777-6']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+  </article>
+  <script>
+    var _gaq = [['_setAccount', 'UA-20644777-6'], ['_trackPageview']];
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      document.body.appendChild(ga);
+    })();
+  </script>
+  <script>
+  var escapes = 0;
+  document.addEventListener('keyup', function(ev) {
+    if (ev.which == 27) {
+      escapes++;
+    }
+    if (escapes > 1) {
+      document.getElementById('administrative').style.display = 'block';
+    }
+  });
+  </script>
+</body>
