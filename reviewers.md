@@ -34,7 +34,7 @@ preliminary questions:
 *First*, decide whether you think you can perform the review within the
 time allotted by the editor. Our review times are shorter than for other
 journals in the field. Please help us get good work to press rapidly:
-this will ultimately be in everybody’s interest.
+this will ultimately be in everybody's interest.
 
 *Second*, notify the editors immediately (via the website) whether you
 can perform the review within the time allotted. It is crucial to the
@@ -54,13 +54,10 @@ inappropriate to continue with the review:
     past, or had corresponded extensively with the author about earlier
     versions of the paper. However, we will consider each case on its
     merits.
-
 2.  You may feel on reflection that you do not have the right background
     to review the paper.
-
 3.  You may know the identity of the author of a paper which has been
     submitted for anonymous review.
-
 4.  You may judge that the standard of English is so low that the paper
     is painful to read or hard to follow. In any such case, please email
     the editors immediately rather than ploughing on with a difficult or
@@ -72,12 +69,12 @@ declining a review includes a space to put in such recommendations).
 
 ## Anonymity
 
-We do not require that submitted papers be anonymous, since this is frequently an unattainable goal. However, the author of a paper has the right to remain anonymous to the reviewers throughout the review process. In that case, the author will take care to anonymize the paper, and will include in a clearly visible position on the front page the text “Submitted to for anonymous review.” The reviewers are then considered under obligation not to attempt to discern the identity of the author. Please take this seriously.
+We do not require that submitted papers be anonymous, since this is frequently an unattainable goal. However, the author of a paper has the right to remain anonymous to the reviewers throughout the review process. In that case, the author will take care to anonymize the paper, and will include in a clearly visible position on the front page the text "Submitted for anonymous review." The reviewers are then considered under obligation not to attempt to discern the identity of the author. Please take this seriously.
 
 ## The review
 
 If you accept to be a reviewer of this paper, please read through the
-paper, and in your report to us address questions A–C, and optionally D,
+paper, and in your report to us address questions A-C, and optionally D,
 below. Note that a perfectly adequate review might be just a page long
 (or even shorter). Many reviewers go beyond the call of duty and provide
 us with editorial advice (and lists of typos and the like); that is of
@@ -112,29 +109,29 @@ reviewers allows the following recommendations:
 -   See comments (&larr; preferred option)
 
 Unless you strongly believe that you should make a specific
-recommendation from that list, we recommend that you choose “See
-comments” and simply provide us with a narrative assessment. It is the
+recommendation from that list, we recommend that you choose "See
+comments" and simply provide us with a narrative assessment. It is the
 job of the editors to make a decision based on the input from multiple
 reviewers and their own reading of the submission.
 
-But to give you a picture of the journal’s practices, here is how we
+But to give you a picture of the journal's practices, here is how we
 interpret the choices offered by our software:
 
 Accept submission
-:   “We will publish this paper as soon as possible”. Minor revisions may still be needed (e.g. fixing typos, small changes in wording, clarification of crucial examples), but those should only take a couple of hours and the paper will move into production as soon as those are done. 
+:   "We will publish this paper as soon as possible". Minor revisions may still be needed (e.g. fixing typos, small changes in wording, clarification of crucial examples), but those should only take a couple of hours and the paper will move into production as soon as those are done.
 
 Revisions required
-:   “Accept the paper but revisions are necessary”. The revisions will by and large not affect the structure of the argument and the proposed analysis, but may require substantial rewriting for expository purposes. They will take no more than 2 weeks of work and only need to be checked by the editors. We will only issue this decision if the revisions are crystal-clear to us. NB: If the authors have not submitted a revised version within 6 months of our decision, we will consider the paper rejected. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
+:   "Accept the paper but revisions are necessary". The revisions will by and large not affect the structure of the argument and the proposed analysis, but may require substantial rewriting for expository purposes. They will take no more than 2 weeks of work and only need to be checked by the editors. We will only issue this decision if the revisions are crystal-clear to us. NB: If the authors have not submitted a revised version within 6 months of our decision, we will consider the paper rejected. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
 
 Resubmit for review
 :   This is intended to be **a rare decision**, and implies that substantial rewriting and possibly new research is needed, possibly taking months. But the editors are confident that they will be able to judge those revisions without sending them out for peer review again (we do reserve the right to change our minds and send the new version out for review). This decision is not an acceptance. The final decision may still be a rejection.
 
 Resubmit elsewhere
-:   This is really a variant of “Decline submission” but with helpful
+:   This is really a variant of "Decline submission" but with helpful
     advice about where else the paper may find a more hospitable home.
 
 Decline submission
-:   “Reject”. This is the most frequent decision for a journal of S&P’s standards. There are shades depending on whether the reviewers and editors recommend submission of a substantially improved paper on the same topic. Any such submission will be treated as a new submission and while we might solicit the opinions of previous reviewers, there is no assurance whatsoever that the same set of reviewers will look at the paper. We should note that quite a few of our published papers were declined in an earlier round. Some of our most enthusiastically positive feedback has come from authors of declined submissions, because of the speed of decision and the quality of editorial feedback.
+:   "Reject". This is the most frequent decision for a journal of S&P's standards. There are shades depending on whether the reviewers and editors recommend submission of a substantially improved paper on the same topic. Any such submission will be treated as a new submission and while we might solicit the opinions of previous reviewers, there is no assurance whatsoever that the same set of reviewers will look at the paper. We should note that quite a few of our published papers were declined in an earlier round. Some of our most enthusiastically positive feedback has come from authors of declined submissions, because of the speed of decision and the quality of editorial feedback.
 
 **C. Justification.** Please write a short justification, in broad
 terms, of the above estimate of overall quality (and of your explicit
@@ -146,7 +143,7 @@ Originality & Results
 :   Are there important new theoretical insights, important new data,
     perhaps a notably original synthesis of ideas from disparate fields,
     or new formal techniques? Does the paper substantially overlap with
-    a separate published paper of the author? What are the major contributions this paper makes to semantics and pragmatics? Note: we would expect a pointer rather than a full explanation, e.g. “The most important contribution is the analysis of Cacgia Roglai temporal markers as dynamic generalized quantifiers.”
+    a separate published paper of the author? What are the major contributions this paper makes to semantics and pragmatics? Note: we would expect a pointer rather than a full explanation, e.g. "The most important contribution is the analysis of Cacgia Roglai temporal markers as dynamic generalized quantifiers."
 
 Empirical quality & Technical competence
 :   Most (but not all) articles in will be based on empirical data. Is
@@ -159,7 +156,7 @@ Audience
 :   Consider the background someone would need to follow the main thread
     of this paper, e.g. only a few specialists, most of those who give
     papers at major semantics conferences, most people with a few
-    graduate level semantics courses, most people who’ve taken a
+    graduate level semantics courses, most people who've taken a
     graduate level introduction to semantics and pragmatics, or perhaps
     any smart educated person with access to a search engine could
     follow the main thread. And if this is the population that could
@@ -183,16 +180,16 @@ Contextualization of research
 
 **D. Comments.** Optional comments for the author. (You may just note
 that it would be acceptable to share your answer in C, or you may
-provide no commentary at all for the author’s eyes)
+provide no commentary at all for the author's eyes)
 
 ## Short contributions
 
 S&P welcomes various shorter contributions (squibs, commentaries, remarks
 and replies, reviews, state of the art surveys). If you are asked for a
 report on such a submission, the criteria outlined above need to be
-modulated. Short squibs, in particular, “will not be required to propose
+modulated. Short squibs, in particular, "will not be required to propose
 a solution to problems they address as long as their relevance to
-theoretical issues is made clear” (as *Linguistic Inquiry* puts it).
+theoretical issues is made clear" (as *Linguistic Inquiry* puts it).
 
 ## Short and quick
 
