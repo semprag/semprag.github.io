@@ -1,7 +1,5 @@
-markdown: kramdown
-rdiscount:
-  extensions: [smart]
-exclude: ['README.md', '.gitignore']
+# github pages overrides:
 safe: true
 lsi: false
-pygments: true
+# github pages defaults:
+highlighter: pygments
