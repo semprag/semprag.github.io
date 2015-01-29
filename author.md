@@ -7,7 +7,7 @@ title: "S&P Guidelines for authors"
 
 ## The journal
 
-*Semantics and Pragmatics* (S&P) is a peer-reviewed open access journal, located on the web at <http://semprag.org>. Its mission is to bring the very best articles in semantics, pragmatics and allied subfields, to as wide an audience as possible, at no cost to readers or authors, as quickly as possible. The journal is affiliated with, and electronically published by, the *Linguistic Society of America*.
+*Semantics and Pragmatics* (S&P) is a peer-reviewed open access journal, located on the web at <http://semprag.org>. Its mission is to bring the very best articles in semantics, pragmatics and allied subfields, to as wide an audience as possible, at no cost to readers or authors, as quickly as possible. The journal is affiliated with, and electronically published by, the [*Linguistic Society of America*](http://www.linguisticsociety.org/).
 
 S&P is a new kind of journal, leveraging the advances in desktop publishing, open source journal management software, and internet communications infrastructure. Our aim is to publish a high-quality, peer-reviewed journal on a par with the established journals but with two very significant advantages:
 

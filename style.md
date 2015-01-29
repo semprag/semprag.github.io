@@ -133,7 +133,7 @@ NB: S&P's bibliographic style is a close implementation of the ["Unified Style S
   - When an abbreviation is commonly used, specify it in parentheses after the full name, e.g.:
     - `booktitle = {North East Linguistic Society (NELS)}`
     - `booktitle = {Semantics and Linguistic Theory (SALT) 21}`
-- Publishers that have multiple cities should include both (unless the publisher information indicates otherwise). Conjoin them with an ampersand `\&`.
+- Publishers that have multiple cities should include both (unless the publisher information indicates otherwise). Conjoin them with an ampersand: `\&`.
 - Do not hard-case words or letters in your BibTeX entries (e.g., `{B}ook {T}itle`), except for the following exceptions:
   - Proper names
     - Languages
