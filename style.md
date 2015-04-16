@@ -60,6 +60,8 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Avoid use of "e.g.," and "i.e.," in non-parenthesized text. Spell them out: "for example," or "that is," respectively.
 - Example references and numbers should be surrounded by parentheses, e.g., (1), (2-3), (4a), (5b-c), (6a,c), etc.
   - Avoid primes, for example: `(1')`
+  - Prefer using the original numbering when repeating an example without changes. E.g., use `\exr{yourOriginalLabel}` instead of `\ex` with gb4e.
+    * However, if you change something, or add anything, or are replicating the example for any reason other than to save the reader the trouble of paging back and forth, use a new number.
 - A footnote attached to a sentence immediately follows the end punctuation, as in this paragraph.<sup>1</sup> The following sentence requires no special spacing.
 - "Et al." contains only one period.
 - "Cf." contains only one period.
@@ -111,6 +113,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
   - <del>inter alia</del> among others
   - <del>simpliciter</del> in and of itself
 - Avoid manual spacing, particularly spacing with explicit units. `\hfil` and `\hfill` are vastly preferable to something like `\hspace{15cm}`. `\\\mbox{}\hfill` is an acceptable way to right-align a short line when a `flushright` environment would take too much vertical space.
+- Avoid `\nocite{}`.
 
 
 ## BibTeX
