@@ -66,6 +66,10 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Be consistent about the use of non-, pre-, and co-. The LI style sheet recommends conjoining prefixes without a dash.
 - Use `'` instead of `\prime` for primes in math environments. If you need to use `\prime`, explain why.
 - Inches are denoted by curly quotes, represented in LaTeX by apostrophes (`’’`), not with math primes (`$''$`).
+- Do not encase numbers in a math environment, except for two cases:
+  * You are writing out a formula and are already in a math environment.
+  * You have tabular data and need fixed-width digits for the numbers to line up.
+- Spell out small numerals. Where you draw the threshold, from 10 to 100, is a matter of taste, but be consistent. This is a soft constraint; there are many cases where a numeral is more suitable, e.g., experimental data, numeric series, or identifiers.
 
 
 # Capitalization and spelling
