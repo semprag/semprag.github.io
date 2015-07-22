@@ -18,10 +18,10 @@ On most Linux distributions, you can move these files to the following global pa
     /texmf/tex/latex/sp.cls
     /texmf/bibtex/bst/sp.bst
 
-On Mac OS X, with TeXLive, the files can be located at:
+On Mac OS X, with [MacTeX](https://tug.org/mactex/), the files should be located at:
 
     ~/Library/texmf/tex/latex/local/sp.cls
-    ~/Library/texmf/tex/latex/local/sp.bst
+    ~/Library/texmf/bibtex/bst/sp.bst
 
 Having done that, you should now be able to get a document started by setting your document class:
 
