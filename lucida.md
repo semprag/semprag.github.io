@@ -54,6 +54,11 @@ into your machine's local TeX distribution:
 
     Some of those `texhash` calls are probably redundant, but they don't hurt.
 
+Upgrading, for example, from MacTeX-2014 to MacTeX-2015, should be easier. The following two commands did the trick on my OS X Mavericks install:
+
+    sudo texhash
+    sudo updmap-sys --enable Map lucida.map
+
 
 ### On Ubuntu (12.04)
 
@@ -132,3 +137,10 @@ On Mac OS X, Lucida font installation problems generally produce something like 
     kpathsea: Appending font creation commands to missfont.log.
     (see the transcript file for additional information)
     !pdfTeX error: pdflatex (file hlhr8r): Font hlhr8r at 1244 not found
+
+Or alternatively, maybe:
+
+    ! pdfTeX error (font expansion): auto expansion is only possible with scalable fonts.
+    \AtBegShi@Output ...ipout \box \AtBeginShipoutBox
+                                                      \fi \fi
+    l.27 \end{document}
