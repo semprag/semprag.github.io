@@ -16,6 +16,8 @@ S&P is a new kind of journal, leveraging the advances in desktop publishing, ope
 
 S&P publishes both main articles and a variety of shorter contributions (squibs, commentaries, remarks and replies, state of the art). We first lay out the expectations for main articles and then discuss the nature of shorter contributions.
 
+As an LSA journal, S&P is following [the Guidelines on Ethics For LSA Publications and Conferences](http://www.linguisticsociety.org/content/guidelines-ethics-lsa-publications-and-conferences). We also follow the recommendations of the [Committee on Publication Ethics](http://publicationethics.org) (COPE).
+
 ## Expectations for main articles
 
 The main content of S&P are high quality, original, self-contained research articles on the semantics and pragmatics of natural languages. While the core of our target audience is academic linguists, we also publish material by, or of relevance to, philosophers, psychologists, and computer scientists.
