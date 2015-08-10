@@ -20,7 +20,7 @@ As an LSA journal, S&P is following [the Guidelines on Ethics For LSA Publicatio
 
 ## Expectations for main articles
 
-The main content of S&P are high quality, original, self-contained research articles on the semantics and pragmatics of natural languages. While the core of our target audience is academic linguists, we also publish material by, or of relevance to, philosophers, psychologists, and computer scientists.
+The main content of S&P are high quality, original, self-contained research articles on the semantics and pragmatics of natural languages. While the core of our target audience is academic linguists, we also publish material by, or of relevance to, philosophers, psychologists, and computer scientists. The language of publication is English.
 
 Papers must include new results of interest to those working in semantics and pragmatics, and must demonstrate clear significance for theoretical development of those areas. Provided the work meets those criteria, we welcome both submissions of papers on core topics in semantics and pragmatics, and submissions of interdisciplinary papers involving work on syntax, phonology, psycho-linguistics, text and corpus studies, discourse and conversation analysis, computational semantics, the lexicon, historical linguistics, cross-linguistic typology, logic, and philosophy of language.
 
