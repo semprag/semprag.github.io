@@ -35,7 +35,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 ## Italicization and quotation
 
 - When italicizing, use `\emph{...}`; do not use `{\it ...}`.
-  - In some cases, you may want to use `\textit{...}` instead of `\emph{...}`. If you have a good reason for doing so, use `\textit`. Otherwise, use `\emph`.
+  - In some cases, you may want to use `\textit{...}` instead of `\emph{...}`. If you have a good reason for doing so, use `\textit{...}`. Otherwise, use `\emph{...}`. In most cases they have the same effect.
 - Use italics for a letter, word, phrase, or sentence cited as a linguistic example or subject of discussion.
 - Use italics for the introduction of terms.
 - Use italics sparingly for emphasis.
@@ -52,6 +52,8 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 
 - Enclose the bottom-most gloss/English translation in single quotes.
 - Math environments will render words in math italics, but this is rarely what you want for full words. Wrap non-mathematical symbols, like text, in `\text{}` or `\textit{}` commands.
+- Technical terms should be italicized.
+
 
 # Punctuation and abbreviation
 
