@@ -108,6 +108,8 @@ For initial submission of an article, we do not require adherence to any particu
 
 When an article is submitted to S&P, we strongly encourage authors to also deposit their manuscript to the Semantics Archive (<http://semanticsarchive.net>) so as to allow the research community to read the pre-publication version and to give feedback on the work to the author.[^2] In the future, we will look into further ways of facilitating this kind of early feedback from the community.
 
+When you have submitted your paper to S&P, you can list it on your CV as "submitted to S&P".
+
 ## Peer review
 
 S&P has submission and rejection rates comparable with the other top journals in our field. The editors act as a first stage filter on papers, normally within a week of receipt. If a paper is determined to be of potential relevance, it is sent to at least two reviewers drawn from our Editorial Board. The Editorial Board consists primarily of PhD holding academics active in the subfields of semantics and pragmatics, selected by the editors, and subject to advice from the Advisory Board. The Board is of sufficient size that we will not normally call on the same reviewer more than twice in a year. The review board is public, but we will not reveal the identity of the reviewer of a particular paper except at the direct request of the reviewer.
@@ -127,12 +129,14 @@ Revisions required
 NB: If the authors have not submitted a revised version within 6 months of our decision, we will consider the paper withdrawn. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
 
 Resubmit for review
-:   "Revise & resubmit". S&P is very much interested in publishing a future version of this submission, but there are substantial issues to resolve. The editorial feedback will lay out what revisions are needed. The author can decide whether to attempt such revisions or withdraw the paper from consideration. If a revised version is submitted, we will usually attempt to assign it out to the same reviewers as in the previous round (but there are exceptions, depending on reviewer availability and suitability). If there are multiple rounds of resubmission, the editors may at some point decide to make a desk decision without further consultation of outside reviewers. If you received a "resubmit for review" decision, it is neither an acceptance nor a rejection; the paper can be listed as "under revision for S&P" on your CV.
+:   "Revise & resubmit". S&P is very much interested in publishing a future version of this submission, but there are substantial issues to resolve; nevertheless the editors are reasonably confident that the issues can in fact be resolved. The editorial feedback will lay out what revisions are needed. The author can decide whether to attempt such revisions or withdraw the paper from consideration. If a revised version is submitted, we will usually attempt to assign it out to the same reviewers as in the previous round (but there are exceptions, depending on reviewer availability and suitability). If there are multiple rounds of resubmission, the editors may at some point decide to make a desk decision without further consultation of outside reviewers. If you received a "resubmit for review" decision, it is neither an acceptance nor a rejection; the paper can be listed as "under revision for S&P" on your CV.
 
 NB: As in the case of "revisions required", if the authors have not submitted a revised version within 6 months of our decision, we will consider the paper withdrawn. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
 
 Decline submission
 :   "Reject". This is the most frequent decision for a journal of S&P's standards. There are shades depending on whether the reviewers and editors recommend submission of a substantially improved paper on the same topic. Any such submission will be treated as a new submission and while we might solicit the opinions of previous reviewers, there is no assurance whatsoever that the same set of reviewers will look at the paper. We should note that quite a few of our published papers were declined in an earlier round. Some of our most enthusiastically positive feedback has come from authors of declined submissions, because of the speed of decision and the quality of editorial feedback.
+
+In some cases, we will warmly encourage the author to submit a thoroughly revised descendant of a rejected paper to our journal. We will ask the author whether they in fact intend to do so. If they commit themselves to doing so, the paper can be listed as "under revision for S&P" on the CV, but only within a six month period from the original editorial decision.
 
 Any type of revised submission should be accompanied by a separate document explaining the changes that were made in response to comments from reviewers and editors.
 
