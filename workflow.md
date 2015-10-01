@@ -55,17 +55,17 @@ likelihood that we may take up to 90 days given the nature of their paper.
 
     Sometimes reviewers accept review requests via email and don't go through the system. In such a case, the shepherd should go to the Review page and click "WILL DO THE REVIEW", thus recording the agreement.
 
-7. If a reviewer doesn't respond within 3 days, resend the request. If they do not respond within a week, cancel the request, chiding them for not responding, and move on to alternate reviewers.
+6. If a reviewer doesn't respond within 3 days, resend the request. If they do not respond within a week, cancel the request, chiding them for not responding, and move on to alternate reviewers.
 
-8. The usual deadline for reviews is four weeks. We sometimes adjust this a bit if needed, keeping in mind that we really want to have a decision made within 60 days of submission. As the deadline approaches or passes, we often need to nudge reviewers.
+7. The usual deadline for reviews is four weeks. We sometimes adjust this a bit if needed, keeping in mind that we really want to have a decision made within 60 days of submission. As the deadline approaches or passes, we often need to nudge reviewers.
 
-9. When the reviews are in, the shepherding editor drafts a decision. For the first few times, you should consult with DIB and KvF. Note that our modal decision by far is "Reject" with varying degrees of warmth encouraging a resubmission. We rarely issue "Revise and resubmit" (only if the path to a successful revision is so clear that we could write the revision ourselves). Read the Author and Reviewer Guidelines for more info: <http://info.semprag.org/author>, <http://info.semprag.org/reviewers>. These documents are in progress; please ask questions, make recommendations for changes, etc. You'll probably see other decisions go by on email and so you'll see how we do things in practice.
+8. When the reviews are in, the shepherding editor drafts a decision. For the first few times, you should consult with DIB and KvF. Note that our modal decision by far is "Reject" with varying degrees of warmth encouraging a resubmission. We rarely issue "Revise and resubmit" (only if the path to a successful revision is so clear that we could write the revision ourselves). Read the Author and Reviewer Guidelines for more info: <http://info.semprag.org/author>, <http://info.semprag.org/reviewers>. These documents are in progress; please ask questions, make recommendations for changes, etc. You'll probably see other decisions go by on email and so you'll see how we do things in practice.
 
-10. The decision is sent to the author, cc'ing all-editors and bcc'ing the reviewers (we make an effort to keep the reviewers abreast of what is happening at all times). [Again the email can be sent out from the system or from a personal account.] The decision is recorded via the website.
+9. The decision is sent to the author, cc’ing all-editors. We also send a copy of the decision to the reviewers. If the manuscript has not been submitted in anonymous form or contains clear indications that the authors do not care about an anonymous review process, the reviewers can be bcc’ed on the letter of decision. Else, a version without identifying information should be sent to the reviewers separately, including in the author letter something along the following lines: "A copy of this email with identifying information removed will be sent to the three anonymous reviewers." [Again, all these emails can be sent out from the system or from a personal account.] The decision is recorded via the website.
 
-11. When a paper has reached near-final perfection, the author should be asked to prepare the final version following our final submission guidelines: <http://info.semprag.org/style>.
+10. When a paper has reached near-final perfection, the author should be asked to prepare the final version following our final submission guidelines: <http://info.semprag.org/style>.
 
-12. When the final version is in, the paper goes to DIB & KvF and their assistants for copy-editing, typesetting, proofreading, and publication.
+11. When the final version is ready, the authors can submit it via the website ("Summary" tab for the paper > "Add a supplementary file") or via email to editors@semprag.org. If there is more than one file to submit (for example in a LaTeX submission: the tex file, the bib file, any image files, any unusual macro packages), the authors should submit a zip archive of all the files. When the final version has been submitted, the shepherding editor informs DIB & KvF. They and their assistants take it from there for copy-editing, typesetting, proofreading, and publication.
 
 # Some notes on ethos and etiquette
 
