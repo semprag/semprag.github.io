@@ -10,6 +10,7 @@ Before you submit your final version (especially if you submit LaTeX source), pl
 
 Read your paper one more time very carefully, paying attention to the issues listed below, but also to typos and other corrections.
 
+
 ## Checklist of the top issues ##
 
 * Your title and your section headings should be in "Sentence case" (not "Title Case"). If you have a subtitle, capitalize the first word of the subtitle: "First part of title: Second part of title".
@@ -21,7 +22,7 @@ Read your paper one more time very carefully, paying attention to the issues lis
     + <del><code>{E}nglish</code></del> `{English}`
     + <del><code>{NPI}s</code></del> `{NPIs}`
   - provide volume *and* issue numbers *and* page numbers for all journal articles (and page numbers for all book chapters etc.)
-  - provide DOIs and URLs for everything that can reasonably be accessed electronically
+  - provide the DOI (or URL) for everything that can reasonably be accessed electronically
 * Our house style follows the *LI*-style in making a distinction between referring to an author and referring to an author's work. So, "Beaver (2001) proposes ..." (LaTeX: `\citet`) but "as claimed in Beaver 2001" (LaTeX: `\citealt`). Expressions that probably go with the latter form: "in", "see", ... .
 * instead of "`---`" or "`--`" for parenthetical remarks, use the `\dash` macro provided by `sp.cls`
 * instead of literal "`...`" for dots, use the LaTeX `\dots` macro
@@ -29,8 +30,13 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * use the `\text{}` macro to wrap object language expressions inside any math environment
 * use the `\co` macro (defined by `sp.cls` as `\colon\thinspace`) for the "such that" colon in math environments
 * You are free to use British spellings (e.g., "colour") as long as you are consistent in American vs. British spelling throughout the document.
+* Do not manipulate the document layout with packages like `geometry` or `fullpage`.
+* Avoid using custom spacing macros like `\vspace`, `\bigskip`, etc.
+  - Similarly, environments like `tabbing` do not always reflow appropriately when typeset in the house style (and Lucida font), so use them sparingly.
+* If you use other packages for typographic manipulation, like `setspace`, `multicol`, `ulem`, or `soul`, explain why you are using these.
 
 Believe it or not, the above are the main stumbling blocks for a quick conversion of a manuscript to a publishable S&P paper. There are more subtle guidelines below, but these are the most important issues.
+
 
 ## Italicization and quotation
 
