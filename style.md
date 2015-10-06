@@ -58,7 +58,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 # Punctuation and abbreviation
 
 - **Logical punctuation.** Punctuation marks (commas, semicolons, periods, etc.) should be inside quotation marks _only if_ they were part of the material being quoted. Otherwise -- if they are attributable to you as the author rather than the material being quoted -- they should occur outside the quotation marks. (Ben Yagoda has [a good article on this topic](http://www.slate.com/articles/life/the_good_word/2011/05/the_rise_of_logical_punctuation.single.html).)
-- Uses of `e.g.` and `i.e.` should be followed by commas: `e.g.,` and `i.e.,`
+- Uses of `e.g.` and `i.e.` and `viz.` should be followed by commas: `e.g.,` and `i.e.,` and `viz.,`.
 - Avoid use of "e.g.," and "i.e.," in non-parenthesized text. Spell them out: "for example," or "that is," respectively.
 - Example references and numbers should be surrounded by parentheses, e.g., (1), (2-3), (4a), (5b-c), (6a,c), etc.
   - Avoid primes, for example: `(1')`
