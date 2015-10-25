@@ -165,3 +165,8 @@ NB: S&P's bibliographic style is a close implementation of the ["Unified Style S
 - Whenever possible, include the DOI for the article. These are often hard to find, but [Google Scholar](http://scholar.google.com/) and [crossref.org/SimpleTextQuery](http://crossref.org/SimpleTextQuery/) can help.
   - DOIs should never end in periods, which can cause the DOI lookup to fail.
   - Use the "doi" BibTeX field, `doi = {10.3765/sp.1.1}`, rather than `url = {http://dx.doi.org/10.3765/sp.1.1}`.
+- If you're using the BibLaTeX style implementation, you can separate the paper's title into the `title` and `subtitle` fields. The style will insert the ":" between the two as needed, and keep the capitalization of the first word of the subtitle as appropriate.
+  - If the title ends with end-of-sentence punctuation, like "`.`", but a colon should still be inserted, replace the final "`.`" with "`.\isdot`" (BibLaTeX only) or "`.\@`" (general TeX). This signifies to the TeX compiler that the "`.`" should not be interpreted as an end-of-sentence marker. The normal behavior is so that other punctuation that _should_ absorb the "`:`", like "`?`", does so.
+    - `title={At least et al.}, subtitle={The semantics of scalar modifiers}` renders to "At least et al. The semantics of scalar modifiers", which is incorrect.
+    - `title={At least et al.\isdot}, subtitle={The semantics of scalar modifiers}` renders to "At least et al.: The semantics of scalar modifiers", which is correct.
+    - `title={Would you believe it?}, subtitle={The King of France is back!}` renders to "Would you believe it? The King of France is back!", which demonstrates correct normal behavior.
