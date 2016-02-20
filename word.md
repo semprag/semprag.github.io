@@ -97,4 +97,3 @@ All aesthetic requirements in the [style guidelines](style) apply to Word docume
 There is an online validator in the works. When it is ready, there will be a link to it here, and it will help you work through the preceding guidelines.
 
 <!-- warnings for odd styles (like small-caps), other fonts, all-caps? -->
-

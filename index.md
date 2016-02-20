@@ -16,7 +16,3 @@ If you have any questions or concerns about the journal and its processes, conta
 * [Reviewer guidelines](reviewers)
 * [The S&P LaTeX system](basics)
 * [Final submission style guidelines](style)
-
-
-
-

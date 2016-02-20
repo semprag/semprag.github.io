@@ -5,7 +5,7 @@ title: "Editorial workflow"
 # Our basic workflow:
 
 1. Author submits paper via our website (which runs software called OJS, Open Journal Systems, which is pretty good but not perfect and we have occasional issues with its upkeep being out of our control). The way we find out is that the all-editors alias is cc'ed when the system sends out acknowledgment to the author.
-  
+
 2. When you see that there is a new submission, please check it out on the website: <http://semprag.org/editor/submissions/submissionsInReview>.
 
 3. The system automatically assigns DIB and KvF as the editors in charge, but that's just temporary until a shepherding editor is chosen. Who takes charge is a collective decision. DIB/KvF may ask for volunteers, browbeat someone into taking it, or take it on themselves. Or, in fact, someone can actually volunteer straightaway if the paper looks interesting to them.
@@ -74,10 +74,9 @@ likelihood that we may take up to 90 days given the nature of their paper.
 * If possible and if we remember, we preface all email subject lines with [S&P: xxx] where xxx indicates who, if anyone, should pay quick attention to the email. Values are ALL or FYI (for announcements, queries directed at all editors), DIB, JD, PDE, KvF, MF, ASG, MK, LMcN, KS (Katrin), KJS (Kjell Johan), KLS (Kristen), JT.
 
 * Everyone goes through periods when S&P work needs to be put on the backburner. If this happens, please ask for help with outstanding tasks that you can't currently attend to. We pride ourselves on a speedy and thorough review process and the only way this can happen is for team members to help each other out.
- 
+
 * If you will be away from email for more than a couple of days, let us know so that we can cover for you.
 
 * We take pride in our editorial feedback to authors. We treat reviewers with respect and use their comments to maximum effect. But the decision on what to do with a paper is ours (primarily the shepherding editor's). In fact, in the guidelines we encourage reviewers not to enter a formal recommendation (they can choose "see comments") and let us triangulate the reviews and our own reading.
 
 * NB: reviewers are blind copied on our editorial decision. We have had enormously positive feedback on this practice. Reviewers are also notified when a paper they worked on has been published; and they're often encouraged to submit a commentary.
-
