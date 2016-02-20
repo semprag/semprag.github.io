@@ -176,6 +176,25 @@ BibTeX normalizations:
 * `s/(\w)+\s*=\s*\{/\1 = {/g`: space out field-value separator, "=", with exactly one space on each side.
 * `s/^[ \t]+/  /g`: force everything that's indented to be indented exactly two spaces.
 
+
+## Items for editors only
+
+* Make sure the keywords specified in the following places all match:
+  - `\pdfkeywords{...}`
+  - `\begin{keywords} ... \end{keywords}`
+  - The article metadata on the OJS website
+* Make sure that the abstract declared in `\begin{abstract} ... \end{abstract}` matches the one on the journal website.
+
+<!--
+  I'm leaving these out because the sp.bst should handle it.
+  - Use of et al. should be reserved for works by more than 3 authors. [This is controlled by sp.bst and sp.cls - KvF]
+  - Unlike years, forthcoming and to appear should be preceded by a comma, e.g., (Smith, forthcoming).
+  - Use the full name of authors unless the author is known better by their initials.
+  I'm not sure what this means:
+  - Include fleqn in documentclass options
+-->
+
+
 ## TODO
 
 Add example article document (as opposed to a template).
