@@ -5,35 +5,36 @@ title: "The S&P LaTeX system"
 
 ## Formats
 
-While we accept submissions in both LaTeX and Microsoft Word formats, we publish all articles using LaTeX typesetting. We prefer LaTeX submissions, because it is easier to remain true to the author's vision when typeset in the S&P style and because it expedites the production process, thus leading to much faster publication. We therefore strongly encourage authors to submit in LaTeX format, and ideally in our house style. If you yourself are not familiar with LaTeX, maybe a friend or colleague could help you with preparing your manuscript. If you have to submit in Word format, please read our [Word-specific instructions](word).
+While we accept submissions in both LaTeX and Microsoft Word formats, we publish all articles using LaTeX typesetting. We prefer LaTeX submissions, because it is easier to remain true to the author's vision when typeset in the *S&P* style and because it expedites the production process, thus leading to much faster publication. We therefore strongly encourage authors to submit in LaTeX format, and ideally in our house style. If you yourself are not familiar with LaTeX, maybe a friend or colleague could help you with preparing your manuscript. If you have to submit in Word format, please read our [Word-specific instructions](word).
 
 ## LaTeX configuration
 
-Compiling in the S&P style requires two files, a TeX style file, [sp.cls](/source/sp.cls), and a BibTeX style file, [sp.bst](/source/sp.bst). (If you like to live on the cutting edge, replace sp.bst with [our BibLaTeX implementation of our bibliography style](https://github.com/semprag/biblatex-sp-unified).)
+Compiling your LaTeX document in the *S&P* house style requires using the documentclass `sp` and a custom bibliography style.
 
-You can add these to your global TeX distribution, your local settings, or keep them in the same folder as your article.
+Run `kpsewhich -var-value TEXMFHOME` to determine where your user-level TeX styles should go. In my case (using MacTeX), this is `~/Library/texmf`, which I'll use in the example instructions below. It may be different on your machine, so adjust accordingly.
 
-On most Linux distributions, you can move these files to the following global paths:
+### The `sp` documentclass
 
-    /texmf/tex/latex/sp.cls
-    /texmf/bibtex/bst/sp.bst
+Download the file [`sp.cls`](https://raw.githubusercontent.com/semprag/tex/master/sp.cls) (you may need to right click and "Save Link As...") to `~/Library/texmf/tex/latex/sp.cls`. You may need to create the directory `~/Library/texmf/tex/latex` if it does not exist.
 
-On Mac OS X, with [MacTeX](https://tug.org/mactex/), the files should be located at:
+You should now be able to render your document in this style by setting your documentclass to `sp`, i.e., `\documentclass{sp}`.
+But you will probably be better off starting from our minimal template, which includes placeholders for the required sections, like authors, abstract, keywords, etc.: [`sp-template.tex`](examples/sp-template.tex).
 
-    ~/Library/texmf/tex/latex/local/sp.cls
-    ~/Library/texmf/bibtex/bst/sp.bst
+*S&P* uses Lucida in all publications. Lucida is a commercial font that is not freely redistributable, so by default the `sp` documentclass uses Times.
 
-Having done that, you should now be able to get a document started by setting your document class:
+### The S&P bibliography style
 
-    \documentclass{sp}
+S&P currently uses **BibLaTeX** to render the bibliography and citations in all published papers.
 
-You will probably be better off starting from a minimal template, though, which includes sections for authors, abstract, keywords,
-and many other required sections. You can download that file here: <a href="source/sp-template.tex">sp-template.tex</a>. Please consult [the detailed explanation of the template](basics).
+We also provide a plain **BibTeX** style file for users without BibLaTeX. The differences from the user's perspective are minimal, but I will provide instructions for both options here. As an author, you need only choose one.
 
-*Semantics and Pragmatics* uses Lucida, a commercial font that is not freely redistributable.
-The provided template uses Times, by default, but you can defer back to the LaTeX standard Computer Modern by specifying `\documentclass[cm]{sp}`.
+- To install the **BibTeX** file, simply download [`sp.bst`](https://raw.githubusercontent.com/semprag/tex/master/sp.bst) to `~/Library/texmf/bibtex/bst/sp.bst`.
+- To install the **BibLaTeX** files (from the [`biblatex-sp-unified`](https://github.com/semprag/biblatex-sp-unified) project):
+  + Download [`biblatex-sp-unified.bbx`](https://raw.githubusercontent.com/semprag/biblatex-sp-unified/master/bbx/biblatex-sp-unified.bbx) to `/Users/chbrown/Library/texmf/tex/latex/biblatex/bbx/biblatex-sp-unified.bbx`, and
+  + Download [`sp-authoryear-comp.cbx`](https://raw.githubusercontent.com/semprag/biblatex-sp-unified/master/cbx/sp-authoryear-comp.cbx) to `/Users/chbrown/Library/texmf/tex/latex/biblatex/cbx/sp-authoryear-comp.cbx`
 
-## Style guidelines ##
+
+## Style guidelines
 
 In our experience, even submissions in LaTeX format often require intensive re-typesetting and additional work on the bibliography. We hope that authors can take some of the burden of that work, again in the interest of an expedited publication process. To that purpose, please read [our style guidelines](style), especially as they pertain to LaTeX submissions.
 
@@ -72,7 +73,7 @@ Our general formatting rules for examples:
 - References to examples appear inside parentheses, with no punctuation between elements.
   - E.g., we can refer to (12), or to its subexample (12a).
 
-For simple needs, we have found that the [linguex package](http://www.ctan.org/pkg/linguex) works well with our style. You can load it by simply passing a `linguex` option to `sp.cls`.
+For simple needs, we have found that the [linguex package](http://www.ctan.org/pkg/linguex) works well with our style. You can load it by simply passing a `linguex` option to `sp.cls`, i.e., `\documentclass[linguex]{sp}`.
 
 For more complex needs (complex glosses, for example), we strongly recommend the [expex package](http://ctan.org/pkg/expex). We expect to offer full expex integration into our system soon.
 
@@ -146,7 +147,7 @@ The end sections are organized in this order:
 
 ### Appendix
 
-The `appendix` environment, is a good home for lengthy proofs, fragments, experimental materials, etc.
+The `appendix` environment is a good home for lengthy proofs, fragments, experimental materials, etc.
 
     \begin{appendix}
       ...
@@ -202,7 +203,7 @@ The `sp.cls` file includes the following packages by default, which means you ha
 - ifthen
 - color
 - fontenc
-- linguex (loaded by `[linguex]` package option)
+- linguex (if you have specified the `\documentclass[linguex]{sp}` option)
 
 ## Postscript
 
