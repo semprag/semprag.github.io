@@ -2,4 +2,4 @@
 safe: true
 lsi: false
 # github pages defaults:
-highlighter: pygments
+highlighter: rouge
