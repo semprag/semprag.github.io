@@ -1,0 +1,804 @@
+%!TEX TS-program = pdflatexmk
+
+\documentclass[lucida,final]{sp}
+
+%\setcounter{errorcontextlines}{999} % useful for debugging
+
+% The recommended examples package for S&P.
+\usepackage{example}
+
+
+%---------------------------------------------------------------------
+% Used for this specific document; likely not of wider utility.
+\usepackage{fancyvrb}
+\fvset{xleftmargin=\parindent}
+\newcommand{\BibTeX}{B{\textsc i\kern-.025em\textsc b}\kern-.08em\TeX}
+\newcommand{\SandP}{S\&P\@}
+\newcommand{\spdir}[1]{\texttt{#1}}
+\newcommand{\spfile}[1]{\texttt{#1}}
+\newcommand{\spcode}[1]{\texttt{#1}}
+\newcommand{\cmd}[1]{\texttt{\textbackslash#1}}
+\newcommand{\argcmd}[2]{\texttt{\textbackslash#1\{#2\}}}
+\newcommand{\twoargcmd}[3]{\texttt{\textbackslash#1\{#2\}\{#3\}}}
+%---------------------------------------------------------------------
+
+%=====================================================================
+%========================= preamble material =========================
+
+% Metadata for the PDF output.
+\pdfauthor{Kai von Fintel, Christopher Potts, and Chung-chieh Shan}
+\pdftitle{Instructions for S&P authors using LaTeX2e}
+\pdfkeywords{Semantics and Pragmatics, LaTeX2e, BibTeX, open acess journal}
+
+% Optional short title inside square brackets, for the running headers.
+% If no short title is given, no title appears in the headers.
+\title[S\&P instructions for \LaTeXe]{Instructions for S\&P authors using \LaTeXe%
+  \thanks{Our thanks to Donald Knuth, Leslie
+    Lamport, and the other developers of \TeX\ and \LaTeX, for making
+    it possible to produce documents like this without the aid of a
+    publishing house.}}
+
+% Optional short author inside square brackets, for the running headers.
+% If no short author is given, no authors print in the headers.
+\author[von Fintel, Potts \& Shan]{% As many authors as you like, each separated by \AND.
+  \spauthor{Kai von Fintel \\ \institute{Massachusetts Institute of Technology}} \AND
+  \spauthor{Christopher Potts \\ \institute{University of Massachusetts Amherst}} \AND
+  \spauthor{Chung-chieh Shan \\ \institute{Rutgers University}}%
+}
+
+% Allow page breaks within a linguistic example.
+\interdisplaylinepenalty=200
+
+\spyear{2007}
+\spvolume{0}
+\sparticle{2}
+\splastpage{14}
+
+%=====================================================================
+
+\begin{document}
+
+%=====================================================================
+%============================ frontmatter ============================
+
+\maketitle
+
+\begin{mshistory}
+First published 2007-11-27. Latest version: 2011-12-20.
+\end{mshistory}
+
+\begin{abstract}
+  This document provides instructions for installing and using the
+  \LaTeXe\ class file, \spfile{sp.cls}, and the \BibTeX\ formatting
+  file \spfile{sp.bst}.
+\end{abstract}
+
+\begin{keywords}
+  \emph{Semantics and Pragmatics}, \LaTeXe, \BibTeX, open-access journal
+\end{keywords}
+
+%=====================================================================
+%============================ article text ===========================
+
+\section{Introduction}
+
+This document describes how to use the \LaTeXe\ files for \SandP.  The
+next few sections explain how to install and work with the package,
+which includes all the bells and whistles needed to produce high
+quality web-ready PDF files.  Many of the macros are specific to
+\SandP, but the package should be generally useful as well.
+
+The source file for this document is a useful example, since it
+employs most of the features of the class file and bst file.  You can
+also download a template file from the \SandP\ website.  We hope,
+though, that you're able to fairly seamlessly use your current source
+files, but with \spfile{sp} as the documentclass and the \SandP\
+specific frontmatter added.
+
+Give \LaTeXe\ a try if you haven't already converted.  It's a shame to
+work for months or years on a paper only to have it come out looking
+like, well, like a Word document.  So make the switch if you haven't
+already.  The classic reference for \TeX\ is \citealt{Knuth84TeXBook},
+and the classic reference for \LaTeX\ is \citealt{Lamport94}.  But
+skip those if you are just starting out.  We recommend instead the
+following newer book, which covers the more recently \LaTeXe\ releases
+and will serve you well even when you're an expert:
+\citealt{KopkaDaly03}.  (Don't worry about the distinctions between
+\TeX, \LaTeX, and \LaTeXe\ \dash you're bound to end up with \LaTeXe\ if
+you install something now.)
+
+%=====================================================================
+%=====================================================================
+
+\section{Installation}
+
+%=====================================================================
+
+\subsection{Package contents}\label{sec:contents}
+
+The \SandP\ package consists of five files:
+%
+\example{
+  \subexamples{
+    \subexample{\spfile{sp.cls}}
+    \subexample{\spfile{sp.bst}}
+    \subexample{\spfile{example.sty}}
+    \subexample{\spfile{mdwtab1.sty}}
+    \subexample{\spfile{wokluwer.sty}}
+  }
+}
+%
+Only two of these files is essential to using the package:
+%
+\example{\label{ex:contents}Essential files\\
+  \subexamples{
+  \subexample{\label{ex:cls}\spfile{sp.cls}: the class file}
+  \subexample{\spfile{sp.bst}: the \BibTeX\ style file}}}
+%
+You should put these where your \LaTeX\ installation looks for
+such files (say, your local \spdir{/texmf/tex/latex} for the cls
+file and \spdir{/texmf/bibtex/bst} for the bst file).
+
+The file \spfile{example.sty} is for typesetting examples.  It
+requires \spfile{mdwtab1.sty} and \spfile{wokluwer.sty}, also
+included.  \spfile{example.sty} is not loaded by the class file, so it
+should be called with \cmd{usepackage} if you want to use it.  Section
+\ref{sec:examples} discusses examples in more detail.
+
+%=====================================================================
+
+\subsection{Requirements}
+
+The class file loads a number of prerequisite packages.  All of them
+are included in standard \LaTeXe\ distributions.  If you happen not to
+have one of them, then it will be freely downloadable from
+\href{http://ctan.org}{ctan.org}.
+
+The official fonts of \SandP\ are the Lucida fonts designed by
+\citet{bigelow-holmes:1986:integrated,bigelow-holmes:2005:lucida-designs}. However,
+since these fonts are commercial rather than freely available, the
+package will use Times unless you select the \spcode{lucida}
+option. This means, unfortunately, that you will not be able to see
+where line-breaks and page-breaks will occur in the final typeset
+version unless you happen to own the Lucida fonts.
+
+The other packages loaded by the class file are standard, so you
+probably don't need to do anything special for them:
+%
+\examples[l@{}l@{}X]{%
+\ex & \multicolumn{2}{@{}X@{}}{Packages loaded by \spfile{sp.cls}} \\
+&\ey& \spfile{fontenc}  (loads iff Times font is used)\\
+&\ey& \spfile{mathptmx} (loads iff exists \& Times font is used) \\
+&\ey& \spfile{stmaryrd} (loads iff exists \& Times font is used)\\
+&\ey& \spfile{textcomp} (loads iff Times font is used)\\
+&\ey& \spfile{amssymb}  (loads iff Times font is used)\\
+&\ey& \spfile{microtype} (loads iff present) \\
+&\ey& \spfile{natbib} (loads unless experimental biblatex is used, cf. below)\\
+&\ey& \spfile{inputenc} \\
+&\ey& \spfile{xspace} \\
+&\ey& \spfile{ifthen} \\
+&\ey& \spfile{color} \\
+&\ey& \spfile{hyperref} \\
+&\ey& \spfile{amsmath} \\
+&\ey& \spfile{ifpdf} \\
+&\ey& \spfile{breakurl} (loads iff you use the \spcode{dvips} option) \\
+&\ey& \spfile{graphicx}\\
+&\ey& \spfile{subfigure}\\
+&\ey& \spfile{float}}
+%
+If your document already calls any of these packages, then it is a
+good idea to remove those calls from your preamble and let
+\spfile{sp.cls} call them as it wants, since, sometimes, order
+matters.
+
+%=====================================================================
+%=====================================================================
+
+\section{Using the package}
+
+%=====================================================================
+
+\subsection{Loading the class file}
+
+The package is loaded with
+%
+\begin{Verbatim}
+\documentclass{sp}
+\end{Verbatim}
+%
+The package insists on 12pt font. You should include the option
+\spcode{dvips} if you are using postscript code (see section
+\ref{sec:ps} for more on this, though).
+
+The only other options recognized by the class concern fonts: the
+default is Times (which can also be requested by the \spcode{times}
+option). If you have problems with that, you can specifically resort
+to the \LaTeX\ standard font, Computer Modern, with the \spcode{cm}
+option. If you have the commercial Lucida fonts, which are the fonts
+used by the journal for the final typesetting, you can request them
+with the \spcode{lucida} option. The font options are, of course,
+mutually exclusive.
+
+%=====================================================================
+
+\subsection{Loading the bst file}
+
+References are handled with \BibTeX. \spfile{sp.bst} is designed with
+the Web in mind, so, ideally, your bib database entries will include
+doi and/or url information.
+%
+\begin{Verbatim}
+\bibliography{your-bib-database}
+\end{Verbatim}
+%
+Section \ref{sec:refs} covers references more fully. There we also
+discuss the experimental biblatex support.
+
+%=====================================================================
+
+\subsection{Frontmatter}\label{sec:frontmatter}
+
+\subsubsection{Metadata}\label{sec:metadata}
+
+\SandP\ publications will appear on the Web in PDF format.  The
+following metadata is useful for optimizing searches and the like:
+%
+\begin{Verbatim}
+\pdfauthor{full author list}
+\pdftitle{full title}
+\pdfkeywords{keywords without special formatting, comma-delimited}
+\end{Verbatim}
+%
+These commands should be given in the preamble.  Minimize the special
+characters used there \dash this is basically ASCII-limited.
+
+
+\subsubsection{Title and thanks}
+
+The title is typeset in the usual way, but an initial argument inside
+square brackets will insert a title in the running headers.  If your
+title is longer than 30 characters, then this should be a short
+version of your title.  Acknowledgments should be included with
+\cmd{thanks} inside the \cmd{title} command.  Thus, the title command
+looks like this:
+%
+\begin{Verbatim}
+\title[Short title]%
+  {Article title%
+    \thanks{Many thanks to ...}%
+  }
+\end{Verbatim}
+
+
+\subsubsection{Authors}
+
+The \cmd{author} command can be used in the normal way.  But when
+typesetting the article for publication, the following format will
+be used (so it is good to use it yourself as well):
+%
+\begin{Verbatim}
+\author[Short authors]{%
+  \spauthor{Author1 \\ \institute{Author1's Institute}} \AND
+  \spauthor{Author2 \\ \institute{Author2's Institute}} \AND
+  \spauthor{Author3 \\ \institute{Author3's Institute}}%
+}
+\end{Verbatim}
+%
+There is no limit to the number of authors you can have.  Each use of
+\cmd{spauthor} should be separated by \cmd{AND}.
+
+The text inside square brackets appears in the running header. Use
+full names for up to three authors and ``FirstAuthorLastName et al.''
+for more than three.
+
+
+\subsubsection{Abstract}
+
+The \cmd{abstract} environment works in the same was as the standard
+abstract environment for the \spcode{article} class:
+%
+\begin{Verbatim}
+\begin{abstract}
+  ...
+\end{abstract}
+\end{Verbatim}
+
+
+\subsubsection{Keywords}
+
+The \cmd{keywords} environment is a standard one:
+%
+\begin{Verbatim}
+\begin{keywords}
+  ...
+\end{keywords}
+\end{Verbatim}
+%
+Six is usually a good number for keywords, but the journal doesn't
+impose restrictions here. You should use the same keywords both here
+and in the pdfkeywords command discussed in Section~\ref{sec:metadata}.
+
+%=====================================================================
+
+\subsection{Article body}
+
+We intend not to be overly controlling about how the body of the
+article looks.  It's your work, after all, and we want to avoid taking
+control of it.  But there are a few style guidelines that we would
+like you to follow.
+
+
+\subsubsection{Example sentences}\label{sec:examples}
+
+You are free to use any package you wish for numbering examples.
+However, we impose a few general formatting restrictions:
+%
+\example{
+  \subexamples{
+    \subexample{Example numbers appear in round parentheses, flush
+      left.}
+    \subexample{Subexamples are labeled with lowercase alphabetical
+      letters, each followed by a period.}
+    \subexample{Displayed equations (if any) and examples are numbered
+      in the same sequence and spaced alike.}
+    \subexample{References to examples appear inside parentheses, with
+      no punctuation between elements.  So, for example, we can refer
+      to~(\ref{ex:contents}), and also to its
+      subexample~(\ref{ex:cls}).}
+  }
+}
+\spfile{example.sty} takes care of this.  For example, here is a
+displayed equation that you can compare the examples in this document
+against:
+%
+\begin{equation}
+  e^{\pi i} + 1 = 0.
+\end{equation}
+%
+Furthermore, both examples and sub(sub)examples support \cmd{label}
+and \cmd{ref}.
+
+The source code for this document provides examples of
+\spfile{example.sty} in action.  Here is the general format for a
+complex case of nesting:
+%
+\begin{Verbatim}
+\example{Optional general text for this block\\
+  \subexamples{
+    \subexample{An optional label for this subexample \\
+      \subsubexamples{
+        \subsubexample{Subsubexample}
+        \subsubexample{Another one!}
+      }
+    }
+    \subexample{
+      \subsubexamples{
+        \subsubexample{\<{??}Questionable}
+        \subsubexample{\<*Ungrammatical}
+      }
+    }
+  }
+}
+\end{Verbatim}
+%
+Group multiple examples together in \verb+\examples{...}+.  If you do
+use \cmd{label} in an example or sub(sub)example, take care to avoid
+surrounding stray spaces:
+%
+\begin{Verbatim}
+\examples{
+  \example{\label{ex:correct-1}This example will be
+    typeset correctly.}
+  \example{%
+    \label{ex:correct-2}%
+    This example will also be typeset correctly.}
+  \example{
+    \label{ex:incorrect}
+    This example will have too much space.}
+}
+\end{Verbatim}
+%
+Page breaks are allowed between examples but not sub(sub)examples.
+
+Because it is based on \spfile{tabularx.sty}, \spfile{example.sty}
+lets you specify your own horizontal alignment in advanced cases.  It
+also performs numbering independent of layout, so, for instance, you
+can put multiple subexamples on a single line, or anywhere else.  For
+example:
+
+\examples[l@{}l@{}XMc]{
+  \ex \label{ex:pseudoclefts}
+      & \ey \label{ex:specificational}
+      & The woman who saw her father is Mary.
+      & \iota x.\, w(x) \land s(f(x),x) = M \\
+      & \ey \label{ex:predicational}
+      & The woman who saw her father is married to a politician.
+      & m\bigl(\iota x.\, w(x) \land s(f(x),x)\bigr) \\
+  \noalign{\addvspace\jot}
+  \ex & \multicolumn{3}{@{}l@{}}
+        {\ey \label{ex:ok}the woman who saw her father\quad
+         \ey \label{ex:wco}\<*the woman who her father saw} \\
+  \noalign{\addvspace\jot}
+  (123) & \multicolumn{3}{@{}l@{}}
+        {Mary wants to marry a custom example number.}}
+Two kinds of pseudoclefts appear in~\eqref{ex:pseudoclefts}:
+\eqref{ex:specificational} is specificational whereas
+\eqref{ex:predicational} is predicational.
+Both show the weak-crossover contrast between
+\eqref{ex:ok} and~\eqref{ex:wco}.
+
+\bigskip\noindent These examples are typeset as follows:
+%
+\begin{Verbatim}
+\examples[l@{}l@{}XMc]{
+ \ex \label{ex:pseudoclefts}
+ & \ey \label{ex:specificational}
+ & The woman who saw her father is Mary.
+ & \iota x.\, w(x) \land s(f(x),x) = M \\
+ & \ey \label{ex:predicational}
+ & The woman who saw her father is married
+   to a politician.
+ & m\bigl(\iota x.\, w(x) \land s(f(x),x)\bigr) \\
+ \noalign{\addvspace\jot}
+ \ex & \multicolumn{3}{@{}l}
+ {\ey \label{ex:ok}the woman who saw her father\quad
+  \ey \label{ex:wco}\<*the woman who her father saw} \\
+ \noalign{\addvspace\jot}
+ (123) & \multicolumn{3}{@{}l@{}}
+ {Mary wants to marry a custom example number.}}
+\end{Verbatim}
+%
+The commands \cmd{ex}, \cmd{ey}, and \cmd{ez} produce consecutive
+numbering for examples, subexamples, and subsubexamples, respectively.
+They can be followed by \cmd{label}, as above.
+
+By default, page breaks are permitted only where you use \cmd{noalign}
+to add vertical space between rows, as above.  You can allow page
+breaks between any two displayed rows by saying
+\verb+\interdisplaylinepenalty=6999+ at the beginning of your paper.
+
+
+\subsubsection{Citations}
+
+The class file loads \spfile{natbib} for handling references, and it
+also provides some additional macros for making citations easier.
+
+Our guidelines for in-text references follow those of \emph{Linguistic
+  Inquiry}:
+%
+\examples{
+  \example{Page numbers are separated from the year by a nonbreaking
+    space: \pgcitet{Montague74}{12}.}
+  \example{Section and chapter numbers are separated from the year by a
+    nonbreaking space and coded with $\S$:
+    \seccitet{Montague74}{2}.}
+  \example{References to articles are given without parentheses:
+    \citealt{Montague74},
+    \pgcitealt{Montague74}{12}, and so forth.}
+  \example{References to an individual-as-author-of-a-text are given with
+    the name followed by the year and other material inside
+    parentheses: \citet{Montague74},
+    \pgcitet{Montague74}{12}, and so forth.}
+  \example{Possessive marking is on the name only:
+    \posscitet{Montague74},
+    \pgposscitet{Montague74}{12}, and so forth.}
+  \example{Parenthetical references to articles do not contain
+    parentheses of their own: \citep{Montague74},
+    \pgcitep{Montague74}{12}, and so forth.}}
+%
+The following commands make this easy (the first four are standard
+\spfile{natbib} commands):
+%
+\example{\subexamples{
+  \subexample{\argcmd{citeauthor}{Montague74}  $\Rightarrow$ \citeauthor{Montague74}}
+  \subexample{\argcmd{citealt}{Montague74}  $\Rightarrow$ \citealt{Montague74}}
+  \subexample{\argcmd{citet}{Montague74}  $\Rightarrow$  \citet{Montague74}}
+  \subexample{\argcmd{citep}{Montague74}  $\Rightarrow$  \citep{Montague74}}
+
+  \subexample{\argcmd{posscitet}{Montague74}  $\Rightarrow$  \posscitet{Montague74}}
+  \subexample{\argcmd{possciteauthor}{Montague74}  $\Rightarrow$  \possciteauthor{Montague74}}
+  \subexample{\twoargcmd{pgposscitet}{Montague74}{988}  $\Rightarrow$  \pgposscitet{Montague74}{988}}
+  \subexample{\twoargcmd{secposscitet}{Montague74}{2}  $\Rightarrow$  \secposscitet{Montague74}{2}}
+
+  \subexample{\twoargcmd{pgcitealt}{Montague74}{988}  $\Rightarrow$ \pgcitealt{Montague74}{2}}
+  \subexample{\twoargcmd{seccitealt}{Montague74}{2}  $\Rightarrow$  \seccitealt{Montague74}{2}}
+
+  \subexample{\twoargcmd{pgcitep}{Montague74}{988}  $\Rightarrow$  \pgcitep{Montague74}{988}}
+  \subexample{\twoargcmd{seccitep}{Montague74}{2}  $\Rightarrow$  \seccitep{Montague74}{2}}
+
+  \subexample{\twoargcmd{pgcitet}{Montague74}{988}  $\Rightarrow$  \pgcitet{Montague74}{988}}
+  \subexample{\twoargcmd{seccitet}{Montague74}{2}  $\Rightarrow$  \seccitet{Montague74}{2}}}}
+%
+We recommend that \emph{every} reference to an article be coded with
+one of the variants of the \cmd{cite} command, to prevent spelling
+mistakes, to accommodate global changes in formatting, and to avoid
+in-text references without entries in the bibliography.
+
+
+\subsubsection{Images}
+
+The class file loads \spfile{graphicx}, so external files are easily
+included with with commands like the following:
+%
+\begin{Verbatim}
+\includegraphics[width=1in]{image-file.pdf}
+\includegraphics[height=6cm]{image-file.jpg}
+\end{Verbatim}
+%
+Users of \spfile{pdflatex} should use PDF or JPG images.  Users of
+\spfile{dvips} should use EPS or PS.
+
+
+\subsubsection{Floats (figures and tables)}
+
+The class file formats figures and tables in a special way, using
+macros built on the \spfile{float} package. To use this format, simply
+format figures and tables in the usual way and let \spfile{sp.cls} do
+its thing.
+
+If you wish to deviate from this style, use the \spfile{float}
+packages command \argcmd{floatstyle}{\ldots}, where \ldots\ is one of
+the \spfile{float} package's accepted styles, along with one or both
+of \argcmd{restylefloat}{table} and \argcmd{restylefloat}{figure}.
+
+If you would like to restyle a single float (or group of them), use
+brackets.  For example:
+
+\begin{Verbatim}
+{
+  \floatstyle{plain}
+  \restylefloat{figure}
+  ...
+  \begin{figure}
+    ...
+  \end{figure}
+  ...
+}
+\end{Verbatim}
+
+
+\subsubsection{Convenience macros}
+
+The class file provides some macros that may be of use to our authors.
+
+The colon in logical and set theoretic notation should not be typeset
+with \spcode{``:''}, since that results in incorrect spacing
+(\spcode{``:''} is interpreted as a relation symbol by \LaTeX) as in:
+%
+\example{$\forall x: x \in D \dots$}
+%
+Instead, one should use \verb?\colon\thinspace?, which results in much
+better output:
+%
+\example{$\forall x\co x \in D \dots$}
+%
+The package provides the abbreviation \verb?\co?, which can be used
+instead of \verb?\colon\thinspace?. So, to typeset the example above,
+you would write \verb?$\forall x\co x \in D \dots$?.
+
+For parenthetical remarks, the journal will use an em-dash --- like so
+---, but we prefer if you insert the dash not with \verb?---? but with
+the macro \verb?\dash?, which will result in better spacing \dash like
+so \dash around the parenthesis.
+
+If you would like to link to a webpage, you can use the \verb?\http?
+macro, which will convert a string into a clickable link in the pdf
+file. So, to link to \http{semprag.org}, you would write
+\verb?\http{semprag.org}?. Similarly, mark up email addresses like
+\email{editors@semprag.org} as \verb?\email{editors@semprag.org}?.
+
+Finally, semanticists will appreciate that we provide a command
+\verb?\sv? which produces semantic evaluation brackets:
+\sv{\text{unicorn}}. Note that the command does not need to be used in
+a math-environment, that is: it does not need to be surrounded by
+\verb?$ ... $?, but it does create a math-environment for its
+argument. So, if you want to use object language expressions inside
+the evaluation brackets, you need to use \verb?\mbox? or \verb?\text?
+(the latter is preferred). Thus, the above example was created by
+using \verb?\sv{\text{unicorn}}?.
+
+%=====================================================================
+
+\subsection{Backmatter}
+
+\subsubsection{Appendices}
+
+Appendices are just sections inside the environment
+%
+\begin{Verbatim}
+\begin{appendix}
+  ...
+\end{appendix}
+\end{Verbatim}
+%
+This is a good home for lengthy proofs, fragments, experimental
+materials, and the like.
+
+
+\subsubsection{References}\label{sec:refs}
+
+References come after any appendices and just before the author
+addresses section:
+%
+\begin{Verbatim}
+\bibliography{your-bib-database}
+\end{Verbatim}
+%
+where \spcode{your-bib-database} is the name of your bibtex database
+file. For final typesetting, we will ask you to provide a
+\spfile{bib}-file containing the bibtex entries for all your
+references.
+
+The class file uses the \BibTeX\ style file \spfile{sp.bst} as a
+default.  This can be overridden with \cmd{bibliographystyle}, but
+we'll use \spfile{sp.bst} for published versions. This new \BibTeX\
+style file implements the guidelines of the ``Unified Stylesheet for
+Linguistics'', which grew out of discussions among a group of editors
+of linguistics journals during 2005-2006 and were approved on January
+7, 2007. They were intended as a ``default, but with discretion to use
+common sense", to quote David Denison.
+
+To ensure that we can provide readers with the full bibliographic
+information they deserve, please make sure that your bibtex database
+satisfies the following:
+
+\begin{enumerate}
+\item Journal and book titles must be given in \emph{full} with initial
+    letter of each major word capitalized.
+\item Page references \emph{must} be given in \emph{full} for all
+  articles in books and journals.
+\item Use full first names of authors or editors.
+\item In case of multiple authorship, the names of all authors must be
+  given.
+\item When possible provide the issue number and not just the volume
+  number for a journal article.
+\item Provide the doi number of a journal article whenever
+  possible. If the information is not directly available with the
+  article, use the form at
+  \http{crossref.org/SimpleTextQuery/} to find the doi.
+\item For conference proceedings title, use the name of the society
+      and then put the meeting's acronym in parentheses. Otherwise treat
+      as a journal article. Do not include the words ``proceedings of
+      the'' or ``papers from the''.
+
+\end{enumerate}
+
+\paragraph{Experimental biblatex bibliography style:}
+%
+The \texttt{sp-latex} package now includes a biblatex bibliography style
+more fully implementing the unified stylesheet:
+\texttt{sp-biblatex.bbx}. If you would like to use this, add the class
+option \texttt{biblatex} when you call \texttt{sp.cls}:
+%
+\begin{Verbatim}
+\documentclass[biblatex]{sp}
+\end{Verbatim}
+%
+Also, add a line to the preamble that loads your \spfile{bib}-file:
+%
+\begin{Verbatim}
+\addbibresource{your-bib-database.bib}
+\end{Verbatim}
+%
+Finally, replace the \cmd{bibliography} line in the backmatter with the
+following:
+%
+\begin{Verbatim}
+\printbibliography
+\end{Verbatim}
+%
+Otherwise the transition should be seamless. Eventually, we will move to
+biblatex completely. If you encounter issues, please email us:
+\email{latex@semprag.org}.
+
+\subsubsection{Author addresses}
+
+Full author addresses appear at the end of each article.  They are
+specified as follows:
+%
+\begin{Verbatim}
+\begin{addresses}
+  \begin{address}
+    Author1 \\
+    Street \\
+    ... \\
+    \email{author1@email}
+  \end{address}
+  \begin{address}
+    Author2 \\
+    Street \\
+    ... \\
+    \email{author2@email}
+  \end{address}
+  ...
+\end{addresses}
+\end{Verbatim}
+
+
+%=====================================================================
+
+\subsection{A note on using postscript}\label{sec:ps}
+
+We discourage using postscript, and we in turn strongly encourage
+using \spfile{pdflatex} or one of its sibling to generate your output.
+As far as we know, only the direct route to PDF can ensure that line
+breaks happen where they are supposed to and hyperlinks work properly.
+
+We understand that you might depend upon postscript for your diagrams.
+If this is so, then we suggest the following:
+%
+\begin{enumerate}
+\item Create PDF files of your diagrams and insert them with a command
+  like \cmd{includegraphics}. (The class file loads \spfile{graphicx}
+  already.)
+\item Use \spfile{pdftricks} or one of its variants.  (This might be
+  somewhat arduous though.)
+\end{enumerate}
+%
+If neither of these options works for you, please contact us.  We are
+happy to work with you to ensure that your diagrams look the way you
+want them to.
+
+With all that said, it is worth pointing out that including the option
+\spcode{dvips} in your \spcode{documentclass} specification will
+instruct \spfile{hyperref} to deal with your hyperlinks and the like
+as best it can.
+%
+\begin{Verbatim}
+\documentclass[dvips]{sp}
+\end{Verbatim}
+%
+This will also call \spfile{breakurl} into action to assist.  This
+might produce first-rate output if your document contains few
+hyperlinks.
+
+%=====================================================================
+
+\section{Troubleshooting}
+
+If you have any problems with the journal's \LaTeX\ package, please
+send email to \email{latex@semprag.org}.
+
+In our experience, there may be font selection issues, in which case
+we recommend trying the \spcode{cm} class option, which uses the
+standard Computer Modern fonts rather than Times.
+
+%=====================================================================
+
+\bibliography{guide}
+
+%=====================================================================
+
+\begin{addresses}
+  \begin{address}
+    Kai von Fintel\\
+    Department of Linguistics \& Philosophy\\
+    Massachusetts Institute of Technology\\
+    77 Massachusetts Avenue, 32-D808\\
+    Cambridge, MA 02139\\
+    USA\\
+    \email{fintel@mit.edu}
+  \end{address}
+  \begin{address}
+    Christopher Potts\\
+    Department of Linguistics\\
+    226 South College\\
+    150 Hicks Way\\
+    Amherst, MA 01003\\
+    USA\\
+    \email{potts@linguist.umass.edu}
+  \end{address}
+  \begin{address}
+    Chung-chieh Shan\\
+    Department of Computer Science and Center for Cognitive Science\\
+    Rutgers University\\
+    110 Frelinghuysen Rd\\
+    Piscataway, NJ 08854-8019\\
+    USA\\
+    \email{ccshan@rutgers.edu}
+  \end{address}
+\end{addresses}
+
+%=====================================================================
+
+\end{document}
