@@ -24,36 +24,24 @@ make changes and wish to push them to the git repository.
 
 ## One-time configuration
 
+Follow the [LaTeX configuration](http://info.semprag.org/basics#latex-configuration)
+instructions, opting for BibLaTeX.
+
 Prepare a working directory. I'll use a folder called `src/` in your home
 directory, but you can put it anywhere you want.
 
     mkdir ~/src
     cd ~/src
 
-Get the `semprag.github.com` repository, which has some useful files in it.
-
-    git clone https://github.com/semprag/semprag.github.com
-    # this should clone it into ~/src/semprag.github.com, which we use next
-
-You'll copy a few files from this into your local directory structure
-(assuming you're using Mac OS X):
-
-    # install the sp stylesheet
-    mkdir -p ~/Library/texmf/tex/latex
-    cp ~/src/semprag.github.com/source/sp.cls ~/Library/texmf/tex/latex/
-
-    # install the sp bibiliography style file
-    mkdir -p ~/Library/texmf/bibtex/bst
-    cp ~/src/semprag.github.com/source/sp.bst ~/Library/texmf/bibtex/bst
-
 Install the Lucida font by following the instructions on the
 [Lucida installation](/lucida) page. Test that it's working by rendering the
 [`basic.tex`](sample/basic.tex) file in this repository.
 
-    cd ~/src/semprag.github.com/sample
+    curl http://info.semprag.org/sample/basic.tex > basic.tex
     pdflatex basic.tex
-    # this should render without complaint and be all in the Lucida font-face
-    # see the original basic.pdf in the same directory for comparison
+
+This should compile without complaint and be all in the Lucida font-face,
+and look like [`basic.pdf`](sample/basic.pdf).
 
 Prepare your machine's keys so that access to the bitbucket git repo is easier.
 You may already have an SSH key set up.
@@ -87,10 +75,7 @@ Let's say you want to render the Rojas-Esponda 2014 paper.
 
     cd sp-repo/sp-submissions/rojas-esponda-2014
     pdflatex rojas-esponda-v2-edited
-    bibtex rojas-esponda-v2-edited
-    # this won't actually work with the current version of the paper,
-    # since it's expecting biblatex (biber), not bibtex
-    pdflatex rojas-esponda-v2-edited
+    biber rojas-esponda-v2-edited
     pdflatex rojas-esponda-v2-edited
 
 Before you commit anything, ensure that your username and email (which will
@@ -99,10 +84,6 @@ be paired with your commit) are correct. I would use something like this:
     git config --global user.name "Christopher Brown"
     git config --global user.email "chrisbrown@utexas.edu"
 
-Also, to match up remote branches with local ones automatically (which is
-sensible in a simple configuration like this one), run:
-
-    git config --global push.default matching
 
 ## Working
 
@@ -151,11 +132,9 @@ Not everything that matches one of these is bad, but double check to be sure:
 * `/[:;]['"]/` heavy punctuation inside a quotation.
 
 
-## Normalizations
+## BibTeX Normalizations
 
-Note that these are biased and stylistic, and don't have
-
-BibTeX normalizations:
+Note that these are opinionated and stylistic, and don't have any effect on the output.
 
 * `s/\}\}\s+@/}\n}\n\n@/g`: close each entry with a brace on its own line.
     + Unclear:
