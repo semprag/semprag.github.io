@@ -17,10 +17,10 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * Make sure that the same keyword list appears in three places: on the first page of your paper, in the PDF meta-data (the <code>\pdfkeywords</code> command in the preamble), and in the meta-data on the S&P website (associated with your submission).
 * Similarly, make sure that the abstract in your paper and the abstract on the S&P website are the same (modulo that the abstract in the paper is LaTeX and the abstract on the website is HTML).
 * Include your contact address at the end of the paper.
-* Make sure that your bibliographic information complies with our requirements (more detail below in the "BibTeX" section), especially:
+* Make sure that your bibliographic information complies with our requirements (more details below in the [BibTeX](#BibTeX) section), especially:
   - full names for *all* authors and editors
   - only use braces to case protect proper names, first words of subtitles, and the like, never a whole title
-  - don't case protect just the initial letter, always the entire word:
+  - when using braces to protect case, wrap the entire word in braces, not just the initial letter:
     + <del><code>{E}nglish</code></del> `{English}`
     + <del><code>{NPI}s</code></del> `{NPIs}`
   - provide volume *and* issue numbers *and* page numbers for all journal articles (and page numbers for all book chapters etc.)
