@@ -30,8 +30,8 @@ We also provide a plain **BibTeX** style file for users without BibLaTeX. The di
 
 - To install the **BibTeX** file, simply download [`sp.bst`](https://raw.githubusercontent.com/semprag/tex/master/sp.bst) to `~/Library/texmf/bibtex/bst/sp.bst`.
 - To install the **BibLaTeX** files (from the [`biblatex-sp-unified`](https://github.com/semprag/biblatex-sp-unified) project):
-  + Download [`biblatex-sp-unified.bbx`](https://raw.githubusercontent.com/semprag/biblatex-sp-unified/master/bbx/biblatex-sp-unified.bbx) to `/Users/chbrown/Library/texmf/tex/latex/biblatex/bbx/biblatex-sp-unified.bbx`, and
-  + Download [`sp-authoryear-comp.cbx`](https://raw.githubusercontent.com/semprag/biblatex-sp-unified/master/cbx/sp-authoryear-comp.cbx) to `/Users/chbrown/Library/texmf/tex/latex/biblatex/cbx/sp-authoryear-comp.cbx`
+  + Download [`biblatex-sp-unified.bbx`](https://raw.githubusercontent.com/semprag/biblatex-sp-unified/master/bbx/biblatex-sp-unified.bbx) to `~/Library/texmf/tex/latex/biblatex/bbx/biblatex-sp-unified.bbx`, and
+  + Download [`sp-authoryear-comp.cbx`](https://raw.githubusercontent.com/semprag/biblatex-sp-unified/master/cbx/sp-authoryear-comp.cbx) to `~/Library/texmf/tex/latex/biblatex/cbx/sp-authoryear-comp.cbx`
 
 
 ## Style guidelines
