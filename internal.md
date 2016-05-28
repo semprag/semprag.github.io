@@ -24,8 +24,20 @@ make changes and wish to push them to the git repository.
 
 ## One-time configuration
 
-Follow the [LaTeX configuration](http://info.semprag.org/basics#latex-configuration)
-instructions, opting for BibLaTeX.
+Follow the [installation](/install)
+instructions, opting for BibLaTeX. The result should look like this:
+
+    ~/Library/texmf
+    └── tex
+        └── latex
+            ├── biblatex
+            │   ├── bbx
+            │   │   └── biblatex-sp-unified.bbx
+            │   └── cbx
+            │       └── sp-authoryear-comp.cbx
+            ├── sp-hyperxmp.sty
+            ├── sp-logo.pdf
+            └── sp.cls
 
 Prepare a working directory. I'll use a folder called `src/` in your home
 directory, but you can put it anywhere you want.
@@ -35,13 +47,13 @@ directory, but you can put it anywhere you want.
 
 Install the Lucida font by following the instructions on the
 [Lucida installation](/lucida) page. Test that it's working by rendering the
-[`basic.tex`](sample/basic.tex) file in this repository.
+[`basic.tex`](examples/basic.tex) file in this repository.
 
-    curl http://info.semprag.org/sample/basic.tex > basic.tex
+    curl http://info.semprag.org/examples/basic.tex > basic.tex
     pdflatex basic.tex
 
 This should compile without complaint and be all in the Lucida font-face,
-and look like [`basic.pdf`](sample/basic.pdf).
+and look like [`basic.pdf`](examples/basic.pdf).
 
 Prepare your machine's keys so that access to the bitbucket git repo is easier.
 You may already have an SSH key set up.
