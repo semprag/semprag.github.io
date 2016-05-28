@@ -146,10 +146,10 @@ NB: S&P's bibliographic style is a close implementation of the ["Unified Style S
   - Prefer URLs pointing to permanent resources, such as [Semantics Archive](http://semanticsarchive.net/), rather than the author's homepage or institutional website, which are all too often subject to [link rot](http://en.wikipedia.org/wiki/Link_rot).
 - Conference proceedings (`@inproceedings`):
   - Should not include the words "proceedings of the" or "papers from the", etc., in the `booktitle` field.
-  - Editor information is not required (and will not appear in the bibliography, if provided)
+  - Editor information is not required.
   - When an abbreviation is commonly used, specify it in parentheses after the full name, e.g.:
-    - `booktitle = {North East Linguistic Society (NELS)}`
-    - `booktitle = {Semantics and Linguistic Theory (SALT) 21}`
+    - `booktitle = {North {East} {Linguistic} {Society} ({NELS})}`
+    - `booktitle = {Semantics and {Linguistic} {Theory} ({SALT}) 21}`
 - Publishers that have multiple cities should include both (unless the publisher information indicates otherwise). Conjoin them with an ampersand: `\&`.
 - Do not hard-case words or letters in your BibTeX entries (e.g., `{B}ook {T}itle`), except for the following exceptions:
   - Proper names
