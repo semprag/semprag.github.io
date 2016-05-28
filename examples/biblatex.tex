@@ -1,0 +1,29 @@
+\documentclass[biblatex]{sp}
+
+\addbibresource{guide.bib}
+
+\begin{document}
+
+\section{Introduction}
+
+This is a minimal example of using BibLaTeX in an \emph{Semantics and Pragmatics} article. There are four steps:
+
+\begin{enumerate}
+  \item Supply the \texttt{biblatex} flag when specifying the document class:
+
+    \verb+\documentclass[biblatex]{sp}+
+
+  \item Somewhere in the preamble (the part of the file before the \verb+\begin{document}+ call), indicate the \texttt{.bib} file to import references from:
+
+    \verb+\addbibresource{guide.bib}+
+
+  \item Use one of the \verb+\cite{...}+ commands to insert an inline citation. For example, to output ``as seen in \cite{Montague74}'':
+
+    \verb+as seen in \cite{Montague74}+
+
+  \item Call \verb+\printbibliography+ at the bottom of your document to print the full bibliography.
+\end{enumerate}
+
+\printbibliography
+
+\end{document}
