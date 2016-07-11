@@ -180,6 +180,14 @@ The `sp.cls` file includes the following packages by default, which means you ha
 - fontenc
 - linguex (if you have specified the `\documentclass[linguex]{sp}` option)
 
+## Prohibited packages
+
+The following packages overwrite or violate the *S&P* style, and should be avoided.
+
+- geometry
+- fullpage
+- epltxfn
+
 ## Postscript
 
 We strongly recommend rendering directly to PDF with `pdflatex`, avoiding `dvi` and `ps` formats entirely.
