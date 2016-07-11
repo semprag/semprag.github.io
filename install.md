@@ -8,7 +8,11 @@ title: "Installing the S&P LaTeX system"
 We are going to install everything to our "TeX & Metafont" (`TEXMF`) home folder.
 This is where all of your custom styles should be installed, so you may have a lot of this structure already.
 
-Run `kpsewhich -var-value TEXMFHOME` to determine where these user-level TeX sources should go. (`TEXMFHOME` isn't a proper environment variable, but if you export the `TEXMFHOME` variable in your shell, `kpsewhich` will use that value instead.) In my case (using [MacTeX](https://tug.org/mactex/)), this is `~/Library/texmf`, which I'll use in the example instructions below. It may be different on your machine, so adjust accordingly.
+Run `kpsewhich -var-value TEXMFHOME` to determine where these user-level TeX sources should go.
+(`TEXMFHOME` isn't a proper environment variable, but if you export the `TEXMFHOME` variable in your shell, `kpsewhich` will use that value instead.)
+In my case, using [MacTeX](https://tug.org/mactex/), this is `~/Library/texmf`, which I'll use in the example instructions below.
+On Ubuntu (12.04), it's `~/texmf`.
+It may be different on your machine, so adjust accordingly.
 
 
 ### The `sp` documentclass
@@ -31,3 +35,24 @@ We also provide a plain **BibTeX** style file for users without BibLaTeX. The di
 - To install the **BibLaTeX** files (from the [`biblatex-sp-unified`](https://github.com/semprag/biblatex-sp-unified) project):
   + Download [`biblatex-sp-unified.bbx`](https://raw.githubusercontent.com/semprag/biblatex-sp-unified/master/bbx/biblatex-sp-unified.bbx) to `~/Library/texmf/tex/latex/biblatex/bbx/biblatex-sp-unified.bbx`, and
   + Download [`sp-authoryear-comp.cbx`](https://raw.githubusercontent.com/semprag/biblatex-sp-unified/master/cbx/sp-authoryear-comp.cbx) to `~/Library/texmf/tex/latex/biblatex/cbx/sp-authoryear-comp.cbx`
+
+
+### Example filesystem layout
+
+If you opted for BibLaTeX, the result should look like this:
+
+    ~/Library/texmf
+    └── tex
+        └── latex
+            ├── biblatex
+            │   ├── bbx
+            │   │   └── biblatex-sp-unified.bbx
+            │   └── cbx
+            │       └── sp-authoryear-comp.cbx
+            └── sp.cls
+
+You can check that LaTeX knows where to look for files by calling `kpsewhich` with just the filename, e.g.:
+
+    kpsewhich sp.cls
+
+> ~/Library/texmf/tex/latex/sp.cls
