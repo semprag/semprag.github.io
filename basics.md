@@ -47,6 +47,8 @@ Our general formatting rules for examples:
 - Equations and examples should be numbered in the same sequence.
 - References to examples appear inside parentheses, with no punctuation between elements.
   - E.g., we can refer to (12), or to its subexample (12a).
+- Reference ranges should look like (12)–(14)
+  - For subexamples, both (12a–e) and (12a)–(12e) are acceptable, but be consistent.
 
 For simple needs, we have found that the [linguex package](http://www.ctan.org/pkg/linguex) works well with our style. You can load it by simply passing a `linguex` option to `sp.cls`, i.e., `\documentclass[linguex]{sp}`.
 
