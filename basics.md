@@ -192,6 +192,33 @@ The following packages overwrite or violate the *S&P* style, and should be avoid
 - fullpage
 - epltxfn
 
+
+## Turing completeness and complexity
+
+LaTeX is infamous for being Turing complete.
+However, the `.tex` sources you submit for publication should be as simple and finite as possible.
+
+* Avoid multiple source `.tex` files.
+* If you need additional functionality, prefer packages on CTAN.
+  If you include a custom `.sty` file, explain what it does and why you need it.
+* Prefer a little bit of repetition over special purpose macros.
+  I.e., it's preferable to have three or four instances of `$_{\mathcal{Z}}$` throughout your paper rather than a special `\newcommand{\subZ}{\ensuremath{_\mathcal{Z}}}` command and three or four instances of `\subZ`.
+  If you have 20+ instances, the `\newcommand` approach becomes more palatable.
+* Do not include the `sp.cls` and `sp.bst` files in your submission (or `gb4e-emulate.sty`, if you are using it).
+  Your versions of those files should match [ours](https://github.com/semprag/tex).
+  Any modifications to the defaults should be made and explicitly described in your submitted `.tex` document, not the class or BibTeX style file.
+* Your `.bib` file should, optimally:
+  - include only the entries required by your document
+  - exclude non-standard fields (e.g., BibDesk includes fields like "Date-Added", "Date-Modified", and "Bdsk-Url-1")
+  - be proper BibTeX
+
+For both `.tex` and `.bib` sources:
+
+* Convert tabs to spaces (tabs are ambiguous)
+* Delete trailing whitespace
+* Use UTF-8 (or simply ASCII, which is a subset of UTF-8)
+
+
 ## Postscript
 
 We strongly recommend rendering directly to PDF with `pdflatex`, avoiding `dvi` and `ps` formats entirely.
