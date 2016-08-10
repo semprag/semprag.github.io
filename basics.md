@@ -50,9 +50,10 @@ Our general formatting rules for examples:
 
 For simple needs, we have found that the [linguex package](http://www.ctan.org/pkg/linguex) works well with our style. You can load it by simply passing a `linguex` option to `sp.cls`, i.e., `\documentclass[linguex]{sp}`.
 
-For more complex needs (complex glosses, for example), we strongly recommend the [expex package](http://ctan.org/pkg/expex). We expect to offer full expex integration into our system soon.
+For more complex needs (complex glosses, for example), we strongly recommend the [expex package](http://ctan.org/pkg/expex). You can load it by passing the `expex` option to `sp.cls`, i.e., `\documentclass[expex]{sp}`.
 
-We advise against all other example packages (gb4e, covington, etc.), because in our experience they create difficult integration problems with our house style.
+We advise against all other example packages (`gb4e`, `covington`, etc.), because in our experience they create difficult integration problems with our house style. If you are already using `gb4e` syntax, install and use our [`gb4e-emulate.sty`](https://raw.githubusercontent.com/semprag/tex/master/gb4e-emulate.sty) package, which specifies proper S&P spacing.
+
 
 ### BibTeX and Citations
 
@@ -179,6 +180,7 @@ The `sp.cls` file includes the following packages by default, which means you ha
 - color
 - fontenc
 - linguex (if you have specified the `\documentclass[linguex]{sp}` option)
+- expex (if you have specified the `\documentclass[expex]{sp}` option)
 
 ## Prohibited packages
 
