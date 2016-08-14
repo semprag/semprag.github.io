@@ -52,12 +52,11 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Bold face should not be used at all, ever, really.
 - To set constants in logical representation, you may choose to use sans serif. `\textsf{...}`
 - Use double quotes for notions and concepts in appositive constructions, e.g., *the notion "proposition"*.
-- Use double quotes to set off the name of a journal article, unpublished paper, chapter, or dissertation, in running text, e.g., *Montague's "Universal Grammar"*.
+- Use double quotes to set off the name of a journal article, unpublished paper, chapter, or dissertation, in running text, e.g.:
+  <code>Montague's ``Universal Grammar''</code>.
 - Use double quotes for scare quotes (but use scare quotes sparingly).
 - Use single quotes for inline meanings and glosses, e.g.:
-
-  > Swedish _sig_ 'self'
-
+  <code>Swedish \emph{sig} `self'</code>
 - Enclose the bottom-most gloss/English translation in single quotes.
 - Math environments will render words in math italics, but this is rarely what you want for full words. Wrap non-mathematical symbols, like text, in `\text{}` or `\textit{}` commands.
 - Technical terms should be italicized.
@@ -118,12 +117,18 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
   - Or even better, import the [cleveref](http://www.ctan.org/tex-archive/macros/latex/contrib/cleveref) package, `\usepackage[nameinlink]{cleveref}`, and use `\Cref{sec:intro}` (which will capitalize "Section") or `\cref{sec:intro}` (which will not capitalize "section").
   - Unless using `cleveref`, you should prevent linebreaks in your named references by using `~`: `Figure~\ref{fig:1}`.
 - In the _very_ rare case where you want to use a link with custom text, you can use `\hyperref`, e.g., `the \hyperref[appendix]{Appendix}`.
+- Use `~` only to prevent line breaks; do not use it to differentiate abbreviation periods vs. end of sentence periods, which is unnecessary with the `sp` class and a modern LaTeX compiler.
+  - LaTeX is extremely good at determining where line breaks should go without stretching or squeezing lines too much, and `~` constraints can inhibit its flexibility.
 - Use English rather than Latin:
   - <del>ceteris paribus</del> other things being equal
   - <del>inter alia</del> among others
   - <del>simpliciter</del> in and of itself
-- Avoid manual spacing, particularly spacing with explicit units. `\hfil` and `\hfill` are vastly preferable to something like `\hspace{15cm}`. `\\\mbox{}\hfill` is an acceptable way to right-align a short line when a `flushright` environment would take too much vertical space.
+- Avoid manual spacing, particularly spacing with explicit units. `\hfil` and `\hfill` are vastly preferable to something like `\hspace{15cm}`.
+- To right-align a short line on its own (e.g., to credit a source following an example or blockquote) use `\par\hspace*{\fill}`.
+  (A full `flushright` environment sometimes adds too much vertical space above and below its contents.)
 - Avoid `\nocite{}`.
+- Don't worry about word wrapping and hyphenation, since the S&P font is much wider than Times and you won't be able to predict where the lines will wrap, but if you suspect some unusually long (and unusual) term might need to be hyphenated, prefer calling `\hyphenation{}` somewhere in your preamble instead of using `\-` in the word itself.
+  + E.g., `\hyphenation{percep-tron}` ... `perceptron` rather than `percep\-tron`.
 
 
 ## BibTeX
