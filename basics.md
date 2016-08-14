@@ -54,6 +54,9 @@ For simple needs, we have found that the [linguex package](http://www.ctan.org/p
 
 For more complex needs (complex glosses, for example), we strongly recommend the [expex package](http://ctan.org/pkg/expex). You can load it by passing the `expex` option to `sp.cls`, i.e., `\documentclass[expex]{sp}`.
 
+Both `linguex` and `expex` are very sensitive to whitespace (perhaps because they date back to plain TeX).
+If you use one of them, be careful that whitespace around `\label{...}` calls do not produce extra (unintended) spacing in the output.
+
 We advise against all other example packages (`gb4e`, `covington`, etc.), because in our experience they create difficult integration problems with our house style. If you are already using `gb4e` syntax, install and use our [`gb4e-emulate.sty`](https://raw.githubusercontent.com/semprag/tex/master/gb4e-emulate.sty) package, which specifies proper S&P spacing.
 
 
