@@ -56,3 +56,31 @@ You can check that LaTeX knows where to look for files by calling `kpsewhich` wi
     kpsewhich sp.cls
 
 > ~/Library/texmf/tex/latex/sp.cls
+
+
+### Rendering in development
+
+`latexmk` is a Perl script that comes with most LaTeX distributions and runs `pdflatex` and `biber` (or `bibtex`) as necessary.
+It's handy for automatically rendering a document when changes have been made to any of its source files.
+
+On Mac OS X, I use Sublime Text for editing LaTeX, rather than an IDE like `TeXShop.app` or `TeXworks.app`. But I still use `TeXShop.app` for viewing the PDFs, since it automatically reloads the PDF when changed (which Acrobat Reader does not), and keeps track of what page you're currently looking at (which `Preview.app` does not).
+
+I use the following `latexmk` config file (`~/.latexmkrc`):
+
+    # record the filenames that pdflatex depends on to a .fls file
+    $recorder = 1;
+    # -pdf (generate pdf by pdflatex)
+    $pdf_mode = 1;
+    # -f (force continued processing past errors)
+    $force_mode = 1;
+    # -interaction=scrollmode
+    $pdflatex = 'pdflatex --shell-escape %O %S';
+    # -pvc (preview document and continuously update.)
+    $preview_continuous_mode = 1;
+    # open in TeXShop rather than the system default
+    $pdf_previewer = "open -a TeXShop.app %O %S";
+
+Then I can simply call `latexmk MyPaper.tex`, and it will run `pdflatex` and `biber` as many times as necessary, and open the freshly rendered PDF in `TeXShop.app` when done.
+Due to the `$preview_continuous_mode = 1;` setting, `latexmk` will keep running until I kill it with `Ctrl+C`, continually re-rendering the PDF whenever any of the sources (which includes the `.tex` and `.bib` files, as well as any figures) have been changed.
+
+There is one potential annoyance in that `TeXShop.app` demands focus whenever it reloads the changed PDF, but this behavior is usually more convenient than annoying.
