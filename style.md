@@ -31,7 +31,8 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * use `\sv{}` (provided by `sp.cls`) for semantic evaluation brackets
 * use the `\text{}` macro to wrap object language expressions inside any math environment
 * use the `\co` macro (defined by `sp.cls` as `\colon\thinspace`) for the "such that" colon in math environments
-* You are free to use British spellings (e.g., "colour") as long as you are consistent in American vs. British spelling throughout the document.
+* You are free to use British spellings (e.g., "colour", "analysed") as long as you are consistent in American vs. British spelling throughout the document.
+  - If you elect to use British spelling, please say so in a comment in your LaTeX document's preamble.
 * Do not manipulate the document layout with packages like `geometry` or `fullpage`.
 * Avoid using custom spacing macros like `\vspace`, `\bigskip`, etc.
   - Similarly, environments like `tabbing` do not always reflow appropriately when typeset in the house style (and Lucida font), so use them sparingly.
