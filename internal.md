@@ -122,9 +122,7 @@ Once you've cloned the submissions repository, the basic process goes like this
   * If the author says something awkward but not precisely ungrammatical,
     point out what's wrong and how you would suggest fixing it.
 5. Record your comments in one place only, and formulate them like a to-do list that the author can work through.
-  * If working directly with the `.tex` file, add `%` comments in the `.tex` file, and mark these comments that require authorial attention with a string that is easily searchable.
-    This way, the author can search through the document and deal with your suggestions like a to-do list,
-    checking items off the list by removing the comment, whether or not they implement your suggestion.
+  * If working directly with the `.tex` file, add `%` comments in the `.tex` file, and mark these comments that require authorial attention with a string that is easily searchable. This way, the author can search through the document and deal with your suggestions like a to-do list, checking items off the list by removing the comment, whether or not they implement your suggestion.
     - E.g., I usually insert a new line directly after the offending usage, describing the problem and then end with '^chb'.
     - If you add your comment at the end of the offending line, put a space before the `%` of the comment (this improves `--word-diff` output)
   * Alternatively, list your comments in the GitHub issue in the `semprag/submissions` repository corresponding to that paper (create one if needed)
