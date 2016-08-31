@@ -105,3 +105,32 @@ Once you've cloned the submissions repository, the basic process goes like this
 
     * The first time you do this, you can call `git push -u origin master`, which sets the defaults for future `git push` calls, allowing you to omit the remote (`origin`) and the branch (`master`), and simply call `git push`.
       - The names `origin` and `master` are the defaults built into git.
+
+
+## Standards
+
+1. **Ground rules** (see [CONTRIBUTING.md](https://github.com/semprag/submissions/blob/master/CONTRIBUTING.md) for the latest version):
+  * All source files should use UTF-8 encoding (ASCII is a subset of UTF-8)
+  * Spaces, not tabs
+  * No trailing whitespace
+  * LF line endings, a.k.a. "Unix-style" (git should handle this for you via the [`.gitattributes`](https://github.com/semprag/submissions/blob/master/.gitattributes) config file).
+2. Avoid immaterial changes, like manually interpreting (i.e., beta-reducing) a LaTeX macro, or re-folding a paragraph to some different line width.
+  * This helps when reviewing changes; `git diff --word-diff` should show only the significant / relevant things you've changed.
+3. Fix typos and style-guide violations outright
+  * No need to comment on these, or any other non-controversial changes
+4. In the case of questionable grammar or prosody, err on the side of artistic license.
+  * If the author says something awkward but not precisely ungrammatical,
+    point out what's wrong and how you would suggest fixing it.
+5. Record your comments in one place only, and formulate them like a to-do list that the author can work through.
+  * If working directly with the `.tex` file, add `%` comments in the `.tex` file, and mark these comments that require authorial attention with a string that is easily searchable.
+    This way, the author can search through the document and deal with your suggestions like a to-do list,
+    checking items off the list by removing the comment, whether or not they implement your suggestion.
+    - E.g., I usually insert a new line directly after the offending usage, describing the problem and then end with '^chb'.
+    - If you add your comment at the end of the offending line, put a space before the `%` of the comment (this improves `--word-diff` output)
+  * Alternatively, list your comments in the GitHub issue in the `semprag/submissions` repository corresponding to that paper (create one if needed)
+  * If that's not possible, list them in a single text file
+  * If working with a PDF, ensure that the author can view all of your changes in one place, or navigate directly from one comment to the next (they shouldn't have to scan through each page of the paper to find all of the sticky notes)
+6. If you're working with the full S&P-style LaTeX production pipeline:
+  * LaTeX compilation should finish without errors or warnings
+    - Do your best to resolve any `underfull` or `overfull` violations
+  * Biber should run without errors or warnings
