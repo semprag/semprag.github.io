@@ -1,5 +1,6 @@
 # github pages overrides:
 safe: true
 lsi: false
+# markdown: kramdown # kramdown is the default and the only supported option on github-pages
 # github pages defaults:
 highlighter: rouge
