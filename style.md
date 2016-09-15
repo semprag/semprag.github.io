@@ -14,7 +14,7 @@ Read your paper one more time very carefully, paying attention to the issues lis
 ## Checklist of the top issues ##
 
 * Your title and your section headings should be in "Sentence case" (not "Title Case"). If you have a subtitle, capitalize the first word of the subtitle: "First part of title: Second part of title".
-* Make sure that the same keyword list appears in three places: on the first page of your paper, in the PDF meta-data (the <code>\pdfkeywords</code> command in the preamble), and in the meta-data on the S&P website (associated with your submission).
+* Make sure that the same keyword list appears in three places: on the first page of your paper, in the PDF meta-data (the `\pdfkeywords` command in the preamble), and in the meta-data on the S&P website (associated with your submission).
 * Similarly, make sure that the abstract in your paper and the abstract on the S&P website are the same (modulo that the abstract in the paper is LaTeX and the abstract on the website is HTML).
 * Include your contact address at the end of the paper.
 * Make sure that your bibliographic information complies with our requirements (more details below in the [BibTeX](#bibtex) section), especially:
@@ -33,10 +33,11 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * use the `\co` macro (defined by `sp.cls` as `\colon\thinspace`) for the "such that" colon in math environments
 * You are free to use British spellings (e.g., "colour", "analysed") as long as you are consistent in American vs. British spelling throughout the document.
   - If you elect to use British spelling, please say so in a comment in your LaTeX document's preamble.
-* Do not manipulate the document layout with packages like `geometry` or `fullpage`.
-* Avoid using custom spacing macros like `\vspace`, `\bigskip`, etc.
-  - Similarly, environments like `tabbing` do not always reflow appropriately when typeset in the house style (and Lucida font), so use them sparingly.
-* If you use other packages for typographic manipulation, like `setspace`, `multicol`, `ulem`, or `soul`, explain why you are using these.
+* Avoid manual spacing hacks (when we typeset your document in the relatively wide Lucida font, such manual adjustments are usually counter-productive).
+  - Do not manipulate the document layout with packages like `geometry`, `fullpage`, `rotating`, `multicol`, `setspace`, `caption`, etc.
+  - Avoid using custom spacing macros like `\hspace`, `\vspace`, `\bigskip`, `\newpage`, `\clearpage`, etc.
+  - Avoid environments like `tabbing`, which do not handle line wrapping well
+* If you use other packages for typographic manipulation, like `ulem` or `soul`, explain why you are using these.
 
 Believe it or not, the above are the main stumbling blocks for a quick conversion of a manuscript to a publishable S&P paper. There are more subtle guidelines below, but these are the most important issues.
 
