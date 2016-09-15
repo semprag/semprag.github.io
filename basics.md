@@ -189,11 +189,16 @@ The `sp.cls` file includes the following packages by default, which means you ha
 
 ## Prohibited packages
 
-The following packages overwrite or violate the *S&P* style, and should be avoided.
+The following packages overwrite or violate the *S&P* style, and should not be used.
 
 - geometry
 - fullpage
 - epltxfn
+- pslatex
+- rotating
+- multicol
+- setspace
+- caption
 
 
 ## Turing completeness and complexity
@@ -204,6 +209,7 @@ However, the `.tex` sources you submit for publication should be as simple and f
 * Avoid multiple source `.tex` files.
 * If you need additional functionality, prefer packages on CTAN.
   If you include a custom `.sty` file, explain what it does and why you need it.
+  Do not import packages that your document doesn't use.
 * Prefer a little bit of repetition over special purpose macros.
   I.e., it's preferable to have three or four instances of `$_{\mathcal{Z}}$` throughout your paper rather than a special `\newcommand{\subZ}{\ensuremath{_\mathcal{Z}}}` command and three or four instances of `\subZ`.
   If you have 20+ instances, the `\newcommand` approach becomes more palatable.
