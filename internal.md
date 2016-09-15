@@ -9,6 +9,13 @@ This page is for use by the core *Semantics and Pragmatics* team and production 
 **Authors** (prospective or accepted) **do not need to follow these instructions**.
 
 
+## Typesetting and proofreading
+
+You are responsible for ensuring that the paper you are assigned adheres to the *S&P* standards described on this site, and is free of grammatical errors and any other typos.
+
+It's the responsibility of the shepherding editor to verify the content, but if you notice anything that seems wrong or doesn't make sense, include that in your report.
+
+
 ## LaTeX
 
 As an S&P production contributor, you must be able to compile LaTeX sources on your local machine.
