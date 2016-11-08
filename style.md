@@ -28,6 +28,7 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * Our house style follows the *LI*-style in making a distinction between referring to an author and referring to an author's work. So, "Beaver (2001) proposes ..." (LaTeX: `\citet`) but "as claimed in Beaver 2001" (LaTeX: `\citealt`). Expressions that probably go with the latter form: "in", "see", ... .
 * instead of "`---`" or "`--`" for parenthetical remarks, use the `\dash` macro provided by `sp.cls`
 * instead of literal "`...`" for dots, use the LaTeX `\dots` macro
+  - If used to elide some portion of a quote, adding a little extra bit of space (`\thinspace`, to be exact) before the `\dots`, i.e. `[\,\dots]`, produces a more balanced result.
 * use `\sv{}` (provided by `sp.cls`) for semantic evaluation brackets
 * use the `\text{}` macro to wrap object language expressions inside any math environment
 * use the `\co` macro (defined by `sp.cls` as `\colon\thinspace`) for the "such that" colon in math environments
