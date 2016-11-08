@@ -73,12 +73,14 @@ I use the following `latexmk` config file (`~/.latexmkrc`):
     $pdf_mode = 1;
     # -f (force continued processing past errors)
     $force_mode = 1;
-    # -interaction=scrollmode
     $pdflatex = 'pdflatex --shell-escape %O %S';
     # -pvc (preview document and continuously update.)
     $preview_continuous_mode = 1;
     # open in TeXShop rather than the system default
     $pdf_previewer = "open -a TeXShop.app %O %S";
+    # biber by default assumes we're running a more modern compiler like
+    # XeLaTeX or LuaTeX on the backend, which isn't true in our case
+    $biber = "biber --output-safechars %O %S"
 
 Then I can simply call `latexmk MyPaper.tex`, and it will run `pdflatex` and `biber` as many times as necessary, and open the freshly rendered PDF in `TeXShop.app` when done.
 Due to the `$preview_continuous_mode = 1;` setting, `latexmk` will keep running until I kill it with `Ctrl+C`, continually re-rendering the PDF whenever any of the sources (which includes the `.tex` and `.bib` files, as well as any figures) have been changed.
