@@ -97,7 +97,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 
 # Other stylistic guidelines
 
-- For lists of 3 items or more, there is a religious war whether a final comma should be used before *and* or *or*
+- For lists of 3 items or more, there is a religious war whether a final comma (a.k.a. the Oxford comma) should be used before *and* or *or*
   - "apples, oranges, and bananas" vs. "apples, oranges and bananas"
   - We do not take a position on this, but authors should be consistent in their policy.
   - Use & to disambiguate conjunctions of conjunctions, e.g., a & b and c & d.
