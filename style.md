@@ -37,7 +37,7 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * Avoid manual spacing hacks (when we typeset your document in the relatively wide Lucida font, such manual adjustments are usually counter-productive).
   - Do not manipulate the document layout with packages like `geometry`, `fullpage`, `rotating`, `multicol`, `setspace`, `caption`, etc.
   - Avoid using custom spacing macros like `\hspace`, `\vspace`, `\bigskip`, `\newpage`, `\clearpage`, etc.
-  - Avoid environments like `tabbing`, which do not handle line wrapping well
+  - Avoid environments like `tabbing`, which do not handle line wrapping well.
 * If you use other packages for typographic manipulation, like `ulem` or `soul`, explain why you are using these.
 
 Believe it or not, the above are the main stumbling blocks for a quick conversion of a manuscript to a publishable S&P paper. There are more subtle guidelines below, but these are the most important issues.
@@ -105,7 +105,8 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Use `\dash` for parenthetical remarks (instead of both n-dashes (`--`) and m-dashes (`---`)); n-dashes (`--`) are useful elsewhere, for example for number ranges (`1--5`) or when citing an affix (the prefix *co`--`*).
 - Avoid stray spaces when using `\label{abc}` in examples by using `%`, e.g., `\label{abc}%`.
 - Use `\sv` for semantic interpretation brackets. It creates a math environment so be sure to use \text for any text in it, e.g., `\sv{\text{unicorn}}`.
-- Use `\co` instead of `:` in your equations to ensure proper spacing. Manual spacing, such as `\;`, `\:`, `\,`, and `\ `, is often unnecessary in math environments, and particularly undesirable around `\co`.
+- Manual spacing, such as `\;`, `\:`, `\,`, and `\ `, is often unnecessary in math environments.
+- Use `\co` instead of `:` in your equations to ensure proper spacing.
   - <del><code>\forall x : x \in D</code></del>
   - `\forall x \co x \in D`
 - Use `\http{}` to link to a webpage, e.g., `\http{semprag.org}`
@@ -122,6 +123,10 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - In the _very_ rare case where you want to use a link with custom text, you can use `\hyperref`, e.g., `the \hyperref[appendix]{Appendix}`.
 - Use `~` only to prevent line breaks; do not use it to differentiate abbreviation periods vs. end of sentence periods, which is unnecessary with the `sp` class and a modern LaTeX compiler.
   - LaTeX is extremely good at determining where line breaks should go without stretching or squeezing lines too much, and `~` constraints can inhibit its flexibility.
+- Avoid using `\ ` (an escaped literal space) to protect whitespace, e.g., following a zero-argument macro.
+  Instead, use `{}`, which more clearly indicates the intent.
+  - <code>we have repeatedly seen the <del>\custom context</del> <del>\custom\ context</del> \custom{} context</code>
+  <!-- References: https://tex.stackexchange.com/q/31091, https://tex.stackexchange.com/q/116528, https://tex.stackexchange.com/q/55105 -->
 - Use English rather than Latin:
   - <del>ceteris paribus</del> other things being equal
   - <del>inter alia</del> among others
@@ -130,7 +135,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - To right-align a short line on its own (e.g., to credit a source following an example or blockquote) use `\par\hspace*{\fill}`.
   (A full `flushright` environment sometimes adds too much vertical space above and below its contents.)
 - Avoid `\nocite{}`.
-- Don't worry about word wrapping and hyphenation, since the S&P font is much wider than Times and you won't be able to predict where the lines will wrap, but if you suspect some unusually long (and unusual) term might need to be hyphenated, prefer calling `\hyphenation{}` somewhere in your preamble instead of using `\-` in the word itself.
+- Don't worry about word wrapping and hyphenation, since the S&P font is much wider than Times and you won't be able to predict where the lines will wrap. That said, if you suspect some unusually long (and unusual) term might need to be hyphenated, prefer calling `\hyphenation{}` somewhere in your preamble instead of using `\-` in the word itself.
   + E.g., `\hyphenation{percep-tron}` ... `perceptron` rather than `percep\-tron`.
 
 
