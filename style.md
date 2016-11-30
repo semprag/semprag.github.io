@@ -14,7 +14,16 @@ Read your paper one more time very carefully, paying attention to the issues lis
 ## Checklist of the top issues ##
 
 * Your title and your section headings should be in "Sentence case" (not "Title Case"). If you have a subtitle, capitalize the first word of the subtitle: "First part of title: Second part of title".
-* Make sure that the same keyword list appears in three places: on the first page of your paper, in the PDF meta-data (the `\pdfkeywords` command in the preamble), and in the meta-data on the S&P website (associated with your submission).
+* Make sure that the abstract declared in `\begin{abstract} ... \end{abstract}` matches the one on the journal website.
+* Keywords:
+  - Should be separated by commas
+  - Should not be capitalized (except for proper nouns)
+  - Should not be followed by a period
+  - Six is a good target for number of keywords
+* Make sure that the same keyword list appears in three places:
+  1. in the `\begin{keywords} ... \end{keywords}` environment directly following the abstract (any valid LaTeX)
+  2. in the `\pdfkeywords{...}` command in the preamble (ASCII only)
+  3. in the metadata associated with your submission on the [S&P website (OJS)](http://semprag.org/)
 * Similarly, make sure that the abstract in your paper and the abstract on the S&P website are the same (modulo that the abstract in the paper is LaTeX and the abstract on the website is HTML).
 * Include your contact address at the end of the paper.
 * Make sure that your bibliographic information complies with our requirements (more details below in the [BibTeX](#bibtex) section), especially:
