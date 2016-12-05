@@ -127,7 +127,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Spell out "Section" (preferably capitalized) when referring to sections by number, e.g., "In Section 3 we discuss the problem of...", but use lowercase when referring to relative, e.g., "...as we saw in the previous section."
   - <del><code>\S\ref{sec:intro}</code></del> `Section~\ref{sec:intro}`
   - Or, use the `autoref` package and type `\autoref{sec:intro}` (which won't capitalize "section")
-  - Or even better, import the [cleveref](http://www.ctan.org/tex-archive/macros/latex/contrib/cleveref) package, `\usepackage[nameinlink]{cleveref}`, and use `\Cref{sec:intro}` (which will capitalize "Section") or `\cref{sec:intro}` (which will not capitalize "section").
+  - Or even better, import the [cleveref](https://ctan.org/pkg/cleveref) package, `\usepackage[nameinlink]{cleveref}`, and use `\Cref{sec:intro}` (which will capitalize "Section") or `\cref{sec:intro}` (which will not capitalize "section").
   - Unless using `cleveref`, you should prevent linebreaks in your named references by using `~`: `Figure~\ref{fig:1}`.
 - In the _very_ rare case where you want to use a link with custom text, you can use `\hyperref`, e.g., `the \hyperref[appendix]{Appendix}`.
 - Use `~` only to prevent line breaks; do not use it to differentiate abbreviation periods vs. end of sentence periods, which is unnecessary with the `sp` class and a modern LaTeX compiler.

@@ -47,9 +47,9 @@ Our general formatting rules for examples:
 - Reference ranges should look like (12)–(14)
   - For subexamples, both (12a–e) and (12a)–(12e) are acceptable, but be consistent.
 
-For simple needs, we have found that the [linguex package](http://www.ctan.org/pkg/linguex) works well with our style. You can load it by simply passing a `linguex` option to `sp.cls`, i.e., `\documentclass[linguex]{sp}`.
+For simple needs, we have found that the [linguex package](https://ctan.org/pkg/linguex) works well with our style. You can load it by simply passing a `linguex` option to `sp.cls`, i.e., `\documentclass[linguex]{sp}`.
 
-For more complex needs (complex glosses, for example), we strongly recommend the [expex package](http://ctan.org/pkg/expex). You can load it by passing the `expex` option to `sp.cls`, i.e., `\documentclass[expex]{sp}`.
+For more complex needs (complex glosses, for example), we strongly recommend the [expex package](https://ctan.org/pkg/expex). You can load it by passing the `expex` option to `sp.cls`, i.e., `\documentclass[expex]{sp}`.
 
 Both `linguex` and `expex` are very sensitive to whitespace (perhaps because they date back to plain TeX).
 If you use one of them, be careful that whitespace around `\label{...}` calls do not produce extra (unintended) spacing in the output.
@@ -204,7 +204,7 @@ LaTeX is infamous for being Turing complete.
 However, the `.tex` sources you submit for publication should be as simple and finite as possible.
 
 * Avoid multiple source `.tex` files.
-* If you need additional functionality, prefer packages on CTAN.
+* If you need additional functionality, prefer packages on [CTAN](https://ctan.org/).
   If you include a custom `.sty` file, explain what it does and why you need it.
   Do not import packages that your document doesn't use.
 * Prefer a little bit of repetition over special purpose macros.
