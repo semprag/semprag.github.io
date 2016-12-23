@@ -1,79 +1,66 @@
-%\documentclass[lucida]{sp} % use if you have the Lucida LaTeX fonts
-\documentclass{sp}          % default: uses Times font
+\documentclass{sp}
 
-%=====================================================================
-%========================= preamble material =========================
-
-% Metadata for the PDF output. ASCII-only!
-\pdfauthor{Full author list}
+% The \pdf* commands provide metadata for the PDF output.
+% Do not use LaTeX style / commands like \emph{} inside these.
+\pdfauthor{Author Full Name(s)}
 \pdftitle{Full title}
-\pdfkeywords{Full keyword list}
+\pdfkeywords{keyword list, each, separated, by commas}
 
 % Optional short title inside square brackets, for the running headers.
 % If no short title is given, no title appears in the headers.
-\title[Short title]{Title%
+\title[Short title]{Full title%
   \thanks{We thank \ldots}}
 
 % Optional short author inside square brackets, for the running headers.
 % If no short author is given, no authors print in the headers.
-\author[Short author]{% As many authors as you like, each separated by \AND.
-  \spauthor{Author1 \\ \institute{Institute1}} \AND
-  \spauthor{Author2 \\ \institute{Institute2}} \AND
-  \spauthor{Author3 \\ \institute{Institute3}}%
-}
-
-%=====================================================================
+\author[Author1, Author2, Author3]{% As many authors as you like, each separated by \AND.
+  \spauthor{Author1 Full Name \\ \institute{Institute1}} \AND
+  \spauthor{Author2 Full Name \\ \institute{Institute2}} \AND
+  \spauthor{Author3 Full Name \\ \institute{Institute3}}}
 
 \begin{document}
-
-%=====================================================================
-%============================ frontmatter ============================
 
 \maketitle
 
 \begin{abstract}
-  Abstract here
+  This is a minimal example document.
 \end{abstract}
 
 \begin{keywords}
-  Keywords (special formatting is fine)
+  keyword list, each, separated, by commas
 \end{keywords}
 
-%=====================================================================
-%============================ article text ===========================
+\section{First section}
 
-\section{Section}
+First paragraph.
 
-\subsection{Subsection}
+\subsection{Subsequent subsection}
 
-\subsubsection{Subsubsection}
+Second paragraph.
 
-\paragraph{Paragraph}
+\subsubsection{Nested subsubsection}
 
-\subparagraph{Subparagraph}
+Third paragraph.
 
-%=====================================================================
+Fourth paragraph.
 
-\bibliography{your-bib-database}
 
-%=====================================================================
+\bibliography{your-bibliography-file}
 
 \begin{addresses}
   \begin{address}
-    Author1 \\
+    Author1 Full Name \\
     Street \\
-    \ldots \\
-    \email{author1@email}
+    City, State Zip \ldots \\
+    \email{author1@example.org}
   \end{address}
+  % Repeat or remove additional addresses as needed.
   \begin{address}
-    Author2 \\
+    Author2 Full Name \\
     Street \\
-    \ldots \\
-    \email{author2@email}
+    City, State Zip \dots \\
+    \email{author2@example.com}
   \end{address}
-  ...
 \end{addresses}
-
-%=====================================================================
 
 \end{document}
