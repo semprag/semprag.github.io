@@ -5,7 +5,7 @@ body {
   padding: 40px;
   font: 14px Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  color: #333;
+  color: #222;
   line-height: 1.3;
 }
 
@@ -32,13 +32,12 @@ article {
 
 svg.logo {
   height: 100px;
-  fill: #333;
+  fill: #222;
 }
 
 a {
   color: #39C;
   font-weight: 400;
-  text-decoration: none;
 }
 a:visited {
   color: #2E8AB8;
@@ -50,16 +49,18 @@ a:active {
   color: #3091C2;
 }
 
+nav a, a.reversefootnote {
+  text-decoration: none;
+}
+
 blockquote {
   border-left: 1px solid #e5e5e5;
   margin: 0;
   padding-left: 10px;
-  /*font-style: italic;*/
 }
 
 code, pre {
-  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color: #333;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
   font-size: 12px;
 }
 
