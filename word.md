@@ -66,7 +66,7 @@ Some of the steps below may incorporate psuedo–LaTeX markup, but all of these 
 - Equations are especially difficult to convert automatically, so they should be typeset in LaTeX, potentially with one of the following WYSIWYG editors:
   * [Online LaTeX Equation Editor](http://www.codecogs.com/latex/eqneditor.php) (online)
   * [HostMath equation editor](http://www.hostmath.com/0) (online)
-  * [LyX](http://www.lyx.org/) (Linux / Windows / Mac OS X)
+  * [LyX](http://www.lyx.org/) (Linux / Windows / macOS)
   * [Wikipedia's list of formula editors](http://en.wikipedia.org/wiki/Formula_editor)
 
   You should use the following markup to indicate which portions of your document are equations, and which are the LaTeX transcriptions:

@@ -5,11 +5,11 @@ title: LaTeX system
 
 ## Formats
 
-While we accept submissions in both LaTeX and Microsoft Word formats, we publish all articles using LaTeX typesetting. We prefer LaTeX submissions, because it is easier to remain true to the author's vision when typeset in the *S&P* style and because it expedites the production process, thus leading to much faster publication. We therefore strongly encourage authors to submit in LaTeX format, and ideally in our house style. If you yourself are not familiar with LaTeX, maybe a friend or colleague could help you with preparing your manuscript. If you have to submit in Word format, please read our [Word-specific instructions](word).
+While we accept submissions in both LaTeX and Microsoft Word formats, we publish all articles using LaTeX typesetting. We prefer LaTeX submissions, because it is easier to remain true to the author's vision when typeset in the S&P style and because it expedites the production process, thus leading to much faster publication. We therefore strongly encourage authors to submit in LaTeX format, and ideally in our house style. If you yourself are not familiar with LaTeX, maybe a friend or colleague could help you with preparing your manuscript. If you have to submit in Word format, please read our [Word-specific instructions](word).
 
 ## Style guidelines
 
-Compiling your LaTeX document in the *S&P* house style requires using the documentclass `sp` and a custom bibliography style. See the [installation instructions](/install) for details on where to put these sources.
+Compiling your LaTeX document in the S&P house style requires using the documentclass `sp` and a custom bibliography style. See the [installation instructions](/install) for details on where to put these sources.
 
 In our experience, even submissions in LaTeX format often require intensive re-typesetting and additional work on the bibliography. We hope that authors can take some of the burden of that work, again in the interest of an expedited publication process. To that purpose, please read [our style guidelines](style), especially as they pertain to LaTeX submissions.
 
@@ -186,7 +186,7 @@ The `sp.cls` file includes the following packages by default, which means you ha
 
 ## Prohibited packages
 
-The following packages overwrite or violate the *S&P* style, and should not be used.
+The following packages overwrite or violate the S&P style, and should not be used.
 
 - geometry
 - fullpage
@@ -230,7 +230,7 @@ For both `.tex` and `.bib` sources:
 We strongly recommend rendering directly to PDF with `pdflatex`, avoiding `dvi` and `ps` formats entirely.
 This ensures that line breaks and hyperlinks appear correctly.
 
-If you must use `postscript` for certain diagrams, we recommend rendering those to PDF format independently (e.g., via `latex` & `dvipdf` or by using `ps2pdf`), and then importing the result directly into your *S&P* submission:
+If you must use `postscript` for certain diagrams, we recommend rendering those to PDF format independently (e.g., via `latex` & `dvipdf` or by using `ps2pdf`), and then importing the result directly into your S&P submission:
 
     \includegraphics{used-to-be-ps.pdf}
 

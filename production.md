@@ -12,7 +12,7 @@ This page is for use by the core *Semantics and Pragmatics* team and production 
 
 ## Typesetting and proofreading
 
-You are responsible for ensuring that the paper you are assigned adheres to the *S&P* standards described on this site, and is free of grammatical errors and any other typos.
+You are responsible for ensuring that the paper you are assigned adheres to the S&P standards described on this site, and is free of grammatical errors and any other typos.
 
 It's the responsibility of the shepherding editor to verify the content, but if you notice anything that seems wrong or doesn't make sense, include that in your report.
 
@@ -21,7 +21,7 @@ It's the responsibility of the shepherding editor to verify the content, but if 
 
 As an S&P production contributor, you must be able to compile LaTeX sources on your local machine.
 
-* On Mac OS X, install LaTeX from [MacTeX](https://tug.org/mactex/).
+* On macOS, install LaTeX from [MacTeX](https://tug.org/mactex/).
   Note that the download is nearly 3 GB, and will take a while to install even after downloading.
 * On Ubuntu: `apt-get texlive-full biber`
 
