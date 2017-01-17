@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Editorial workflow"
+title: Editorial workflow
 ---
-# Our basic workflow:
+# Editorial workflow
 
-1. Author submits paper via our website (which runs software called OJS, Open Journal Systems, which is pretty good but not perfect and we have occasional issues with its upkeep being out of our control). The way we find out is that the all-editors alias is cc'ed when the system sends out acknowledgment to the author.
+1. Author submits paper via our website (which runs software called OJS, Open Journal Systems, which is pretty good but not perfect and we have occasional issues with its upkeep being out of our control). The way we find out is that the `all-editors` alias is cc'ed when the system sends out acknowledgment to the author.
 
-2. When you see that there is a new submission, please check it out on the website: <http://semprag.org/editor/submissions/submissionsInReview>.
+2. When you see that there is a new submission, please check it out on the [OJS website](http://semprag.org/editor/submissions/submissionsInReview).
 
 3. The system automatically assigns DIB and KvF as the editors in charge, but that's just temporary until a shepherding editor is chosen. Who takes charge is a collective decision. DIB/KvF may ask for volunteers, browbeat someone into taking it, or take it on themselves. Or, in fact, someone can actually volunteer straightaway if the paper looks interesting to them.
 
