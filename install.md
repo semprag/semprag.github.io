@@ -1,9 +1,7 @@
 ---
 layout: default
-title: "Installing the S&P LaTeX system"
+title: Installing the LaTeX system
 ---
-
-## S&P LaTeX installation
 
 We are going to install everything to our "TeX & Metafont" (`TEXMF`) home folder.
 This is where all of your custom styles should be installed, so you may have a lot of this structure already.

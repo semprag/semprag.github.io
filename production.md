@@ -2,7 +2,8 @@
 layout: default
 title: Production and Development
 ---
-# Internal configuration instructions
+
+## Internal configuration instructions
 
 This page is for use by the core *Semantics and Pragmatics* team and production contributors.
 

@@ -1,8 +1,7 @@
 ---
 layout: default
-title: "S&P Guidelines for reviewers"
+title: Guidelines for reviewers
 ---
-# S&P Guidelines for reviewers
 
 ## Preliminaries
 

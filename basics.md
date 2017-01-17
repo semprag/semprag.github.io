@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "The S&P LaTeX system"
+title: LaTeX system
 ---
 
 ## Formats

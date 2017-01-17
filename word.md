@@ -1,8 +1,7 @@
 ---
 layout: default
-title: "Instructions for submission in Word format"
+title: Instructions for submission in Word format
 ---
-# Word
 
 Providing a document in Word format is problematic for a few reasons.
 
