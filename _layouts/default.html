@@ -49,8 +49,8 @@
       </ul>
     </section>
 
-    <section id="administrative" style="display: none; opacity: 0.5">
-      <strong>Administrative</strong>
+    <section>
+      <strong>Management</strong>
       <ul>
         <li><a href="/editors">Editorial workflow</a></li>
         <li><a href="/production">Production</a></li>
@@ -68,16 +68,5 @@
       ga.src = 'https://ssl.google-analytics.com/ga.js';
       document.body.appendChild(ga);
     })();
-  </script>
-  <script>
-  var escapes = 0;
-  document.addEventListener('keyup', function(ev) {
-    if (ev.which == 27) {
-      escapes++;
-    }
-    if (escapes > 1) {
-      document.getElementById('administrative').style.display = 'block';
-    }
-  });
   </script>
 </body>
