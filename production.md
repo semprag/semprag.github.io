@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Internal configuration"
+title: Production and Development
 ---
 # Internal configuration instructions
 
