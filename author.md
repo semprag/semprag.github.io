@@ -102,7 +102,12 @@ The last two kinds of contributions are invitation-only but the editors welcome 
 
 ## Submission
 
-For initial submission of an article, we do not require adherence to any particular style guidelines. We ask for a PDF of the article, with generous margins for the convenience of our reviewers. The submission is made on the journal's website. There is an author's checklist that guides the authors through the steps involved in asking the journal to consider their article. All communication between the authors and the journal will be via the website and email. There is always a designated "shepherding" editor that will handle the peer review process and communication with the author. At any point during the process, we welcome personal messages to the editor in charge of a submission. Authors can also contact the editors-in-chief at any time at <editors@semprag.org>.
+For initial submission of an article, we do not require adherence to any particular style guidelines. An abstract is encouraged, but not required. We ask for a PDF of the article, with all figures and tables embedded in the document, and with generous margins for the convenience of our reviewers.
+
+All submissions are made through [S&P's main website](http://semprag.org/) ([**semprag.org**](http://semprag.org/)), which uses OJS (Open Journal Systems) to handle the submission and reviewing process.
+New authors will need to [register](http://semprag.org/user/register) an account, and ensure that they are using the ['Author'](http://semprag.org/user/profile) role.
+
+There is an author's checklist that guides the authors through the steps involved in asking the journal to consider their article. All communication between the authors and the journal will be via the website and email. There is always a designated "shepherding" editor that will handle the peer review process and communication with the author. At any point during the process, we welcome personal messages to the editor in charge of a submission. Authors can also contact the editors-in-chief at any time at <editors@semprag.org>.
 
 When an article is submitted to S&P, we strongly encourage authors to also deposit their manuscript to the [Semantics Archive](http://semanticsarchive.net) so as to allow the research community to read the pre-publication version and to give feedback on the work to the author.[^2] In the future, we will look into further ways of facilitating this kind of early feedback from the community.
 
