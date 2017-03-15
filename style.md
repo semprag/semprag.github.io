@@ -117,7 +117,7 @@ Believe it or not, the above are the main stumbling blocks for a quick conversio
 - Use `\co` instead of `:` in your equations to ensure proper spacing.
   - <del><code>\forall x : x \in D</code></del>
   - `\forall x \co x \in D`
-- Use `\http{}` to link to a webpage, e.g., `\http{semprag.org}`
+- Use `\url{}` to link to a webpage, e.g., `\url{http://semprag.org}`
 - Use `\email{}` to include an email address, e.g., `\email{editors@semprag.org}`
 - Use `\footnotemark` and `\footnotetext` for footnotes in section headers.
   - You'll need to use the `\section[options]` options for the section title.
