@@ -22,8 +22,11 @@ It's the responsibility of the shepherding editor to verify the content, but if 
 As an S&P production contributor, you must be able to compile LaTeX sources on your local machine.
 
 * On macOS, install LaTeX from [MacTeX](https://tug.org/mactex/).
-  Note that the download is nearly 3 GB, and will take a while to install even after downloading.
+  You should use the full version (not the "Smaller Download") of the current TeX distribution.
+  Note that the download is approximately 3 GB, and will take a while to install even after downloading.
 * On Ubuntu: `apt-get texlive-full biber`
+
+As of 2017, the BibLaTeX compile process requires at least the 2016 distribution to build properly.
 
 Once LaTeX is installed, follow the S&P-specific [installation](/install) instructions, installing both the BibTeX and BibLaTeX style files.
 You should also install the `gb4e-emulate.sty`, `sp-hyperxmp.sty`, and `sp-logo.pdf` files from [semprag/tex](https://github.com/semprag/tex) to your `TEXMFHOME/tex/latex/` directory, alongside `sp.cls`.
@@ -35,6 +38,8 @@ We keep all articles under source control in a private repository at [semprag/su
 Please use an intelligible username, since all of your changes will be annotated with that username.
 
 Once you have an account, email us at [latex@semprag.org](mailto:latex@semprag.org) with your username, and one of the [semprag organization](https://github.com/semprag) administrators will add you.
+You will receive an invitation to be a member of a team of the `semprag` GitHub organization via the email associated with that account.
+You'll also be notified of your standing invitations when you log onto GitHub.
 
 By default, whenever you need to write to a git repository on GitHub, or read from a private repository, you will have to enter your GitHub username and password. You can avoid this by adding your SSH key to your GitHub account or by caching your GitHub credentials. The latter method, caching your password, will probably be easier.
 
@@ -71,12 +76,31 @@ Now clone the [semprag/submissions](https://github.com/semprag/submissions) repo
 
 That creates the directory `submissions/` inside your current working directory (`~/src`).
 
-Now let's say you want to render the Rojas-Esponda 2014 paper:
+Now let's say you want to render the Willer 2016 paper:
 
-    cd submissions/rojas-esponda-2014
-    pdflatex rojas-esponda-v2-edited
-    biber rojas-esponda-v2-edited
-    pdflatex rojas-esponda-v2-edited
+    cd submissions/willer-2016
+
+The first time you run `pdflatex` will produce lots of "LaTeX Warning: Reference (or Citation) X on page Y undefined on input line Z" messages, which is fine.
+(If you omit the `.tex` extension, `pdflatex` will infer it.)
+
+    pdflatex lessons
+
+There will now be a `lessons.aux` file, and when in `biblatex` mode, `lessons.bcf` and `lessons.run.xml` files.
+Now run `biber` to compile the BibLaTeX, which reads the `lessons.bcf` file you just created, and the paper's specified bibliography resource (in this case, `Philosophy.bib`).
+(It's customary to omit the `.bcf` extension here.)
+
+    biber lessons
+
+Biber writes its TeX-ready output to `lessons.bbl` (and logs to `lessons.blg`).
+Running `pdflatex` again will incorporate that file and all the intermediate output from the last run to incorporate all citations / references.
+
+    pdflatex lessons
+
+All the citations and references should now show up, but since paging has changed, you might need to run `pdflatex` one more time.
+
+    pdflatex lessons
+
+At this point, if the LaTeX compiler log still complains about undefined references or citations, there is something legitimately missing from the document that needs to be fixed.
 
 
 ## Working with git
