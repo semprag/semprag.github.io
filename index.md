@@ -9,9 +9,15 @@ This site is dedicated to information about the journal and resources for author
 
 If you have any questions or concerns about the journal and its processes, contact us at [editors@semprag.org](mailto:editors@semprag.org). If you have any issues with the formatting and typesetting instructions here, or with compiling your article, please email the technical team at [latex@semprag.org](mailto:latex@semprag.org).
 
+
 ## Overview of the resources on this site
 
 * [Author guidelines](author)
 * [Reviewer guidelines](reviewers)
 * [The S&P LaTeX system](basics)
 * [Final submission style guidelines](style)
+
+
+### Hosting and development
+
+Thanks to [GitHub](https://github.com/) for providing S&P with a "100% off forever" coupon!
