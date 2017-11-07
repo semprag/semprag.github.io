@@ -47,14 +47,20 @@ Our general formatting rules for examples:
 - Reference ranges should look like (12)–(14)
   - For subexamples, both (12a–e) and (12a)–(12e) are acceptable, but be consistent.
 
-For simple needs, we have found that the [linguex package](https://ctan.org/pkg/linguex) works well with our style. You can load it by simply passing a `linguex` option to `sp.cls`, i.e., `\documentclass[linguex]{sp}`.
+There are three example-numbering packages that are approved for use in S&P documents: `linguex`, `expex`, and `gb4e` (as `gb4e-emulate`, see below).
+Each of these have different syntaxes and functionality, and you can use whichever fits your needs (but not more than one of them).
 
-For more complex needs (complex glosses, for example), we strongly recommend the [expex package](https://ctan.org/pkg/expex). You can load it by passing the `expex` option to `sp.cls`, i.e., `\documentclass[expex]{sp}`.
+- `linguex`: for simple needs, we have found that the [linguex package](https://ctan.org/pkg/linguex) works well with our style.
+  You should load it by passing the `linguex` option to `sp.cls`, i.e., `\documentclass[linguex]{sp}`.
+- `expex`: for more complex needs (complex glosses, for example), we recommend the [expex package](https://ctan.org/pkg/expex).
+  You should load it by passing the `expex` option to `sp.cls`, i.e., `\documentclass[expex]{sp}`.
+- `gb4e`: if you are already using `gb4e` syntax, install and use our [`gb4e-emulate.sty`](https://raw.githubusercontent.com/semprag/tex/master/gb4e-emulate.sty) package, which specifies proper S&P spacing.
+  Usually this means simply adding `gb4e-emulate.sty` to the same folder as your `.tex` document, and replacing `\usepackage{gb4e}` with `\usepackage{gb4e-emulate}`.
 
 Both `linguex` and `expex` are very sensitive to whitespace (perhaps because they date back to plain TeX).
 If you use one of them, be careful that whitespace around `\label{...}` calls do not produce extra (unintended) spacing in the output.
 
-We advise against all other example packages (`gb4e`, `covington`, etc.), because in our experience they create difficult integration problems with our house style. If you are already using `gb4e` syntax, install and use our [`gb4e-emulate.sty`](https://raw.githubusercontent.com/semprag/tex/master/gb4e-emulate.sty) package, which specifies proper S&P spacing.
+We advise against all other example packages (e.g., `covington`), because in our experience they create difficult integration problems with our house style.
 
 
 ### BibTeX and Citations
