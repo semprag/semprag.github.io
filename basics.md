@@ -166,8 +166,8 @@ They are specified in an `addresses` environment, which consists of `address` en
 The `sp.cls` file includes the following packages by default, which means you have access to all their commands without having to `\usepackage{}` it in your own document (in fact, it is a very good idea to delete the relevant `\usepackage{}` commands from your preamble):
 
 - graphicx
-- natbib
 - hyperref
+- url
 - amsmath
 - amssymb
 - float
@@ -175,14 +175,17 @@ The `sp.cls` file includes the following packages by default, which means you ha
 - mathptmx
 - stmaryrd
 - textcomp
-- microtype
+- microtype (if available)
 - inputenc
 - xspace
 - ifthen
-- color
+- ifpdf
+- xcolor
 - fontenc
-- linguex (if you have specified the `\documentclass[linguex]{sp}` option)
-- expex (if you have specified the `\documentclass[expex]{sp}` option)
+- biblatex (if you have specified the `[biblatex]` option)
+- natbib (if you have not specified the `[biblatex]` option)
+- linguex (if you have specified the `[linguex]` option)
+- expex (if you have specified the `[expex]` option)
 
 ## Prohibited packages
 
