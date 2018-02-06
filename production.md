@@ -139,6 +139,52 @@ Once you've cloned the submissions repository, the basic process goes like this
       - The names `origin` and `master` are the defaults built into git.
 
 
+## Integration with Overleaf
+
+Overleaf is an online LaTeX editor, which makes it very easy to get started typesetting.
+Once an Overleaf project has been set up, you need only provide the proofreader/typesetter with a link to the project.
+They will need to create an Overleaf account if they do not have one, but they will not need to install LaTeX or do any of the steps below.
+
+The steps below are only for the initial creation and setup of the project.
+The commands below assume that you've `git clone`'d the [`lucida`](https://github.com/semprag/lucida) and [`tex`](https://github.com/semprag/tex) repositories onto your local machine, and that they are up to date.
+
+1. Create a new project in your Overleaf account, and note the URL:
+   * This should be a "Basics" → "Blank Paper" project (but it doesn't really matter since we don't use any of the provided files)
+   * Click the "Share" button in the project's navigation bar and copy the Git URL, which looks something like:
+
+         https://git.overleaf.com/12345678abcdefghijkl
+2. Clone the project locally, but give it a better name, like `Author20xx-overleaf`, and delete the `main.tex` file:
+
+       git clone https://git.overleaf.com/12345678abcdefghijkl Author20xx-overleaf
+       cd Author20xx-overleaf
+       rm main.tex
+3. Copy the S&P style files and Lucida font `.otf` files into that new directory, `Author20xx-overleaf/`
+   (this is the part that assumes your the `tex` and `lucida` repositories are in a specific place):
+
+       cp ~/semprag/tex/{.gitignore,sp.cls,sp.bst} .
+       cp -R ~/semprag/lucida/opentype fonts
+4. Copy in the source files for the S&P submission, its `*.tex`, `*.bib`,
+   and whatever other resources it includes (like `gb4e-emulate.sty`),
+   and set `lucidaot` in the class options, e.g.:
+
+       \documentclass[lucidaot]{sp}
+
+   You should now be able to render the document from your local machine if you have LaTeX installed,
+   but this is not required: `latexmk -xelatex`
+5. Stage, commit, and push your changes:
+
+       git add .
+       git commit -m "Re-initialize with sources for Author's 20xx submission"
+       git push
+6. Back on the Overleaf project page, click the "⚙" (gear) button in the navigation bar at the top right.
+   Change the "Advanced Build Options" → "LaTeX Engine" value to "XeLaTeX"; then click "Save Project Settings".
+   Overleaf should re-render accordingly, and everything _should_ be in working order!
+
+**Disclaimer:** The Lucida style file for LaTeX, `lucimatx.sty`, does a lot more than just load and configure the PostScript-format fonts.
+There are a lot of little tweaks and customizations that have not been ported to the OpenType integration.
+While the appearance of a document rendered with Lucida OpenType is much closer to the production result than with Times or Computer Roman, it isn't pixel-perfect; in particular, the horizontal spacing of equations in math environments seems to be the most dissimilar aspect.
+
+
 ## Standards
 
 1. **Ground rules** (see [CONTRIBUTING.md](https://github.com/semprag/submissions/blob/master/CONTRIBUTING.md) for the latest version):
