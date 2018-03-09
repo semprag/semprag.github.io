@@ -142,7 +142,7 @@ Once you've cloned the submissions repository, the basic process goes like this
 ## Integration with Overleaf
 
 Overleaf is an online LaTeX editor, which makes it very easy to get started typesetting.
-Once an Overleaf project has been set up, you need only provide the proofreader/typesetter with a link to the project.
+Once an Overleaf project has been set up, you need only provide the collaborator/proofreader/typesetter with a link to the project.
 They will need to create an Overleaf account if they do not have one, but they will not need to install LaTeX or do any of the steps below.
 
 The steps below are only for the initial creation and setup of the project.
@@ -183,6 +183,37 @@ The commands below assume that you've `git clone`'d the [`lucida`](https://githu
 **Disclaimer:** The Lucida style file for LaTeX, `lucimatx.sty`, does a lot more than just load and configure the PostScript-format fonts.
 There are a lot of little tweaks and customizations that have not been ported to the OpenType integration.
 While the appearance of a document rendered with Lucida OpenType is much closer to the production result than with Times or Computer Roman, it isn't pixel-perfect; in particular, the horizontal spacing of equations in math environments seems to be the most dissimilar aspect.
+
+### Overleaf "One-click to open"
+
+Assuming you're logged into Overleaf (or can be) in this browser, submitting the following form (by clicking the button) creates a new Overleaf project with several of the requirements pre-configured.
+
+<form action="https://www.overleaf.com/docs" method="post" target="_blank" rel="noopener">
+  <!-- Turn off the default Overleaf tutorial splash screen -->
+  <input type="hidden" name="splash" value="none">
+  <!-- Set the compiler to XeLaTeX instead of "Choose Automatically" -->
+  <input type="hidden" name="engine" value="xelatex">
+  <!-- Add basic source files -->
+  <input type="hidden" name="snip_uri[]" value="http://info.semprag.org/tex/sp.cls">
+  <input type="hidden" name="snip_uri[]" value="http://info.semprag.org/tex/sp.bst">
+  <input type="hidden" name="snip_uri[]" value="https://raw.githubusercontent.com/semprag/tex/master/.gitignore">
+  <!-- Add BibLaTeX source files for good measure -->
+  <input type="hidden" name="snip_uri[]" value="http://info.semprag.org/biblatex-sp-unified/bbx/biblatex-sp-unified.bbx">
+  <input type="hidden" name="snip_uri[]" value="http://info.semprag.org/biblatex-sp-unified/cbx/sp-authoryear-comp.cbx">
+  <!-- And the template file, since Overleaf is looking for something with a \documentclass -->
+  <input type="hidden" name="snip_uri[]" value="http://info.semprag.org/examples/sp-template.tex">
+  <!-- Submit -->
+  <button>Click here to auto-populate a new Overleaf project</button>
+</form>
+
+You'll still need to:
+
+* Note the "Clone With Git" URL.
+* `git clone` the project (repository) locally.
+* Add the Lucida OTF fonts.
+* Add the article's `.tex` and `.bib` (etc.) sources, replacing the `sp-template.tex` placeholder.
+* Add/set `[lucidaot]` in the class options.
+* `git commit ...` and `... push` to sync your changes.
 
 
 ## Standards
