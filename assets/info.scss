@@ -93,3 +93,28 @@ dt {
 dd {
   margin-left: 20px;
 }
+
+// #manual-cli {
+
+#manual {
+  display: none;
+  &:target {
+    display: block;
+    &::before {
+      content: "Manual";
+      font-weight: bold;
+      display: block;
+    }
+  }
+}
+#cli {
+  display: none;
+  &:target {
+    display: block;
+    &::before {
+      content: "CLI";
+      font-weight: bold;
+      display: block;
+    }
+  }
+}
