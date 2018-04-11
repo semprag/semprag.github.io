@@ -215,6 +215,8 @@ You'll still need to:
 * Add/set `[lucidaot]` in the class options.
 * `git commit ...` and `... push` to sync your changes.
 
+Reference:
+* [Overleaf "API" documentation](https://www.overleaf.com/devs)
 
 ## Standards
 
