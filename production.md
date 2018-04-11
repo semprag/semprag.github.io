@@ -204,6 +204,10 @@ Assuming you're logged into Overleaf (or can be) in this browser, submitting the
   <input type="hidden" name="snip_uri[]" value="http://info.semprag.org/examples/sp-template.tex">
   <!-- Submit -->
   <button>Click here to auto-populate a new Overleaf project</button>
+  <label>
+    <span>Protected</span>
+    <input type="checkbox" name="protected" value="required" checked>
+  </label>
 </form>
 
 You'll still need to:
