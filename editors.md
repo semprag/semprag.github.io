@@ -37,6 +37,8 @@ likelihood that we may take up to 90 days given the nature of their paper.
     When some of these conditions are not met (e.g. for a postdoc only 1 year out, or for someone who has limited semantics publications but a primary area of interest that is relevant), then discussion with the rest of the editorial team (or at least with Kai and David, if you prefer) would be merited.
 
     Notify the all-editors list when you plan to invite a new board member. Please use [the template for editorial board invitations](/resources/sp-editorial-invitation.txt) (edit as you see fit).
+    
+    If and when the person agrees to join the board, follow the steps layed out below.
 
     *Ad hoc reviewer*
 
@@ -70,7 +72,7 @@ likelihood that we may take up to 90 days given the nature of their paper.
 
 * We definitely err on including everyone on email conversations so that our operations are as transparent as possible. This makes for an occasional email onslaught.
 
-* If possible and if we remember, we preface all email subject lines with [S&P: xxx] where xxx indicates who, if anyone, should pay quick attention to the email. Values are ALL or FYI (for announcements, queries directed at all editors), DIB, JD, PDE, KvF, MF, ASG, MK, LMcN, KS (Katrin), KJS (Kjell Johan), KLS (Kristen), JT.
+* If possible and if we remember, we preface all email subject lines with [S&P: xxx] where xxx indicates who, if anyone, should pay quick attention to the email. Values are ALL or FYI (for announcements, queries directed at all editors), DIB, JD, KvF, MF, ASG, MK, LMcN, HP, KS (Katrin), KJS (Kjell Johan), KLS (Kristen), JT.
 
 * Everyone goes through periods when S&P work needs to be put on the backburner. If this happens, please ask for help with outstanding tasks that you can't currently attend to. We pride ourselves on a speedy and thorough review process and the only way this can happen is for team members to help each other out.
 
@@ -79,3 +81,53 @@ likelihood that we may take up to 90 days given the nature of their paper.
 * We take pride in our editorial feedback to authors. We treat reviewers with respect and use their comments to maximum effect. But the decision on what to do with a paper is ours (primarily the shepherding editor's). In fact, in the guidelines we encourage reviewers not to enter a formal recommendation (they can choose "see comments") and let us triangulate the reviews and our own reading.
 
 * NB: reviewers are blind copied on our editorial decision. We have had enormously positive feedback on this practice. Reviewers are also notified when a paper they worked on has been published; and they're often encouraged to submit a commentary.
+
+# Adding a new person to the editorial board
+
+There are two options: once the new person has agreed to join the board, (i) let David & Kai know and have them do all the work of setting the new person up (this is the default), (ii) do the first two steps yourself and ask David & Kai to do the masthead addition.
+
+1. check whether they already have an account in the system (from being a reader, an author, or an ad hoc reviewer). If so, that's the account we'll be "upgrading". If not, create a new account for them with reader/author/reviewer status (in that case, the system will send them an email about their new account and login info).
+
+2. send them an email saying one of the following:
+
+If they have an account already:
+
+<blockquote>
+Dear  X,
+
+that's great. Since you already have an account on our journal management system (username: "Y"), I just flipped the reviewer bit. If you could take a moment and edit your profile (http://semprag.org/user/profile), especially your affiliation and your "reviewing interests" (topics that you feel most comfortable with), that would be very helpful. You will soon be added to the masthead as well (http://semprag.org/about/editorialTeam).
+
+We look forward to working with you. If at any time, you have questions or concerns about the journal, please let us know.
+
+The review request will be on its way as well.
+
+All the best,
+
+Z (for the rest of the team as well).
+
+--  
+Semantics and Pragmatics  
+http://semprag.org
+</blockquote>
+
+If they do not yet have an account:
+
+<blockquote>
+Dear X,
+
+that's great. You should by now have received an automated email from our journal management system with login information (username: "Y"). If you could take a moment and edit your profile, especially with your affiliation and your "reviewing interests" (topics that you feel most comfortable with), that would be very helpful. You will soon be added to the masthead as well (http://semprag.org/about/editorialTeam).
+
+We look forward to working with you. If at any time, you have questions or concerns about the journal, please let us know.
+
+The review request will be on its way as well.
+
+All the best,
+
+Z (for the rest of the team as well).
+
+--  
+Semantics and Pragmatics  
+http://semprag.org
+</blockquote>
+
+3. David or Kai will add them to the masthead.
