@@ -196,14 +196,14 @@ The `sp.cls` file includes the following packages by default, which means you ha
 
 The following packages overwrite or violate the S&P style, and should not be used.
 
-- geometry
-- fullpage
+- caption
 - epltxfn
+- fullpage
+- geometry
+- multicol
 - pslatex
 - rotating
-- multicol
 - setspace
-- caption
 
 
 ## Turing completeness and complexity
