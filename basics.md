@@ -179,7 +179,6 @@ The `sp.cls` file includes the following packages by default, which means you ha
 - float
 - subfigure
 - mathptmx
-- stmaryrd
 - textcomp
 - microtype (if available)
 - inputenc
