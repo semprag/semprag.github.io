@@ -196,6 +196,7 @@ The `sp.cls` file includes the following packages by default, which means you ha
 
 The following packages overwrite or violate the S&P style, and should not be used.
 
+- breqn
 - caption
 - epltxfn
 - fullpage
@@ -204,6 +205,7 @@ The following packages overwrite or violate the S&P style, and should not be use
 - pslatex
 - rotating
 - setspace
+- subfig
 
 
 ## Turing completeness and complexity
