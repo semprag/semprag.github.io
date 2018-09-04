@@ -133,7 +133,11 @@ Any type of revised submission should be accompanied by a separate document expl
 Resubmit for review
 :   "Revise & resubmit". S&P is very much interested in publishing a future version of this submission, but there are substantial issues to resolve; nevertheless the editors are reasonably confident that the issues can in fact be resolved. The editorial feedback will clearly lay out what revisions are needed. The author can decide whether to attempt such revisions or withdraw the paper from consideration. This decision is not an acceptance. The final decision may still be a rejection.
 
-If a revised version is submitted, we will usually attempt to assign it out to the same reviewers as in the previous round (but there are exceptions, depending on reviewer availability and suitability). If there are multiple rounds of resubmission, the editors may at some point decide to make a desk decision (of any kind) without further consultation of outside reviewers. If you received a "resubmit for review" decision, it is neither an acceptance nor a rejection; the paper can be listed as "under revision for S&P" on your CV.
+If a revised version is submitted, we will usually attempt to assign it out to the same reviewers as in the previous round (but there are exceptions, depending on reviewer availability and suitability). 
+
+After multiple rounds of resubmission, the editors may at some point decide to make a desk decision (of any kind) without further consultation of outside reviewers. 
+
+If you received a "resubmit for review" decision, it is neither an acceptance nor a rejection; the paper can be listed as "under revision for S&P" on your CV.
 
 NB: If the authors have not submitted a revised version within 6 months of our decision, we will consider the paper withdrawn. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
 
