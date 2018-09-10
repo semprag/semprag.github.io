@@ -124,6 +124,7 @@ S&P endeavors to make an initial decision on any submission within 60 days. To t
 Before we list the different categories of decisions, a few important points that are more generally applicable:
 
 - Any type of revised submission (whether after an initial decline, or "resubmit for review", or "revision required") should be accompanied by a separate document explaining the changes that were made in response to comments from reviewers and editors.
+- If after "resubmit for review" or "revisions required" decisions, the authors have not submitted a revised version within 6 months of our decision, we will consider the paper withdrawn. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
 - If a revised version is submitted, we will usually attempt to assign it out to the same reviewers as in previous rounds (but there are exceptions, depending on reviewer availability and suitability). 
 - At any point during the peer review process, the editors may decide to make a desk decision (of any kind) without further consultation of outside reviewers.
 
@@ -132,17 +133,13 @@ Following the review, the editors will communicate their decision to the author(
 Decline submission
 :   "Reject". This is the most frequent decision for a journal of S&P's standards. There are shades depending on whether the reviewers and editors recommend submission of a substantially improved paper on the same topic. Any such submission will be treated as a new submission and while we might solicit the opinions of previous reviewers, there is no assurance whatsoever that the same set of reviewers will look at the paper. We should note that quite a few of our published papers were declined in an earlier round. Some of our most enthusiastically positive feedback has come from authors of declined submissions, because of the speed of decision and the quality ofeditorial feedback.
 
-In some cases, we will warmly encourage the author to submit a thoroughly revised descendant of a rejected paper to our journal. We will ask the author whether they in fact intend to do so. If they commit themselves to doing so, the paper can be listed as "under revision for S&P" on the CV, but only within a six month period from the original editorial decision.
+    In some cases, we will warmly encourage the author to submit a thoroughly revised descendant of a rejected paper to our journal. We will ask the author whether they in fact intend to do so. If they commit themselves to doing so, the paper can be listed as "under revision for S&P" on the CV, but only within a six month period from the original editorial decision.
 
 Resubmit for review
 :   "Revise & resubmit". S&P is very much interested in publishing a future version of this submission, but there are substantial issues to resolve; nevertheless the editors are reasonably confident that the issues can in fact be resolved. The editorial feedback will clearly lay out what revisions are needed. The author can decide whether to attempt such revisions or withdraw the paper from consideration. A "Resubmit for review" decision is not an acceptance, not even a conditional one. The final decision may still be a rejection. The paper can be listed as "under revision for S&P" on your CV, but only for a six month period from the original editorial decision.
 
-NB: If the authors have not submitted a revised version within 6 months of our decision, we will consider the paper withdrawn. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
-
 Revisions required
 :   "Accept the paper but revisions are necessary". The revisions will by and large not affect the structure of the argument and the proposed analysis, but may require substantial rewriting for expository purposes. They will take no more than 2 weeks of work and only need to be checked by the editors. We will only issue this decision if the revisions are crystal-clear to us. If you received this conditional acceptance, you can list your article as "accepted pending revisions at S&P" on your CV.
-
-NB: If the authors have not submitted a revised version within 6 months of our decision, we will consider the paper withdrawn. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
 
 Accept submission
 :   "We will publish this paper as soon as possible". Minor revisions may still be needed (e.g., fixing typos, small changes in wording, clarification of crucial examples), but those should only take a couple of hours and the paper will move into production as soon as those are done. At this point, at the very latest, we strongly encourage authors to prepare their article via our LaTeX style package. At a minimum, authors will need to follow the final submission guidelines spelled out at <http://info.semprag.org/style>. If you receive this decision, you can list your article as "accepted at S&P" on your CV.
