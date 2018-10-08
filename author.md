@@ -127,6 +127,7 @@ Before we list the different categories of decisions, a few important points tha
 - If after "resubmit for review" or "revisions required" decisions, the authors have not submitted a revised version within 6 months of our decision, we will consider the paper withdrawn. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
 - If a revised version is submitted, we will usually attempt to assign it out to the same reviewers as in previous rounds (but there are exceptions, depending on reviewer availability and suitability). 
 - At any point during the peer review process, the editors may decide to make a desk decision (of any kind) without further consultation of outside reviewers.
+- Last but not least: S&P values the input of our reviewers very much. The editorial decision is based on that input and the editors' own careful reading of the submission. We ask our reviewers to refrain from making a recommendation but to focus on substantive evaluation and comments. Even if reviewers make recommendations and even if those are unanimous, the editors are not bound by them.
 
 Following the review, the editors will communicate their decision to the author(s). The following are the types of decisions:
 
