@@ -1,5 +1,6 @@
 /**
- * semprag-120202.css
+ * semprag-2019-08-23.css
+ * switched the logo to https connection (KvF)
  * added logo and direct link to it in #headerTitle (KvF)
  * corrected link to logo after new rewrite rules from admins (KvF)
  * minor tweaks as I work through the submissions process (KvF)
@@ -146,7 +147,7 @@ input.defaultButton {
 	width: 82%;
 	height: 140px;
 	text-align: left !important;
-	background: #fff url(http://semprag.org/public/journals/5/sp1.gif) 20px 20px no-repeat;
+	background: #fff url(https://semprag.org/public/journals/5/sp1.gif) 20px 20px no-repeat;
 	margin: 0.5em auto;
 	border: 3px solid #933;
 	padding: 0;
