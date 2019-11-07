@@ -119,21 +119,25 @@ reviewers and their own reading of the submission.
 But to give you a picture of the journal's practices, here is how we
 interpret the choices offered by our software:
 
-Accept submission
-:   "We will publish this paper as soon as possible". Minor revisions may still be needed (e.g. fixing typos, small changes in wording, clarification of crucial examples), but those should only take a couple of hours and the paper will move into production as soon as those are done.
+Decline submission
+:   "Reject". This is the most frequent decision for a journal of S&P's standards. Some of our most enthusiastically positive feedback has come from authors of declined submissions, because of the speed of decision and the quality of editorial feedback.
 
-Revisions required
-:   "Accept the paper but revisions are necessary". The revisions will by and large not affect the structure of the argument and the proposed analysis, but may require substantial rewriting for expository purposes. They will take no more than 2 weeks of work and only need to be checked by the editors. We will only issue this decision if the revisions are crystal-clear to us. NB: If the authors have not submitted a revised version within 6 months of our decision, we will consider the paper rejected. Any resubmitted version after 6 months will be considered a new submission and will be subject to the regular review process again.
+    There are shades depending on whether the reviewers and editors recommend submission of a substantially improved paper on the same topic. In some cases, we will warmly encourage the author to submit a thoroughly revised descendant of a rejected paper to our journal. We will ask the author whether they in fact intend to do so. If they commit themselves to doing so, the paper can be listed as "under revision for S&P" on the CV, but only within a six month period from the original editorial decision. 
+
+    Unless we explicitly encourage resubmission of an improved paper, a decline will be considered final. The editor may in addition suggest other venues for publication.
 
 Resubmit for review
-:   This is intended to be **a rare decision**, and implies that substantial rewriting and possibly new research is needed, possibly taking months. But the editors are confident that they will be able to judge those revisions without sending them out for peer review again (we do reserve the right to change our minds and send the new version out for review). This decision is not an acceptance. The final decision may still be a rejection.
+:   "Revise & resubmit". S&P is very much interested in publishing a future version of this submission, but there are substantial issues to resolve; nevertheless the editors are reasonably confident that the issues can in fact be resolved. The editorial feedback will clearly lay out what revisions are needed. The author can decide whether to attempt such revisions or withdraw the paper from consideration. A "Resubmit for review" decision is not an acceptance, not even a conditional one. The final decision may still be a rejection. The paper can be listed as "under revision for S&P" on the authors' CV(s), but only for a six month period from the original editorial decision.
+
+Revisions required 
+: "Accept the paper but revisions are necessary". The revisions will by and large not affect the structure of the argument and the proposed analysis, but may require substantial rewriting for expository purposes. Although in principle the author may take up to 6 months before resubmitting, the revisions required by the editors should normally amount to at most 2 weeks of work for this type of decision.  We will only issue this decision if the revisions are crystal-clear to us. The revisions should be verifiable by the editors, and not normally require any further external review. If we issue such a conditional acceptance, the article can be listed on the authors' CV(s) as "accepted pending revisions at S&P".
+
+Accept submission
+:   "We will publish this paper as soon as possible". Minor revisions may still be needed (e.g., fixing typos, small changes in wording, clarification of crucial examples), but those should only take a couple of hours and the paper will move into production as soon as those are done. At this point, at the very latest, we strongly encourage authors to prepare their article via our LaTeX style package. At a minimum, authors will need to follow the final submission guidelines spelled out at <http://info.semprag.org/style>. If we issue this decision, the article can be listed as "accepted at S&P" on the authors' CV(s).
 
 Resubmit elsewhere
 :   This is really a variant of "Decline submission" but with helpful
     advice about where else the paper may find a more hospitable home.
-
-Decline submission
-:   "Reject". This is the most frequent decision for a journal of S&P's standards. There are shades depending on whether the reviewers and editors recommend submission of a substantially improved paper on the same topic. Any such submission will be treated as a new submission and while we might solicit the opinions of previous reviewers, there is no assurance whatsoever that the same set of reviewers will look at the paper. We should note that quite a few of our published papers were declined in an earlier round. Some of our most enthusiastically positive feedback has come from authors of declined submissions, because of the speed of decision and the quality of editorial feedback.
 
 ### C. Justification
 
