@@ -1,5 +1,17 @@
-# github pages overrides:
-safe: true
+# See https://help.github.com/articles/configuring-jekyll for details on
+# github-pages's defaults and overrides. E.g., the only allowed markdown
+# renderer is kramdown. The settings below replicate the github-pages
+# environment for more accurate development rendering.
 lsi: false
-# github pages defaults:
-highlighter: pygments
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate

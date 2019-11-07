@@ -1,4 +1,10 @@
+/vendor/
+/.bundle/
+Gemfile.lock
+
 /_site/
+.jekyll-metadata
+
 *.sublime*
 *.aux
 *.log

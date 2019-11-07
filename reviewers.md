@@ -1,8 +1,7 @@
 ---
 layout: default
-title: "S&P Guidelines for reviewers"
+title: Guidelines for reviewers
 ---
-# S&P Guidelines for reviewers
 
 ## Preliminaries
 
@@ -60,30 +59,31 @@ inappropriate to continue with the review:
     submitted for anonymous review.
 4.  You may judge that the standard of English is so low that the paper
     is painful to read or hard to follow. In any such case, please email
-    the editors immediately rather than ploughing on with a difficult or
+    the editors immediately rather than plowing on with a difficult or
     inappropriate review.
 
 If you do decline to review the paper, please help us out by suggesting
 some alternative reviewers (the template presented by the website when
 declining a review includes a space to put in such recommendations).
 
+
 ## Anonymity
 
 We do not require that submitted papers be anonymous, since this is frequently an unattainable goal. However, the author of a paper has the right to remain anonymous to the reviewers throughout the review process. In that case, the author will take care to anonymize the paper, and will include in a clearly visible position on the front page the text "Submitted for anonymous review." The reviewers are then considered under obligation not to attempt to discern the identity of the author. Please take this seriously.
 
+
 ## The review
 
-If you accept to be a reviewer of this paper, please read through the
-paper, and in your report to us address questions A-C, and optionally D,
-below. Note that a perfectly adequate review might be just a page long
-(or even shorter). Many reviewers go beyond the call of duty and provide
-us with editorial advice (and lists of typos and the like); that is of
-course appreciated but we really mean it when we say that a concise
-review delivered by the agreed upon deadline is all we need in the first
-round. As a paper moves closer to publication, we may call on reviewers
-to give us more detailed advice, if they agree to that.
+If you agree to be a reviewer of this paper, please read through the
+paper, and in your report to us address questions [**A**](#a-estimate-of-overall-quality), [**B**](#b-recommendation), and [**C**](#c-justification), and optionally [**D**](#d-comments), below.
+Note that a perfectly adequate review might be just a page long (or even shorter).
+Many reviewers go beyond the call of duty and provide us with editorial advice (and lists of typos and the like); that is of
+course appreciated but we really mean it when we say that a concise review delivered by the agreed upon deadline is all we need in the first round.
+As a paper moves closer to publication, we may call on reviewers to give us more detailed advice, if they agree to that.
 
-**A. Estimate of overall quality.** Check one of the following:
+### A. Estimate of overall quality
+
+Check one of the following:
 
 -   Instant classic (with minor revision, may be among the most
     important publications in this field this year)
@@ -97,7 +97,9 @@ to give us more detailed advice, if they agree to that.
 -   Does not contain sufficient publishable material to warrant
     consideration for S&P.
 
-**B. Recommendation.** At the moment, we are constrained by the choices
+### B. Recommendation
+
+At the moment, we are constrained by the choices
 that our journal management software provides. The pull-down menu for
 reviewers allows the following recommendations:
 
@@ -137,7 +139,9 @@ Resubmit elsewhere
 :   This is really a variant of "Decline submission" but with helpful
     advice about where else the paper may find a more hospitable home.
 
-**C. Justification.** Please write a short justification, in broad
+### C. Justification
+
+Please write a short justification, in broad
 terms, of the above estimate of overall quality (and of your explicit
 recommendation, if you chose to make one). Although you should feel free
 to explain your reaction in any way you think will be helpful, issues
@@ -182,9 +186,12 @@ Contextualization of research
     show the relevance of the results to future work in the same or
     other fields?
 
-**D. Comments.** Optional comments for the author. (You may just note
+### D. Comments
+
+Optional comments for the author. (You may just note
 that it would be acceptable to share your answer in C, or you may
-provide no commentary at all for the author's eyes)
+provide no commentary at all for the author's eyes.)
+
 
 ## Short contributions
 

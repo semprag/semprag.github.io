@@ -1,0 +1,66 @@
+\documentclass{sp}
+
+% The \pdf* commands provide metadata for the PDF output.
+% Do not use LaTeX style / commands like \emph{} inside these.
+\pdfauthor{Author Full Name(s)}
+\pdftitle{Full title}
+\pdfkeywords{keyword list, each, separated, by commas}
+
+% Optional short title inside square brackets, for the running headers.
+% If no short title is given, no title appears in the headers.
+\title[Short title]{Full title%
+  \thanks{We thank \ldots}}
+
+% Optional short author inside square brackets, for the running headers.
+% If no short author is given, no authors print in the headers.
+\author[Author1, Author2, Author3]{% As many authors as you like, each separated by \AND.
+  \spauthor{Author1 Full Name \\ \institute{Institute1}} \AND
+  \spauthor{Author2 Full Name \\ \institute{Institute2}} \AND
+  \spauthor{Author3 Full Name \\ \institute{Institute3}}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  This is a minimal example document.
+\end{abstract}
+
+\begin{keywords}
+  keyword list, each, separated, by commas
+\end{keywords}
+
+\section{First section}
+
+First paragraph.
+
+\subsection{Subsequent subsection}
+
+Second paragraph.
+
+\subsubsection{Nested subsubsection}
+
+Third paragraph.
+
+Fourth paragraph.
+
+
+\bibliography{your-bibliography-file}
+
+\begin{addresses}
+  \begin{address}
+    Author1 Full Name \\
+    Street \\
+    City, State Zip \ldots \\
+    \email{author1@example.org}
+  \end{address}
+  % Repeat or remove additional addresses as needed.
+  \begin{address}
+    Author2 Full Name \\
+    Street \\
+    City, State Zip \dots \\
+    \email{author2@example.com}
+  \end{address}
+\end{addresses}
+
+\end{document}

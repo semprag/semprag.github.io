@@ -1,0 +1,524 @@
+/**
+ * semprag-2019-08-23.css
+ * switched the logo to https connection (KvF)
+ * added logo and direct link to it in #headerTitle (KvF)
+ * corrected link to logo after new rewrite rules from admins (KvF)
+ * minor tweaks as I work through the submissions process (KvF)
+ * align navigation with sidebar (LDH)
+ * arrange navigation on one line (LDH)
+ * modified menu position (LDH)
+ * modified h2 bottom-padding (Kvf)
+ * modified a.file to not use uppercase (KvF)
+ * tried to adjust to the new OJS code (KvF)
+ *
+ * Copyright (c) 2000-2012 John Willinsky
+ * Modified for S&P by Kodiak Web Design and Kai von Fintel
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * S&P-specific stylesheet
+ *
+ * 
+ */
+
+/**
+ * Common HTML elements
+ */
+ 
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #C0AC85;
+	color: #000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+/* 	text-align: center; */
+}
+
+div {
+	line-height: 140%;
+	text-align: left;
+}
+
+p {
+	margin: 1em 0; /* Making default stylesheet explicit - fixes IE7 margin collapsing. */
+}
+
+table {
+	border: 0;
+	border-spacing: 0;
+	font-size: 1.0em;
+}
+
+form {
+	margin: 0;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:link {
+	color: #c50;
+	font-weight: bold;
+}
+
+a:active {
+	color: #933;
+}
+
+a:visited {
+	color: #666;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #933;
+}
+
+a.plain {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0.25em 0 0.75em 0;
+	padding: 0 0 0 2.5em;
+}
+
+tt {
+	font-size: 1.25em;
+}
+
+label {
+}
+
+label.error {
+	color: #900;
+}
+
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	background-color: #fff;
+	color: #000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font-size: 1em;
+}
+
+input.button {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #fff;
+	font-size: 1em;
+}
+
+input.defaultButton {
+	background-color: #c50;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+/**
+ * Main layout elements
+ */
+
+#container {
+	line-height: 125%;
+	width: 100% !important;
+	min-width: 730px !important;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#header {
+	padding: 0;
+	margin: 1em 10px; 
+	text-align: center;
+	background-color: #C0AC85;
+}
+
+#headerTitle {
+	width: 82%;
+	height: 140px;
+	text-align: left !important;
+	background: #fff url(https://semprag.org/public/journals/5/sp1.gif) 20px 20px no-repeat;
+	margin: 0.5em auto;
+	border: 3px solid #933;
+	padding: 0;
+}
+
+#header h1 {
+	margin: 70px 20px 20px 0;
+	padding: 0.5em 5px; /* 0.5em; /* em widths here - orig. both set to 0.5em */
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-weight: normal;
+	text-align: right;
+	color: #933;
+}
+
+#footer {
+	width: 100%;
+	min-height: 50px;
+	position: static;
+	clear: both;
+	background-color: #d9ceb7;
+	text-align: center;
+	border: 3px solid #933;
+}
+
+#footerContent {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 10%;
+}
+
+#main {
+	padding: 0em 0em 2em 0em;
+	background: #C0AC85;
+}
+
+#main h2 {
+margin-bottom: 0.6em;
+padding: 0 0 0 10px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-weight: normal;
+color: #933;
+	text-align: right;
+}
+
+#main h3 {
+	margin: 0em 1em 0.5em 0em;
+	padding-top: 0em;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-weight: normal;
+}
+
+#navbar {
+	margin-right: 0;
+	background: #d9ceb7;
+	padding: 0.5em 10px;
+	border: 3px solid #933;
+}
+
+#breadcrumb {
+	color: #933;
+	padding-top: 1em;
+	padding-left: 1em;
+	font-size: 0.7em;
+margin-top: 0.5em;
+margin-bottom: 1em;
+}
+
+#content {
+	background: #fff;
+	margin: 0;
+	border: 3px solid #933;
+	padding: 0.5em 10px;
+	font-size: 0.7em;
+}
+
+#content h3 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-weight: normal;
+	font-size: 1.8em;
+	line-height: 1.35em;
+}
+
+#content h4 {
+	margin: .75em 1em 0.25em 0em;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+#content h5 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+/**
+ * Breadcrumbs
+ */
+
+#breadcrumb a {
+	text-decoration: none;
+	color: #933;
+}
+
+#breadcrumb a.current {
+	font-weight: bold;
+}
+
+
+/**
+ * Footer elements
+ */
+
+#footer div.debugStats {
+	font-size: 0.6em;
+}
+
+
+/**
+ * Additional text styles
+ */
+
+span.disabled, label.disabled {
+	color: #666;
+}
+
+a.action, a.file {
+	font-size: 0.85em;
+	/* text-transform: uppercase; */
+}
+
+a.icon {
+	text-decoration: none;
+}
+
+a.icon img {
+	border: 0;
+}
+
+a.icon:hover {
+	background: none;
+}
+
+span.formRequired {
+background: #ccc;
+	color: #333;
+	font-size: 0.9em;
+}
+
+span.instruct {
+}
+
+span.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+
+span.highlight {
+	border-bottom: 1px dotted #000;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+/**
+ * Table styles
+ */
+
+table.info td {
+	padding: 0;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+}
+
+table.listing td {
+	padding: 0.25em 1.5em 0.25em 0.5em;
+}
+
+table.listing tr.heading td, table.listing td.heading, table.info td.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 0.75em 1.5em 1em 0.5em;
+}
+
+table.info td.heading {
+	padding-left: 0;
+}
+
+
+table.listing td.nodata, table.info td.nodata {
+	text-align: center;
+	font-style: italic;
+}
+
+table.listing td.headseparator {
+	border-top: 1px dotted #000;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.listing td.endseparator {
+	border-top: 1px dotted #000;
+	font-size: 0.25em;
+	line-height: 10%;
+}
+
+table.listing td.separator, table.info td.separator {
+	border-top: 1px dotted #DDDDD0;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data tr {
+}
+
+table.data td {
+	padding-bottom: 0.25em;
+}
+
+table.data td.label {
+	padding-right: 1em;
+}
+
+table.data td.value {
+}
+
+table.data td.separator {
+	padding: 0.5em;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data td.heading {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+table.nested tr {
+	padding: 0;
+	margin: 0;
+}
+
+span.nested {
+	padding: 0 4px 0 0;
+	font-size: 1.2em;
+}
+
+/**
+ * Form-specific elements
+ */
+
+span.formError {
+	color: #900;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+span.formSuccess {
+	color: #090;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+ul.formErrorList {
+	color: #900;
+}
+
+
+/**
+ * Other organizational elements
+ */
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	margin: 0;
+	padding: 0;
+	padding-right: 1.5em;
+	display: inline;
+}
+
+ul.menu li.current {
+	font-weight: bold;
+}
+
+ul.menu a {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+ul.steplist {
+	margin: 0;
+	padding: 0;
+	list-style-type: decimal;
+}
+
+ul.steplist li {
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+	padding-right: 0.5em;
+	display: inline;
+	text-transform: uppercase;
+}
+
+ul.steplist li.current {
+	font-weight: bold;
+}
+
+ul.steplist a {
+	text-decoration: none;
+}
+
+ul.plain {
+	list-style-type: none;
+	padding-left: 1.5em;
+}
+
+ul.filter {
+	margin: 0;
+	padding: 1.5em 0 1.5em 0;
+	list-style-type: none;
+}
+
+ul.filter li {
+	padding-right: 1.5em;
+	display: inline;
+}
+
+
+/**
+ * Other organizational elements
+ */
+
+div.separator {
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	padding: 0;
+	border-bottom: 1px dotted #000;
+	font-size: 0.5em;
+	line-height: 25%;
+}
+
+/* Sidebar code */
+
+#rightSidebar {
+	padding-left: 1em;
+/* 
+	margin-right: 10%;
+ */
+	margin-left: 1%;
+	background: #d9ceb7;
+    border: 3px solid #933;
+}
+
+#articlePdfResizer {
+    height: 100%;
+    width: 100%;
+}
+
+.tocSectionTitle {
+    padding-bottom: 0.5em;
+}

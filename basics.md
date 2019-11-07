@@ -1,39 +1,15 @@
 ---
 layout: default
-title: "The S&P LaTeX system"
+title: LaTeX system
 ---
 
 ## Formats
 
 While we accept submissions in both LaTeX and Microsoft Word formats, we publish all articles using LaTeX typesetting. We prefer LaTeX submissions, because it is easier to remain true to the author's vision when typeset in the S&P style and because it expedites the production process, thus leading to much faster publication. We therefore strongly encourage authors to submit in LaTeX format, and ideally in our house style. If you yourself are not familiar with LaTeX, maybe a friend or colleague could help you with preparing your manuscript. If you have to submit in Word format, please read our [Word-specific instructions](word).
 
-## LaTeX configuration
+## Style guidelines
 
-Compiling in the S&P style requires two files, a TeX style file, [sp.cls](/source/sp.cls), and a BibTeX style file, [sp.bst](/source/sp.bst). (If you like to live on the cutting edge, replace sp.bst with [our BibLaTeX implementation of our bibliography style](https://github.com/semprag/biblatex-sp-unified).)
-
-You can add these to your global TeX distribution, your local settings, or keep them in the same folder as your article.
-
-On most Linux distributions, you can move these files to the following global paths:
-
-    /texmf/tex/latex/sp.cls
-    /texmf/bibtex/bst/sp.bst
-
-On Mac OS X, with [MacTeX](https://tug.org/mactex/), the files should be located at:
-
-    ~/Library/texmf/tex/latex/local/sp.cls
-    ~/Library/texmf/bibtex/bst/sp.bst
-
-Having done that, you should now be able to get a document started by setting your document class:
-
-    \documentclass{sp}
-
-You will probably be better off starting from a minimal template, though, which includes sections for authors, abstract, keywords,
-and many other required sections. You can download that file here: <a href="source/sp-template.tex">sp-template.tex</a>. Please consult [the detailed explanation of the template](basics).
-
-*Semantics and Pragmatics* uses Lucida, a commercial font that is not freely redistributable.
-The provided template uses Times, by default, but you can defer back to the LaTeX standard Computer Modern by specifying `\documentclass[cm]{sp}`.
-
-## Style guidelines ##
+Compiling your LaTeX document in the S&P house style requires using the documentclass `sp` and a custom bibliography style. See the [installation instructions](/install) for details on where to put these sources.
 
 In our experience, even submissions in LaTeX format often require intensive re-typesetting and additional work on the bibliography. We hope that authors can take some of the burden of that work, again in the interest of an expedited publication process. To that purpose, please read [our style guidelines](style), especially as they pertain to LaTeX submissions.
 
@@ -56,9 +32,6 @@ There is no limit to the number of authors you can have. Each use of `\spauthor{
 
 The optional argument to `\author` (inside square brackets) is what appears in the header on subsequent pages. Just give your full name. For two authors, you can give both full names conjoined with *and*. When the author list becomes too long, use last names only, and use *&* instead of *and*. If you have more than three authors, use "Murphy et al." (where Murphy is the last name of the first author).
 
-#### Keywords
-
-The content of the `keywords` environment should be the same as the `\pdfkeywords{}` command, except that the environment allows an extended character set. Six is a good target for number of keywords.
 
 ## The document
 
@@ -71,12 +44,24 @@ Our general formatting rules for examples:
 - Equations and examples should be numbered in the same sequence.
 - References to examples appear inside parentheses, with no punctuation between elements.
   - E.g., we can refer to (12), or to its subexample (12a).
+- Reference ranges should look like (12)–(14)
+  - For subexamples, both (12a–e) and (12a)–(12e) are acceptable, but be consistent.
 
-For simple needs, we have found that the [linguex package](http://www.ctan.org/pkg/linguex) works well with our style. You can load it by simply passing a `linguex` option to `sp.cls`.
+There are three example-numbering packages that are approved for use in S&P documents: `linguex`, `expex`, and `gb4e` (as `gb4e-emulate`, see below).
+Each of these have different syntaxes and functionality, and you can use whichever fits your needs (but not more than one of them).
 
-For more complex needs (complex glosses, for example), we strongly recommend the [expex package](http://ctan.org/pkg/expex). We expect to offer full expex integration into our system soon.
+- `linguex`: for simple needs, we have found that the [linguex package](https://ctan.org/pkg/linguex) works well with our style.
+  You should load it by passing the `linguex` option to `sp.cls`, i.e., `\documentclass[linguex]{sp}`.
+- `expex`: for more complex needs (complex glosses, for example), we recommend the [expex package](https://ctan.org/pkg/expex).
+  You should load it by passing the `expex` option to `sp.cls`, i.e., `\documentclass[expex]{sp}`.
+- `gb4e`: if you are already using `gb4e` syntax, install and use our [`gb4e-emulate.sty`](https://raw.githubusercontent.com/semprag/tex/master/gb4e-emulate.sty) package, which specifies proper S&P spacing.
+  Usually this means simply adding `gb4e-emulate.sty` to the same folder as your `.tex` document, and replacing `\usepackage{gb4e}` with `\usepackage{gb4e-emulate}`.
 
-We advise against all other example packages (gb4e, covington, etc.), because in our experience they create difficult integration problems with our house style.
+Both `linguex` and `expex` are very sensitive to whitespace (perhaps because they date back to plain TeX).
+If you use one of them, be careful that whitespace around `\label{...}` calls do not produce extra (unintended) spacing in the output.
+
+We advise against all other example packages (e.g., `covington`), because in our experience they create difficult integration problems with our house style.
+
 
 ### BibTeX and Citations
 
@@ -146,7 +131,7 @@ The end sections are organized in this order:
 
 ### Appendix
 
-The `appendix` environment, is a good home for lengthy proofs, fragments, experimental materials, etc.
+The `appendix` environment is a good home for lengthy proofs, fragments, experimental materials, etc.
 
     \begin{appendix}
       ...
@@ -187,29 +172,75 @@ They are specified in an `addresses` environment, which consists of `address` en
 The `sp.cls` file includes the following packages by default, which means you have access to all their commands without having to `\usepackage{}` it in your own document (in fact, it is a very good idea to delete the relevant `\usepackage{}` commands from your preamble):
 
 - graphicx
-- natbib
 - hyperref
+- url
 - amsmath
 - amssymb
 - float
 - subfigure
 - mathptmx
-- stmaryrd
 - textcomp
-- microtype
+- microtype (if available)
 - inputenc
 - xspace
 - ifthen
-- color
+- ifpdf
+- xcolor
 - fontenc
-- linguex (loaded by `[linguex]` package option)
+- biblatex (if you have specified the `[biblatex]` option)
+- natbib (if you have not specified the `[biblatex]` option)
+- linguex (if you have specified the `[linguex]` option)
+- expex (if you have specified the `[expex]` option)
+
+## Prohibited packages
+
+The following packages overwrite or violate the S&P style, and should not be used.
+
+- breqn
+- caption
+- epltxfn
+- fullpage
+- geometry
+- multicol
+- pslatex
+- rotating
+- setspace
+- subfig
+
+
+## Turing completeness and complexity
+
+LaTeX is infamous for being Turing complete.
+However, the `.tex` sources you submit for publication should be as simple and finite as possible.
+
+* Avoid multiple source `.tex` files.
+* If you need additional functionality, prefer packages on [CTAN](https://ctan.org/).
+  If you include a custom `.sty` file, explain what it does and why you need it.
+  Do not import packages that your document doesn't use.
+* Prefer a little bit of repetition over special purpose macros.
+  I.e., it's preferable to have three or four instances of `$_{\mathcal{Z}}$` throughout your paper rather than a special `\newcommand{\subZ}{\ensuremath{_\mathcal{Z}}}` command and three or four instances of `\subZ`.
+  If you have 20+ instances, the `\newcommand` approach becomes more palatable.
+* Do not include the `sp.cls` and `sp.bst` files in your submission (or `gb4e-emulate.sty`, if you are using it).
+  Your versions of those files should match [ours](https://github.com/semprag/tex).
+  Any modifications to the defaults should be made and explicitly described in your submitted `.tex` document, not the class or BibTeX style file.
+* Your `.bib` file should, optimally:
+  - include only the entries required by your document
+  - exclude non-standard fields (e.g., BibDesk includes fields like "Date-Added", "Date-Modified", and "Bdsk-Url-1")
+  - be proper BibTeX
+
+For both `.tex` and `.bib` sources:
+
+* Convert tabs to spaces (tabs are ambiguous)
+* Delete trailing whitespace
+* Use UTF-8 (or simply ASCII, which is a subset of UTF-8)
+
 
 ## Postscript
 
 We strongly recommend rendering directly to PDF with `pdflatex`, avoiding `dvi` and `ps` formats entirely.
 This ensures that line breaks and hyperlinks appear correctly.
 
-If you must use `postscript` for certain diagrams, we recommend rendering those to PDF format independently (e.g., via `latex` & `dvipdf` or by using `ps2pdf`), and then importing the result directly into your *S&P* submission:
+If you must use `postscript` for certain diagrams, we recommend rendering those to PDF format independently (e.g., via `latex` & `dvipdf` or by using `ps2pdf`), and then importing the result directly into your S&P submission:
 
     \includegraphics{used-to-be-ps.pdf}
 

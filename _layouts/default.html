@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <title>Semantics & Pragmatics</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/master.css" type="text/css">
+  <title>Semantics & Pragmatics{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/info.css" type="text/css">
 </head>
 <body>
   <nav>
     <div style="text-align: center; margin-bottom: 2em">
-      <a href="/">{% include logo.svg %}</a>
-      <h1><a href="http://semprag.org/">Semantics & Pragmatics</a></h1>
+      <a href="/"><img src="/assets/logo.svg" style="height: 100px" /></a>
+      <h1><a href="http://semprag.org/" style="font-weight: normal">Semantics & Pragmatics</a></h1>
       <h3>Guidelines and typesetting resources</h3>
     </div>
 
@@ -24,6 +24,7 @@
     <section>
       <strong>Typesetting</strong>
       <ul>
+        <li><a href="/install">LaTeX installation</a></li>
         <li><a href="/basics">LaTeX configuration</a></li>
         <li><a href="/style">Detailed style guide</a></li>
         <li><a href="/word">Microsoft Word</a></li>
@@ -33,42 +34,34 @@
     <section>
       <strong>LaTeX sources</strong>
       <ul>
-        <li><a href="/source/sp-template.tex">Empty template</a></li>
-        <li><a href="/source/sp.cls">S&P document class</a></li>
-        <li><a href="/source/sp.bst">S&P BibTeX style</a></li>
+        <li><a href="/examples/sp-template.tex">Empty template</a></li>
+        <li><a href="https://raw.githubusercontent.com/semprag/tex/master/sp.cls">S&P document class</a></li>
+        <li><a href="https://raw.githubusercontent.com/semprag/tex/master/sp.bst">S&P BibTeX style</a></li>
       </ul>
     </section>
 
-    <section id="administrative" style="display: none; opacity: 0.5">
-      <strong>Administrative</strong>
+    <section>
+      <strong>Outlinks</strong>
       <ul>
-        <li><a href="/workflow">Workflow</a></li>
-        <li><a href="/internal">Internal</a></li>
-        <li><a href="/lucida">Lucida</a></li>
-        <li><a href="https://github.com/semprag/semprag.github.com">This repository on GitHub</a></li>
+        <li><a href="http://semprag.org/">Main journal site</a></li>
+        <li><a href="https://blog.semprag.org/">S&P Editors' Blog</a></li>
+        <li><a href="https://github.com/semprag/semprag.github.com">This site on GitHub</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <strong>Management</strong>
+      <ul>
+        <li><a href="/editors">Editorial workflow</a></li>
+        <li><a href="/production">Production</a></li>
       </ul>
     </section>
   </nav>
   <article>
+    {% if page.title %}
+      <h1>{{ page.title }}</h1>
+    {% endif %}
     {{ content }}
   </article>
-  <script>
-    var _gaq = [['_setAccount', 'UA-20644777-6'], ['_trackPageview']];
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      document.body.appendChild(ga);
-    })();
-  </script>
-  <script>
-  var escapes = 0;
-  document.addEventListener('keyup', function(ev) {
-    if (ev.which == 27) {
-      escapes++;
-    }
-    if (escapes > 1) {
-      document.getElementById('administrative').style.display = 'block';
-    }
-  });
-  </script>
+  <script src="/assets/site.js"></script>
 </body>

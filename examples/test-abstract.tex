@@ -1,0 +1,42 @@
+\documentclass[lucida]{sp}
+
+\pdfauthor{Semprag Typesetting}
+\pdftitle{The title of this paper is this}
+\pdfkeywords{typesetting,abstract,test}
+
+\title[The title of this paper]{The title of this paper is this\thanks{Thanks go out to the \LaTeX{} commands, \texttt{\textbackslash@ifnextchar}, \texttt{\textbackslash{}expandafter}, \texttt{\textbackslash@gobble}, and \texttt{\textbackslash{}ignorespaces}, without whose support this research would have come to naught.}}
+
+\author[Semprag Typesetting]{%
+  \spauthor{Semprag Typesetting \\ \institute{Semantics \& Pragmatics}}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+This paper presents examples of abstract layout. We test three possible variations. First, spaces, including at least one newline, before the abstract content begins, which is the problematic case. Second, some spaces, but no newline, before the abstract's content, which is the typical case, and has the intended output. Third, no spaces at all before the abstract's content begins (who would do that!?).
+
+This is the first case.
+
+\end{abstract}
+
+\begin{abstract}
+This paper presents examples of abstract layout. We test three possible variations. First, spaces, including at least one newline, before the abstract content begins, which is the problematic case. Second, some spaces, but no newline, before the abstract's content, which is the typical case, and has the intended output. Third, no spaces at all before the abstract's content begins (who would do that!?).
+
+This is the second case.
+\end{abstract}
+
+\begin{abstract}This paper presents examples of abstract layout. We test three possible variations. First, spaces, including at least one newline, before the abstract content begins, which is the problematic case. Second, some spaces, but no newline, before the abstract's content, which is the typical case, and has the intended output. Third, no spaces at all before the abstract's content begins (who would do that!?).
+
+This is the third case.
+\end{abstract}
+
+\begin{keywords}
+typesetting, abstract, test
+\end{keywords}
+
+Since the abstract is really the focus of this paper, I will begin with the conclusion. We see that all instances of the abstract look the same, with a bold `Abstract' header, left-aligned, a double space, and the content of the abstract following immediately on that line, no matter which case is used.
+
+\end{document}
