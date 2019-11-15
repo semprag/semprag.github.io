@@ -7,7 +7,7 @@ title: Editorial workflow
 
 2. When you see that there is a new submission, please check it out on the [OJS website](http://semprag.org/editor/submissions/submissionsInReview).
 
-3. The system automatically assigns DIB and KvF as the editors in charge, but that's just temporary until a shepherding editor is chosen. Who takes charge is a collective decision. DIB/KvF may ask for volunteers, browbeat someone into taking it, or take it on themselves. Or, in fact, someone can actually volunteer straightaway if the paper looks interesting to them.
+3. The system automatically assigns LMcN and KJS as the editors in charge, but that's just temporary until a shepherding editor is chosen. Who takes charge is a collective decision. LMcN/KJS may ask for volunteers, browbeat someone into taking it, or take it on themselves. Or, in fact, someone can actually volunteer straightaway if the paper looks interesting to them.
 
 4. The shepherding editor sends email to the author, saying that they will shepherd the article, that we are aiming for a decision within 60 days, and that they should contact the shepherd if they have any questions or concerns.
 
@@ -60,19 +60,37 @@ likelihood that we may take up to 90 days given the nature of their paper.
 
 7. The usual deadline for reviews is four weeks. We sometimes adjust this a bit if needed, keeping in mind that we really want to have a decision made within 60 days of submission. As the deadline approaches or passes, we often need to nudge reviewers.
 
-8. When the reviews are in, the shepherding editor drafts a decision. For the first few times, you should consult with DIB and KvF. Note that our modal decision by far is "Reject" with varying degrees of warmth encouraging a resubmission. We rarely issue "Revise and resubmit" (only if the path to a successful revision is so clear that we could write the revision ourselves). Read the Author and Reviewer Guidelines for more info: <http://info.semprag.org/author>, <http://info.semprag.org/reviewers>. These documents are in progress; please ask questions, make recommendations for changes, etc. You'll probably see other decisions go by on email and so you'll see how we do things in practice.
+8. When the reviews are in, the shepherding editor drafts a decision. For the first few times, you should consult with LMcN and KJS. Note that our modal decision by far is "Reject" with varying degrees of warmth encouraging a resubmission. We rarely issue "Revise and resubmit" (only if the path to a successful revision is so clear that we could write the revision ourselves). Read the Author and Reviewer Guidelines for more info: <http://info.semprag.org/author>, <http://info.semprag.org/reviewers>. These documents are in progress; please ask questions, make recommendations for changes, etc. You'll probably see other decisions go by on email and so you'll see how we do things in practice.
 
 9. The decision is sent to the author, cc’ing all-editors. We also send a copy of the decision to the reviewers. If the manuscript has not been submitted in anonymous form or contains clear indications that the authors do not care about an anonymous review process, the reviewers can be bcc’ed on the letter of decision. Else, a version without identifying information should be sent to the reviewers separately, including in the author letter something along the following lines: "A copy of this email with identifying information removed will be sent to the three anonymous reviewers." [Again, all these emails can be sent out from the system or from a personal account.] The decision is recorded via the website.
 
-10. When a paper has reached near-final perfection, the author should be asked to prepare the final version following our final submission guidelines: <http://info.semprag.org/style>.
+#### When you are ready to issue a "revisions required" decision (= conditional accept)
 
-11. When the final version is ready, the authors can submit it via the website ("Summary" tab for the paper > "Add a supplementary file") or via email to editors@semprag.org. If there is more than one file to submit (for example in a LaTeX submission: the tex file, the bib file, any image files, any unusual macro packages), the authors should submit a zip archive of all the files. When the final version has been submitted, the shepherding editor informs DIB & KvF. They and their assistants take it from there for copy-editing, typesetting, proofreading, and publication.
+With your "revision required" decision, please include this:
+
+> This is the stage for you to try and prepare the next and hopefully final version in accordance with our formatting guidelines: http://info.semprag.org/basics and http://info.semprag.org/style. Ideally, you would use our LaTeX style files, which are linked from that site. Please make sure to provide DOIs for everything in your bibliography that has DOIs. Pasting your bibliography into the form at https://doi.crossref.org/simpleTextQuery is a great way to find the DOIs if you don't already have them. If you have any technical issues, please contact production@semprag.org.
+
+#### When you are ready to accept the final version
+
+Before you officially accept the submission in the OJS system, please send the following to the author(s). Only accept the submission when they have sent their source files and the signed author agreement:
+
+> We are ready to accept your paper, which we will officially do once you have provided us with a zip archive, including the following items:
+>
+> - all your source files (tex, bib, any image files)
+> - an electronically signed or signed & scanned copy of the S&P author agreement (https://info.semprag.org/resources/sp-author-agreement.pdf)
+>
+> When we received this material, we will move your paper into production. Soon after, we will publish an "early access" version (based on your final PDF), which will count as the official publication (with a publication date, the final DOI, and an entry in the journal's table of contents). The final typeset version will replace the early access version in due course. Our production team will be in touch at all stages of the process.
+>
+> Please email the zip archive to me.
+
+Once they send you the zip archive, forward it to production@semprag.org and "accept" the submission on OJS. The production team will take it from there and your job is done.
+
 
 # Some notes on ethos and etiquette
 
 * We definitely err on including everyone on email conversations so that our operations are as transparent as possible. This makes for an occasional email onslaught.
 
-* If possible and if we remember, we preface all email subject lines with [S&P: xxx] where xxx indicates who, if anyone, should pay quick attention to the email. Values are ALL or FYI (for announcements, queries directed at all editors), DIB, JD, KvF, MF, ASG, MK, LMcN, HP, KS (Katrin), KJS (Kjell Johan), KLS (Kristen), JT.
+* If possible and if we remember, we preface all email subject lines with [S&P: xxx] where xxx indicates who, if anyone, should pay quick attention to the email. Values are ALL or FYI (for announcements, queries directed at all editors), LMcN, KJS (Kjell Johan), KvF, DIB, EEC, JuD (Judith Degen), JD (Josh Dever), ASG, MK, HP, KR, KLS (Kristen), JT.
 
 * Everyone goes through periods when S&P work needs to be put on the backburner. If this happens, please ask for help with outstanding tasks that you can't currently attend to. We pride ourselves on a speedy and thorough review process and the only way this can happen is for team members to help each other out.
 
@@ -130,4 +148,4 @@ Semantics and Pragmatics
 http://semprag.org
 </blockquote>
 
-3. David or Kai will add them to the masthead.
+3. Kai will add them to the masthead.
