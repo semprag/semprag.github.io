@@ -79,7 +79,6 @@ paper, and in your report to us address questions [**A**](#a-estimate-of-overall
 Note that a perfectly adequate review might be just a page long (or even shorter).
 Many reviewers go beyond the call of duty and provide us with editorial advice (and lists of typos and the like); that is of
 course appreciated but we really mean it when we say that a concise review delivered by the agreed upon deadline is all we need in the first round.
-As a paper moves closer to publication, we may call on reviewers to give us more detailed advice, if they agree to that.
 
 ### A. Estimate of overall quality
 
@@ -139,6 +138,8 @@ Resubmit elsewhere
 :   This is really a variant of "Decline submission" but with helpful
     advice about where else the paper may find a more hospitable home.
 
+If you do choose one of these specific recommendations, to facilitate our decision process, please avoid stating it in the comments that you make available to authors.
+
 ### C. Justification
 
 Please write a short justification, in broad
@@ -190,7 +191,7 @@ Contextualization of research
 
 Optional comments for the author. (You may just note
 that it would be acceptable to share your answer in C, or you may
-provide no commentary at all for the author's eyes.)
+provide no commentary at all for the author's eyes, although we encourage such feedback.)
 
 
 ## Short contributions
