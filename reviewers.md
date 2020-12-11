@@ -46,19 +46,16 @@ would however appreciate advice regarding alternate reviewers.
 *Third*, check whether for some reason you think it might be
 inappropriate to continue with the review:
 
-1.  Most obviously, determine whether there is any potential conflict of
-    interest, and notify the editors if you think there may be. A
-    conflict of interest might occur if a reviewer was based at the same
-    institution as an author, or had collaborated with an author in the
-    past, or had corresponded extensively with the author about earlier
-    versions of the paper. However, we will consider each case on its
-    merits.
+1.  Most obviously, determine whether there is any potential conflict of interest, and notify the editors if you 
+    think there may be. A conflict of interest might occur if a reviewer is based at the same institution as an 
+    author, has been in a supervisory relationship or collaborated with an author in the recent past, has 
+    corresponded extensively with the author about earlier versions of the paper, or has a close personal 
+    relationship with an author. However, we will consider each case on its merits, asking the question: 
+    Would a reasonable person with all the relevant facts question your impartiality?
 2.  You may feel on reflection that you do not have the right background
     to review the paper.
-3.  You may know the identity of the author of a paper which has been
-    submitted for anonymous review.
-4.  You may judge that the standard of English is so low that the paper
-    is painful to read or hard to follow. In any such case, please email
+3.  You may judge that the standard of English is so low that the paper
+    is a challenge to read or hard to follow. In any such case, please email
     the editors immediately rather than plowing on with a difficult or
     inappropriate review.
 
@@ -69,7 +66,12 @@ declining a review includes a space to put in such recommendations).
 
 ## Anonymity
 
-We do not require that submitted papers be anonymous, since this is frequently an unattainable goal. However, the author of a paper has the right to remain anonymous to the reviewers throughout the review process. In that case, the author will take care to anonymize the paper, and will include in a clearly visible position on the front page the text "Submitted for anonymous review." The reviewers are then considered under obligation not to attempt to discern the identity of the author. Please take this seriously.
+As of January 2021, Semantics and Pragmatics has a double-blind review 
+policy for all contributed submissions: Authors should refrain from 
+identifying themselves, and reviewers should not attempt to identify the 
+author. We follow the policy and guidelines of the journal Language, 
+which can be found here (link to Language guidelines).
+We acknowledge that in some cases, you may be able to identify the author. This alone need not prevent you from carrying out the review, as long as you feel you can make an objective evaluation of the work.
 
 
 ## The review
