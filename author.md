@@ -80,7 +80,7 @@ Apart from main research articles, S&P publishes some shorter contributions and 
 S&P welcomes several kinds of shorter contributions:
 
 Squibs
-:   Squibs have a target length of 2--8 journal pages (including references, appendices, and footnotes), and should be no more than 10 journal pages (less than 4,000 words of main text). As in the tradition established by *Linguistic Inquiry*, "manuscripts accepted as Squibs will not be required to propose a solution to problems they address as long as their relevance to theoretical issues is made clear" (<http://www.mitpressjournals.org/page/sub/ling>).
+:   Squibs have a target length of 2--8 journal pages (including references, appendices, and footnotes), and should be no more than 10 journal pages (less than 4,000 words of main text). As in the tradition established by *Linguistic Inquiry*, "manuscripts accepted as Squibs will not be required to propose a solution to problems they address as long as their relevance to theoretical issues is made clear" (<https://www.mitpressjournals.org/loi/ling>).
 
 Remarks and Replies
 :   Remarks and replies deal with issues raised in the literature and present a new perspective on them. They have a target length of 5--15 pages (including references, appendices, and footnotes), and should be no more than 20 journal pages (less than 8,000 words).
