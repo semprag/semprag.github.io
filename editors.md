@@ -70,6 +70,8 @@ With your "revision required" decision, please include this:
 
 > This is the stage for you to try and prepare the next and hopefully final version in accordance with our formatting guidelines: http://info.semprag.org/basics and http://info.semprag.org/style. Ideally, you would use our LaTeX style files, which are linked from that site. Please make sure to provide DOIs for everything in your bibliography that has DOIs. Pasting your bibliography into the form at https://doi.crossref.org/simpleTextQuery is a great way to find the DOIs if you don't already have them. If you have any technical issues, please contact production@semprag.org.
 
+If a file or files of supplementary material are involved, the authors should be asked to host them at a reliable repository (such as Harvard Dataverse or Open Science Framework) and to link to them from their pdf, so that the Early Access version provides easy access to the material for readers.
+
 #### When you are ready to accept the final version
 
 Before you officially accept the submission in the OJS system, please send the following to the author(s). Only accept the submission when they have sent their source files and the signed author agreement:
@@ -83,7 +85,7 @@ Before you officially accept the submission in the OJS system, please send the f
 >
 > Please email the zip archive to me.
 
-Once they send you the zip archive, forward it to production@semprag.org and "accept" the submission on OJS. The production team will take it from there and your job is done.
+Once they send you the zip archive, forward it to production@semprag.org and "accept" the submission on OJS. If a file or files of supplementary material are involved, please make a note of this in the forwarding email. The production team will take it from there and your job is done.
 
 
 # Some notes on ethos and etiquette
