@@ -81,7 +81,7 @@ Before you officially accept the submission in the OJS system, please send the f
 > - all your source files (tex, bib, any image files)
 > - an electronically signed or signed & scanned copy of the S&P author agreement (https://info.semprag.org/resources/sp-author-agreement.pdf)
 >
-> When we received this material, we will move your paper into production. Soon after, we will publish an "early access" version (based on your final PDF), which will count as the official publication (with a publication date, the final DOI, and an entry in the journal's table of contents). The final typeset version will replace the early access version in due course. Our production team will be in touch at all stages of the process.
+> When we received this material, we will move your paper into production and register it as "accepted" in our online submission system. Soon after, we will publish an "early access" version (based on your final PDF), which will count as the official publication (with a publication date, the final DOI, and an entry in the journal's table of contents). The final typeset version will replace the early access version in due course. Our production team will be in touch at all stages of the process.
 >
 > Please email the zip archive to me.
 
@@ -150,4 +150,4 @@ Semantics and Pragmatics
 http://semprag.org
 </blockquote>
 
-3. Kai will add them to the masthead.
+3. The editors-in-chief will add them to the masthead.
