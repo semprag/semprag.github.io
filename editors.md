@@ -74,14 +74,14 @@ If a file or files of supplementary material are involved, the authors should be
 
 #### When you are ready to accept the final version
 
-Before you officially accept the submission in the OJS system, please send the following to the author(s). Only accept the submission when they have sent their source files and the signed author agreement:
+Before you officially accept the submission in the OJS system, please send the following to the author(s). Please keep the status of the paper as "revisions required" and **only accept the submission when they have sent their source files and the signed author agreement**:
 
 > We are ready to accept your paper, which we will officially do once you have provided us with a zip archive, including the following items:
 >
 > - all your source files (tex, bib, any image files)
 > - an electronically signed or signed & scanned copy of the S&P author agreement (https://info.semprag.org/resources/sp-author-agreement.pdf)
 >
-> When we received this material, we will move your paper into production and register it as "accepted" in our online submission system. Soon after, we will publish an "early access" version (based on your final PDF), which will count as the official publication (with a publication date, the final DOI, and an entry in the journal's table of contents). The final typeset version will replace the early access version in due course. Our production team will be in touch at all stages of the process.
+> Once we've received this material, we will move your paper into production and register it as "accepted" in our online submission system. Soon after, we will publish an "early access" version (based on your final PDF), which will count as the official publication (with a publication date, the final DOI, and an entry in the journal's table of contents). The final typeset version will replace the early access version in due course. Our production team will be in touch at all stages of the process.
 >
 > Please email the zip archive to me.
 
