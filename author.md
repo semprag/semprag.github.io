@@ -136,7 +136,7 @@ Following the review, the editors will communicate their decision to the author(
 Decline submission
 :   "Reject". This is the most frequent decision for a journal of S&P's standards. Some of our most enthusiastically positive feedback has come from authors of declined submissions, because of the speed of decision and the quality of editorial feedback.
 
-In some cases, the editor will communicate to the author that the journal will be willing to consider a thoroughly revised descendant of the current submission. This will be treated as a new submission. Unless we explicitly encourage resubmission of an improved paper, a decline will be considered final.
+:   In some cases, the editor will communicate to the author that the journal will be willing to consider a thoroughly revised descendant of the current submission. This will be treated as a new submission. Unless we explicitly encourage resubmission of an improved paper, a decline will be considered final.
 
 Resubmit for review
 :   "Revise & resubmit". S&P is interested in publishing a future version of this submission, but there are substantial issues to resolve; nevertheless the editors are reasonably confident that the issues can in fact be resolved. The editorial feedback will clearly lay out what revisions are needed. A "Resubmit for review" decision is not an acceptance, not even a conditional one. The final decision may still be a rejection. The paper can be listed as "under revision for S&P" on your CV, but only for a six month period from the original editorial decision.
