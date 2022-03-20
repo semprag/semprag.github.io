@@ -119,7 +119,7 @@ When you have submitted your paper to S&P, you can list it on your CV as "submit
 
 S&P has submission and rejection rates comparable with the other top journals in our field. The editors act as a first stage filter on papers, normally within a week of receipt. If a paper is determined to be of potential relevance, it is sent to at least two reviewers drawn from our Editorial Board. The Editorial Board consists primarily of PhD holding academics active in the subfields of semantics and pragmatics, selected by the editors, and subject to advice from the Advisory Board. The Board is of sufficient size that we will not normally call on the same reviewer more than twice in a year. The review board is public, but we will not reveal the identity of the reviewer of a particular paper except at the direct request of the reviewer.
 
-As of January 2021, Semantics and Pragmatics has a double-blind review policy for all contributed submissions: Authors should refrain from identifying themselves, and reviewers should not attempt to identify the author. We follow the policy and guidelines of the journal Language, which can be found <a href="https://languagelsa.org/index.php/language/anon">here</a>.
+As of January 2021, Semantics and Pragmatics has a double-anonymous review policy for all contributed submissions: Authors should refrain from identifying themselves, and reviewers should not attempt to identify the author. We follow the policy and guidelines of the journal Language, which can be found <a href="https://languagelsa.org/index.php/language/anon">here</a>.
 
 S&P endeavors to make an initial decision on any submission within 60 days. To that end, reviewers are typically asked to provide their review within four weeks.
 
