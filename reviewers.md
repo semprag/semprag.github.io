@@ -66,7 +66,7 @@ declining a review includes a space to put in such recommendations).
 
 ## Anonymity
 
-As of January 2021, Semantics and Pragmatics has a double-blind review 
+As of January 2021, Semantics and Pragmatics has a double-anonymous review 
 policy for all contributed submissions: Authors should refrain from 
 identifying themselves, and reviewers should not attempt to identify the 
 author. We follow the policy and guidelines of the journal Language, 
