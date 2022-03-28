@@ -162,7 +162,7 @@ NB: S&P's bibliographic style is a close implementation of the ["Unified Style S
 - Articles in journals and books *must* specify page numbers.
 - Use full first names of authors or editors.
 - In case of multiple authorship, the names of all authors must be given.
-- Unpublished manuscripts need a month and year. If a URL is available, include it.
+- If a URL is available for unpublished manuscripts, include it.
 - When you have a choice of URLs, choose one pointing to the more permanent resource.
   - For example, prefer [Semantics Archive](http://semanticsarchive.net/) URLs over the author's homepage or institutional website, which are all too often subject to [link rot](http://en.wikipedia.org/wiki/Link_rot).
 - When you have a choice of years, choose the more official ("Cite this as...") year
