@@ -78,6 +78,7 @@ Before you officially accept the submission in the OJS system, please send the f
 
 > We are ready to accept your paper, which we will officially do once you have provided us with a zip archive, including the following items:
 >
+> - your final pdf
 > - all your source files (tex, bib, any image files)
 > - an electronically signed or signed & scanned copy of the S&P author agreement (https://info.semprag.org/resources/sp-author-agreement.pdf)
 >
