@@ -26,7 +26,7 @@ Read your paper one more time very carefully, paying attention to the issues lis
 * Similarly, make sure that the abstract in your paper and the abstract on the S&P website are the same (modulo that the abstract in the paper is LaTeX and the abstract on the website is HTML).
 * Include your contact address at the end of the paper.
 * Make sure that your bibliographic information complies with our requirements (more details below in the [BibTeX](#bibtex) section), especially:
-  - full names for *all* authors and editors
+  - full names for *all* authors and editors (except for authors/editors who prefer a specific form of their name, such as "e.e. cummings")
   - only use braces to case protect proper names, first words of subtitles, and the like, never a whole title
   - when using braces to protect case, wrap the entire word in braces, not just the initial letter:
     + <del><code>{E}nglish</code></del> `{English}`
@@ -160,7 +160,7 @@ NB: S&P's bibliographic style is a close implementation of the ["Unified Style S
 - University names should be written out in full (e.g., "University of California, Los Angeles" and "Massachusetts Institute of Technology").
 - Journal and book titles *must* be given in full
 - Articles in journals and books *must* specify page numbers.
-- Use full first names of authors or editors.
+- Use full first names of authors or editors (except for authors/editors who prefer a specific form of their name, such as "e.e. cummings").
 - In case of multiple authorship, the names of all authors must be given.
 - If a URL is available for unpublished manuscripts, include it.
 - When you have a choice of URLs, choose one pointing to the more permanent resource.
