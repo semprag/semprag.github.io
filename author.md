@@ -69,7 +69,7 @@ Subject matter and methodology
 
     *Many articles will not make use of corpora or web data, but nowadays all authors must be aware that readers and reviewers have rapid access to corpus and web evidence. It would be as well for authors to forestall potential objections based on these sources by considering for themselves whether any such data might be relevant to their claims prior to submission.*
 
-    *We strongly encourage <a href="https://www.cos.io/initiatives/prereg>preregistration</a> of experimental studies. To facilitate double-blind review, if possible please make an anonymous version of your preregistration. 
+    *We strongly encourage <a href="https://www.cos.io/initiatives/prereg">preregistration</a> of experimental studies. To facilitate double-blind review, if possible please make an anonymous version of your preregistration. 
 
     *If an article applies formal techniques and tools that are not (yet) widely known within the target audience of S&P, authors have to include an accessible introduction to those tools within their article. This will facilitate familiarity with such new developments and will enhance the potential impact of the article.*
 
