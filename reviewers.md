@@ -70,7 +70,7 @@ As of January 2021, Semantics and Pragmatics has a double-anonymous review
 policy for all contributed submissions: Authors should refrain from 
 identifying themselves, and reviewers should not attempt to identify the 
 author. We follow the policy and guidelines of the journal Language, 
-which can be found here (link to Language guidelines).
+which can be found [here](https://languagelsa.org/index.php/language/anon).
 We acknowledge that in some cases, you may be able to identify the author. This alone need not prevent you from carrying out the review, as long as you feel you can make an objective evaluation of the work.
 
 
