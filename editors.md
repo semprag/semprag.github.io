@@ -70,7 +70,7 @@ With your "revision required" decision, please include this:
 
 > This is the stage for you to try and prepare the next and hopefully final version in accordance with our formatting guidelines: http://info.semprag.org/basics and http://info.semprag.org/style. Ideally, you would use our LaTeX style files, which are linked from that site. Please make sure to provide DOIs for everything in your bibliography that has DOIs. Pasting your bibliography into the form at https://doi.crossref.org/simpleTextQuery is a great way to find the DOIs if you don't already have them. If you have any technical issues, please contact production@semprag.org.
 
-If a file or files of supplementary material are involved, the authors should be asked to host them at a reliable repository (such as Harvard Dataverse or Open Science Framework) and to link to them from their pdf, so that the Early Access version provides easy access to the material for readers.
+If a file or files of supplementary material are involved, containing, for example, experimental data or computational code, the authors should be asked to host them at a reliable repository (such as Harvard Dataverse or Open Science Framework) and to link to them from their pdf, so that the Early Access version provides easy access to the material for readers.
 
 #### When you are ready to accept the final version
 
