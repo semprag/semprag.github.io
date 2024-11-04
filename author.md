@@ -14,7 +14,7 @@ S&P leverages advances in desktop publishing, open source journal management sof
 
 S&P publishes both main articles and a variety of shorter contributions (squibs, commentaries, remarks and replies, state of the art). We first lay out the expectations for main articles and then discuss the nature of shorter contributions.
 
-As an LSA journal, S&P is following [the Guidelines on Ethics For LSA Publications and Conferences](http://www.linguisticsociety.org/content/guidelines-ethics-lsa-publications-and-conferences). We also follow the recommendations of the [Committee on Publication Ethics](http://publicationethics.org) (COPE).
+As an LSA journal, S&P is following [the Guidelines on Ethics For LSA Publications and Conferences](https://old.linguisticsociety.org/sites/default/files/Supplemental%20Materials%20Guide%20for%20LSA%20Pubs_0.pdf). We also follow the recommendations of the [Committee on Publication Ethics](http://publicationethics.org) (COPE).
 
 ## Expectations for main articles
 
