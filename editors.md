@@ -7,7 +7,7 @@ title: Editorial workflow
 
 2. When you see that there is a new submission, please check it out on the [OJS website](http://semprag.org/editor/submissions/submissionsInReview).
 
-3. The system automatically assigns LMcN and KJS as the editors in charge, but that's just temporary until a shepherding editor is chosen. Who takes charge is a collective decision. LMcN/KJS may ask for volunteers, browbeat someone into taking it, or take it on themselves. Or, in fact, someone can actually volunteer straightaway if the paper looks interesting to them.
+3. The system automatically assigns the editors in chief as the editors in charge, but that's just temporary until a shepherding editor is chosen. Who takes charge is a collective decision. The editors in chief may ask for volunteers, browbeat someone into taking it, or take it on themselves. Or, in fact, someone can actually volunteer straightaway if the paper looks interesting to them.
 
 4. The shepherding editor sends email to the author, saying that they will shepherd the article, that we are aiming for a decision within 60 days, and that they should contact the shepherd if they have any questions or concerns.
 
@@ -18,7 +18,7 @@ likelihood that we may take up to 90 days given the nature of their paper.
 
 5. Within 1-3 days of submission, the shepherding editor chooses reviewers (when in doubt consult with the other editors) and sends out requests via the website, as follows:
 
-    On the Review tab for the submission, click "Select Reviewer", which brings up a searchable list of the editorial board. There is a way to search by review interests. There’s a glitch in that there is a substantial database of reviewing interests but the system fails to display them consistently. Also, the stats about the reviewer having “active” reviews outstanding are unreliable. If in doubt whether a reviewer is busy for us (or was recently), ask the team.
+    On the Review tab for the submission, click "Add Reviewer", which brings up a searchable list of the reviewer database. There is a way to search by review interests. There’s a glitch in that there is a substantial database of reviewing interests but the system fails to display them consistently. If you click on the little "down" arrow to the right of the "Select Reviewer" button, you can see active assignments, how often the reviewer has declined or has had a review request canceled, and how long they have taken to review on average. Sometimes the information is not accurate - for example, if someone accepts, then doesn't do the review for whatever reason, but it's never cancelled within the system, they'll be shown as still actively reviewing. Please remember to cancel any reviews that are accepted but then not completed to reduce this glitch. If in doubt about whether a reviewer is busy for us (or was recently), ask the team.
 
     When you’ve made a choice, “assign" the reviewer. Back on the "Review" tab, click the mail icon to send an email to the reviewer. A prefilled template shows up but you can personalize the text to your heart's content.
 
@@ -54,23 +54,23 @@ likelihood that we may take up to 90 days given the nature of their paper.
 
     -----
 
-    Sometimes reviewers accept review requests via email and don't go through the system. In such a case, the shepherd should go to the Review page and click "WILL DO THE REVIEW", thus recording the agreement.
+    Sometimes reviewers accept review requests via email and don't go through the system. In such a case, the shepherd should remind the reviewer to accept the request within the system, thus recording the agreement.
 
-6. If a reviewer doesn't respond within 3 days, resend the request. If they do not respond within a week, cancel the request, chiding them for not responding, and move on to alternate reviewers.
+7. If a reviewer doesn't respond within 4-5 days, try contacting them directly from your own email system at the most updated address you can find for them. Sometimes review requests from the OJS system go to spam, or reviewers have changed email address and not updated their information in the system. If they do not respond to a second mail, cancel the request and move on to alternate reviewers.
 
-7. The usual deadline for reviews is four weeks. We sometimes adjust this a bit if needed, keeping in mind that we really want to have a decision made within 60 days of submission. As the deadline approaches or passes, we often need to nudge reviewers.
+8. The usual deadline for reviews is four weeks. We sometimes adjust this a bit if needed, keeping in mind that we really want to have a decision made within 60 days of submission. As the deadline approaches or passes, we often need to nudge reviewers.
 
-8. When the reviews are in, the shepherding editor drafts a decision. For the first few times, you should consult with LMcN and KJS. Note that our modal decision by far is "Reject" with varying degrees of warmth encouraging a resubmission. We rarely issue "Revise and resubmit" (only if the path to a successful revision is so clear that we could write the revision ourselves). Read the Author and Reviewer Guidelines for more info: <http://info.semprag.org/author>, <http://info.semprag.org/reviewers>. These documents are in progress; please ask questions, make recommendations for changes, etc. You'll probably see other decisions go by on email and so you'll see how we do things in practice.
+9. When the reviews are in, the shepherding editor drafts a decision. Normally, we circulate draft decisions to the entire editorial team. Any associate editor is free to comment on decisions if they have something relevant to observe. Note that our modal decision by far is "Reject" with varying degrees of warmth encouraging a resubmission. We rarely issue "Revise and resubmit" (only if the path to a successful revision is so clear that we could write the revision ourselves). Read the Author and Reviewer Guidelines for more info: <http://info.semprag.org/author>, <http://info.semprag.org/reviewers>. These documents are in progress; please ask questions, make recommendations for changes, etc. You'll probably see other decisions go by on email and so you'll see how we do things in practice.
 
-9. The decision is sent to the author, cc’ing all-editors. We also send a copy of the decision to the reviewers. If the manuscript has not been submitted in anonymous form or contains clear indications that the authors do not care about an anonymous review process, the reviewers can be bcc’ed on the letter of decision. Else, a version without identifying information should be sent to the reviewers separately, including in the author letter something along the following lines: "A copy of this email with identifying information removed will be sent to the three anonymous reviewers." [Again, all these emails can be sent out from the system or from a personal account.] The decision is recorded via the website.
+10. The decision is sent to the author, cc’ing all-editors. We also send an anonymized copy of the decision in a separate mail to the reviewers, placing them in bcc to preserve their anonymity. This latter message should be preface with something along the following lines: "A copy of this email with identifying information removed will be sent to the three anonymous reviewers." The decision should be sent via the website but you can send the copy to reviewers from your own email system.
 
 #### When you are ready to issue a "revisions required" decision (= conditional accept)
 
 With your "revision required" decision, please include this:
 
-> This is the stage for you to try and prepare the next and hopefully final version in accordance with our formatting guidelines: http://info.semprag.org/basics and http://info.semprag.org/style. Ideally, you would use our LaTeX style files, which are linked from that site. Please make sure to provide DOIs for everything in your bibliography that has DOIs. Pasting your bibliography into the form at https://doi.crossref.org/simpleTextQuery is a great way to find the DOIs if you don't already have them. If you have any technical issues, please contact production@semprag.org.
+> This is the stage for you to try and prepare the next and hopefully final version in accordance with our formatting guidelines: http://info.semprag.org/basics and http://info.semprag.org/style. Ideally, you would use our LaTeX style files, which are linked from that site. Please make sure to provide DOIs for everything in your bibliography that has a DOI. Pasting your bibliography into the form at https://doi.crossref.org/simpleTextQuery is a great way to find the DOIs if you don't already have them. If you have any technical issues, please contact production@semprag.org.
 
-If a file or files of supplementary material are involved, containing, for example, experimental data or computational code, the authors should be asked to host them at a reliable repository (such as Harvard Dataverse or Open Science Framework) and to link to them from their pdf, so that the Early Access version provides easy access to the material for readers.
+If a file or files of supplementary material are involved, containing, for example, experimental data or computational code, the authors should be asked to host them at a reliable repository (e.g., [Open Science Framework](https://osf.io) or Github) and to link to them from their pdf, so that the Early Access version provides easy access to the material for readers.
 
 #### When you are ready to accept the final version
 
@@ -93,7 +93,7 @@ Once they send you the zip archive, forward it to production@semprag.org and "ac
 
 * We definitely err on including everyone on email conversations so that our operations are as transparent as possible. This makes for an occasional email onslaught.
 
-* If possible and if we remember, we preface all email subject lines with [S&P: xxx] where xxx indicates who, if anyone, should pay quick attention to the email. Values are ALL or FYI (for announcements, queries directed at all editors), LMcN, KJS (Kjell Johan), KvF, DIB, EEC, JuD (Judith Degen), JD (Josh Dever), ASG, MK, HP, KR, KLS (Kristen), JT.
+* If possible and if we remember, we preface all email subject lines with [S&P: xxx] where xxx indicates who, if anyone, should pay quick attention to the email. Values are ALL or FYI (for announcements, queries directed at all editors), or the initials of the relevant editor(s) (e.g., KvF for Kai von Fintel).
 
 * Everyone goes through periods when S&P work needs to be put on the backburner. If this happens, please ask for help with outstanding tasks that you can't currently attend to. We pride ourselves on a speedy and thorough review process and the only way this can happen is for team members to help each other out.
 
@@ -105,7 +105,7 @@ Once they send you the zip archive, forward it to production@semprag.org and "ac
 
 # Adding a new person to the editorial board
 
-There are two options: once the new person has agreed to join the board, (i) let David & Kai know and have them do all the work of setting the new person up (this is the default), (ii) do the first two steps yourself and ask David & Kai to do the masthead addition.
+There are two options: once the new person has agreed to join the board, (i) let the editors in chief know and have them do all the work of setting the new person up, or (preferably) (ii) do the first two steps yourself and ask the editors in chief to do the masthead addition.
 
 1. check whether they already have an account in the system (from being a reader, an author, or an ad hoc reviewer). If so, that's the account we'll be "upgrading". If not, create a new account for them with reader/author/reviewer status (in that case, the system will send them an email about their new account and login info).
 
@@ -151,4 +151,4 @@ Semantics and Pragmatics
 http://semprag.org
 </blockquote>
 
-3. The editors-in-chief will add them to the masthead.
+3. The editors in chief will add them to the masthead.
