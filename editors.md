@@ -102,6 +102,12 @@ Once they send you the zip archive, forward it to production@semprag.org and "ac
 * We take pride in our editorial feedback to authors. We treat reviewers with respect and use their comments to maximum effect. But the decision on what to do with a paper is ours (primarily the shepherding editor's). In fact, in the guidelines we encourage reviewers not to enter a formal recommendation (they can choose "see comments") and let us triangulate the reviews and our own reading.
 
 * NB: reviewers are blind copied on our editorial decision. We have had enormously positive feedback on this practice. Reviewers are also notified when a paper they worked on has been published; and they're often encouraged to submit a commentary.
+  
+* The use of generative AI: We do not exclude appropriate use of generative AI in the preparation of submissions. As of September 2025, we do not yet have an explicit stated policy as to what constitutes appropriate use. As for inappropriate use of generative AI, experience shows that manuscripts manifesting inappropriate use of AI will contain errors that would render it unpublishable in any event -- for example, blatently incorrect or invented references, incorrect or inappropriate citation practices, or work at a level of such generality that no original contribution or substantive engagement with existing literature can be identified in it. Most such manuscripts will be handled by the editors in chief, but should you find such a submission in your hands, you can use the following text as the main content of the body of your decision letter:
+
+<blockquote>
+Unfortunately, we have noted an accumulation of errors in your manuscript that are typical of manuscripts written with the assistance of generative AI. Whether or not generative AI was used in the preparation of your submission, the manuscript does not meet the scholarly standards that our journal requires, and therefore it is declined for publication.
+</blockquote>
 
 # Adding a new person to the editorial board
 
