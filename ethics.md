@@ -5,8 +5,6 @@ title: Guidelines on ethics for Semantics and Pragmatics
 
 *These guidelines are based on Guidelines on Ethics for Linguistic Society of America (LSA) Publications and Conferences.*
 
-## Introduction
-
 It is important for S&P to maintain a high level of quality and integrity in its reviewing and editorial procedures. The responsibility for this rests with all those involved, including authors, reviewers, and editorial staff. Adherence to the guidelines in this document should promote fair treatment throughout the processes of peer review and editorial decision, for all items under consideration for inclusion in S&P.
 
 ### Definition of Conflict of interest
