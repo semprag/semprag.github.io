@@ -14,7 +14,7 @@ S&P leverages advances in desktop publishing, open source journal management sof
 
 S&P publishes both main articles and a variety of shorter contributions (squibs, commentaries, remarks and replies, state of the art). We first lay out the expectations for main articles and then discuss the nature of shorter contributions.
 
-Authors are advised to consult the [Guidelines on ethics for Semantics and Pragmatics](info.semprag.org/ethics). 
+Authors are advised to consult the [Guidelines on ethics for Semantics and Pragmatics](https://info.semprag.org/ethics). 
 
 ## Expectations for main articles
 
